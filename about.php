@@ -31,15 +31,15 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
                 <div style="display: flex; gap: 24px; flex-wrap: wrap;">
                     <div>
-                        <h3 style="font-size: 2.25rem; color: var(--clr-primary-light); font-weight: 800;">100%</h3>
+                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 800;">100%</h3>
                         <span style="color: var(--clr-text-muted); font-size: 0.9rem;">Client Transparency</span>
                     </div>
                     <div>
-                        <h3 style="font-size: 2.25rem; color: var(--clr-primary-light); font-weight: 800;">50+</h3>
+                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 800;">50+</h3>
                         <span style="color: var(--clr-text-muted); font-size: 0.9rem;">Global Markets</span>
                     </div>
                     <div>
-                        <h3 style="font-size: 2.25rem; color: var(--clr-primary-light); font-weight: 800;">24/7</h3>
+                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 800;">24/7</h3>
                         <span style="color: var(--clr-text-muted); font-size: 0.9rem;">SLA Support</span>
                     </div>
                 </div>
@@ -47,21 +47,21 @@ require_once __DIR__ . '/includes/header.php';
 
             <!-- Vision / Mission Cards -->
             <div style="display: flex; flex-direction: column; gap: 24px;">
-                <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); border-radius: var(--radius-lg); padding: 32px;">
-                    <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(6, 182, 212, 0.15); color: var(--clr-primary-light); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
+                <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); border-radius: var(--radius-lg); padding: 32px;">
+                    <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(61, 193, 208, 0.15); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
                         <i class="fa-solid fa-eye"></i>
                     </div>
-                    <h3 style="font-size: 1.35rem; margin-bottom: 10px;">Our Vision</h3>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: var(--clr-brand-dark);">Our Vision</h3>
                     <p style="color: var(--clr-text-muted); font-size: 0.95rem;">
                         To be the premier global IT partner recognized for creating scalable, secure, and intelligent digital infrastructure that shapes the future of global enterprise.
                     </p>
                 </div>
 
-                <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); border-radius: var(--radius-lg); padding: 32px;">
-                    <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(99, 102, 241, 0.15); color: var(--clr-secondary-light); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
+                <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); border-radius: var(--radius-lg); padding: 32px;">
+                    <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(38, 18, 91, 0.15); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
                         <i class="fa-solid fa-bullseye"></i>
                     </div>
-                    <h3 style="font-size: 1.35rem; margin-bottom: 10px;">Our Mission</h3>
+                    <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: var(--clr-brand-dark);">Our Mission</h3>
                     <p style="color: var(--clr-text-muted); font-size: 0.95rem;">
                         To architect cutting-edge web applications, enterprise ERP systems, mobile software, and AI solutions that drive operational efficiency and sustainable business growth.
                     </p>
@@ -72,7 +72,7 @@ require_once __DIR__ . '/includes/header.php';
 </section>
 
 <!-- Core Values Section -->
-<section class="section-padding" style="background: rgba(13, 18, 36, 0.5);">
+<section class="section-padding" style="background: rgba(255, 255, 255, 0.6); border-top: 1px solid var(--clr-border);">
     <div class="container">
         <div style="text-align: center;">
             <div class="section-tag"><i class="fa-solid fa-gem"></i> Principles</div>

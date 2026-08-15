@@ -22,12 +22,12 @@ require_once __DIR__ . '/includes/header.php';
         <div class="blog-grid">
             <?php foreach ($blog_posts as $post): ?>
                 <div class="blog-card">
-                    <div style="background: rgba(6, 182, 212, 0.08); padding: 40px 24px 20px; text-align: center; border-bottom: 1px solid var(--clr-border);">
-                        <i class="fa-solid fa-newspaper" style="font-size: 3rem; color: var(--clr-primary-light);"></i>
+                    <div style="background: rgba(38, 18, 91, 0.05); padding: 40px 24px 20px; text-align: center; border-bottom: 1px solid var(--clr-border);">
+                        <i class="fa-solid fa-newspaper" style="font-size: 3rem; color: var(--clr-brand-dark);"></i>
                     </div>
                     <div style="padding: 24px; display: flex; flex-direction: column; flex-grow: 1;">
                         <div class="blog-meta">
-                            <span style="color: var(--clr-primary-light); font-weight: 600;"><?php echo $post['category']; ?></span>
+                            <span style="color: var(--clr-brand-dark); font-weight: 700;"><?php echo $post['category']; ?></span>
                             <span>&bull;</span>
                             <span><?php echo $post['read_time']; ?></span>
                         </div>

@@ -52,7 +52,7 @@ $current_page = $current_page ?? 'home';
                                 <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>.php" class="dropdown-item">
                                     <i class="fa-solid <?php echo $service['icon']; ?>"></i>
                                     <div>
-                                        <strong style="display:block; color:#fff; font-size:0.9rem;"><?php echo $service['title']; ?></strong>
+                                        <strong style="display:block; color:var(--clr-brand-dark); font-size:0.9rem;"><?php echo $service['title']; ?></strong>
                                     </div>
                                 </a>
                             <?php endforeach; ?>

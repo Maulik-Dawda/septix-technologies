@@ -27,11 +27,11 @@ require_once __DIR__ . '/includes/header.php';
         <div class="section-tag"><i class="fa-solid fa-bookmark"></i> <?php echo $current_post['category']; ?></div>
         <h1 class="hero-headline" style="font-size: 2.75rem;"><?php echo $current_post['title']; ?></h1>
         <div style="display: flex; align-items: center; justify-content: center; gap: 16px; color: var(--clr-text-muted); font-size: 0.95rem; margin-top: 20px;">
-            <span><i class="fa-solid fa-user" style="color: var(--clr-primary-light);"></i> <?php echo $current_post['author']; ?></span>
+            <span><i class="fa-solid fa-user" style="color: var(--clr-brand-dark);"></i> <?php echo $current_post['author']; ?></span>
             <span>&bull;</span>
-            <span><i class="fa-solid fa-calendar" style="color: var(--clr-primary-light);"></i> <?php echo $current_post['date']; ?></span>
+            <span><i class="fa-solid fa-calendar" style="color: var(--clr-brand-dark);"></i> <?php echo $current_post['date']; ?></span>
             <span>&bull;</span>
-            <span><i class="fa-solid fa-clock" style="color: var(--clr-primary-light);"></i> <?php echo $current_post['read_time']; ?></span>
+            <span><i class="fa-solid fa-clock" style="color: var(--clr-brand-dark);"></i> <?php echo $current_post['read_time']; ?></span>
         </div>
     </div>
 </section>
@@ -39,8 +39,8 @@ require_once __DIR__ . '/includes/header.php';
 <!-- Article Content -->
 <section class="section-padding" style="padding-top: 20px;">
     <div class="container" style="max-width: 850px;">
-        <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); border-radius: var(--radius-lg); padding: 48px;">
-            <p style="font-size: 1.2rem; color: #fff; line-height: 1.8; margin-bottom: 28px; font-weight: 500;">
+        <div style="background: #ffffff; border: 1px solid var(--clr-border); box-shadow: var(--shadow-card-hover); border-radius: var(--radius-lg); padding: 48px;">
+            <p style="font-size: 1.2rem; color: var(--clr-brand-dark); line-height: 1.8; margin-bottom: 28px; font-weight: 600;">
                 <?php echo $current_post['summary']; ?>
             </p>
             <hr style="border: 0; border-top: 1px solid var(--clr-border); margin-bottom: 28px;">
@@ -49,18 +49,18 @@ require_once __DIR__ . '/includes/header.php';
                 <p style="margin-bottom: 20px;">
                     As organizations expand across multi-region markets, traditional software monoliths introduce bottlenecks in continuous deployment and operational agility. Implementing modular event-driven microservices backed by high-availability databases ensures low latency and robust fault tolerance.
                 </p>
-                <h3 style="color: #fff; margin: 32px 0 16px;">Key Strategic Takeaways for Tech Leaders</h3>
+                <h3 style="color: var(--clr-brand-dark); margin: 32px 0 16px;">Key Strategic Takeaways for Tech Leaders</h3>
                 <ul style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px;">
                     <li style="display: flex; align-items: flex-start; gap: 10px;">
-                        <i class="fa-solid fa-circle-check" style="color: var(--clr-primary-light); margin-top: 4px;"></i>
+                        <i class="fa-solid fa-circle-check" style="color: var(--clr-brand-light); margin-top: 4px;"></i>
                         <span>Enforce automated CI/CD pipelines to validate code safety before production deployment.</span>
                     </li>
                     <li style="display: flex; align-items: flex-start; gap: 10px;">
-                        <i class="fa-solid fa-circle-check" style="color: var(--clr-primary-light); margin-top: 4px;"></i>
+                        <i class="fa-solid fa-circle-check" style="color: var(--clr-brand-light); margin-top: 4px;"></i>
                         <span>Implement continuous zero-trust security monitoring across distributed hybrid networks.</span>
                     </li>
                     <li style="display: flex; align-items: flex-start; gap: 10px;">
-                        <i class="fa-solid fa-circle-check" style="color: var(--clr-primary-light); margin-top: 4px;"></i>
+                        <i class="fa-solid fa-circle-check" style="color: var(--clr-brand-light); margin-top: 4px;"></i>
                         <span>Leverage custom AI engines to automate data pipelines and eliminate repetitive tasks.</span>
                     </li>
                 </ul>

@@ -18,7 +18,7 @@ $services_data = [
         'title' => 'Website Development',
         'short_desc' => 'High-performance, scalable web applications, custom enterprise platforms, and progressive web apps engineered for speed and conversion.',
         'icon' => 'fa-laptop-code',
-        'banner_gradient' => 'linear-gradient(135deg, #0ea5e9 0%, #1e1b4b 100%)',
+        'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
             'Enterprise Web Applications & Single Page Apps (SPA)',
             'Custom CMS & Headless E-Commerce Solutions',
@@ -41,7 +41,7 @@ $services_data = [
         'title' => 'Mobile Application Development',
         'short_desc' => 'Native iOS & Android mobile applications and cross-platform Flutter/React Native solutions built for seamless user experience.',
         'icon' => 'fa-mobile-screen-button',
-        'banner_gradient' => 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)',
+        'banner_gradient' => 'linear-gradient(135deg, #1d0c47 0%, #3dc1d0 100%)',
         'features' => [
             'Native iOS (Swift) & Android (Kotlin) Development',
             'Cross-Platform Mobile Apps (Flutter & React Native)',
@@ -64,7 +64,7 @@ $services_data = [
         'title' => 'Custom ERP Software',
         'short_desc' => 'Tailor-made Enterprise Resource Planning systems to automate business workflows, supply chain, financial analytics, and HR operations.',
         'icon' => 'fa-cubes',
-        'banner_gradient' => 'linear-gradient(135deg, #38bdf8 0%, #1e293b 100%)',
+        'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #298d9e 100%)',
         'features' => [
             'End-to-End Enterprise Workflow Automation',
             'Financial Accounting & Invoicing Systems',
@@ -87,7 +87,7 @@ $services_data = [
         'title' => 'Digital Marketing',
         'short_desc' => 'Data-driven growth strategies, search engine optimization (SEO), performance marketing, and conversion rate optimization for global brand reach.',
         'icon' => 'fa-chart-line',
-        'banner_gradient' => 'linear-gradient(135deg, #0284c7 0%, #6366f1 100%)',
+        'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
             'Technical & On-Page SEO Optimization',
             'PPC Campaign Management (Google, Bing, Social)',
@@ -110,7 +110,7 @@ $services_data = [
         'title' => 'AI/ML Solutions',
         'short_desc' => 'Cutting-edge Artificial Intelligence, Machine Learning models, predictive analytics, NLP, and intelligent business automation solutions.',
         'icon' => 'fa-brain',
-        'banner_gradient' => 'linear-gradient(135deg, #06b6d4 0%, #4f46e5 100%)',
+        'banner_gradient' => 'linear-gradient(135deg, #1d0c47 0%, #3dc1d0 100%)',
         'features' => [
             'Generative AI & LLM Custom Integrations',
             'Predictive Analytics & Forecasting Models',
@@ -133,7 +133,7 @@ $services_data = [
         'title' => 'IT Networking Solutions',
         'short_desc' => 'Secure enterprise networking, cloud migration, cybersecurity audits, VPN infrastructure, and 24/7 managed IT services for global connectivity.',
         'icon' => 'fa-network-wired',
-        'banner_gradient' => 'linear-gradient(135deg, #0284c7 0%, #0f172a 100%)',
+        'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
             'Enterprise Infrastructure & WAN/LAN Design',
             'Cloud Migration (AWS, Google Cloud, Azure)',
@@ -212,7 +212,6 @@ function is_active($page_name, $current_page) {
 
 // Helper Function: Get Base URL
 function get_base_url() {
-    // Detect subfolder or root path
     $script_dir = dirname($_SERVER['SCRIPT_NAME'] ?? '');
     $script_dir = str_replace('\\', '/', $script_dir);
     if ($script_dir === '/' || $script_dir === '.') {

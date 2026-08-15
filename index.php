@@ -75,7 +75,7 @@ require_once __DIR__ . '/includes/header.php';
                         <ul style="display: flex; flex-direction: column; gap: 8px;">
                             <?php foreach (array_slice($service['features'], 0, 3) as $feat): ?>
                                 <li style="color: var(--clr-text-muted); font-size: 0.875rem; display: flex; align-items: center; gap: 8px;">
-                                    <i class="fa-solid fa-check" style="color: var(--clr-primary-light); font-size: 0.8rem;"></i> <?php echo $feat; ?>
+                                    <i class="fa-solid fa-check" style="color: var(--clr-brand-light); font-size: 0.85rem;"></i> <?php echo $feat; ?>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
@@ -102,16 +102,16 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
                 <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 30px;">
                     <div style="display: flex; align-items: center; gap: 14px;">
-                        <i class="fa-solid fa-shield-halved" style="color: var(--clr-primary-light); font-size: 1.25rem;"></i>
+                        <div class="info-icon" style="width:36px; height:36px; font-size:1rem;"><i class="fa-solid fa-shield-halved"></i></div>
                         <div>
-                            <strong style="display: block; color: #fff;">Global Security & Compliance</strong>
+                            <strong style="display: block; color: var(--clr-brand-dark);">Global Security & Compliance</strong>
                             <span style="color: var(--clr-text-muted); font-size: 0.9rem;">ISO 27001, GDPR, and HIPAA compliant data protection standards.</span>
                         </div>
                     </div>
                     <div style="display: flex; align-items: center; gap: 14px;">
                         <div class="info-icon" style="width:36px; height:36px; font-size:1rem;"><i class="fa-solid fa-bolt"></i></div>
                         <div>
-                            <strong style="display: block; color: #fff;">Rapid Deployment Velocity</strong>
+                            <strong style="display: block; color: var(--clr-brand-dark);">Rapid Deployment Velocity</strong>
                             <span style="color: var(--clr-text-muted); font-size: 0.9rem;">Agile sprint cycles ensuring faster time-to-market.</span>
                         </div>
                     </div>
@@ -157,7 +157,7 @@ require_once __DIR__ . '/includes/header.php';
 </section>
 
 <!-- Interactive Project Estimator Section -->
-<section class="section-padding" style="background: rgba(13, 18, 36, 0.4);">
+<section class="section-padding" style="background: rgba(255, 255, 255, 0.4);">
     <div class="container">
         <div style="text-align: center;">
             <div class="section-tag"><i class="fa-solid fa-calculator"></i> Quick Project Estimator</div>
@@ -217,7 +217,7 @@ require_once __DIR__ . '/includes/header.php';
             <?php foreach (array_slice($blog_posts, 0, 3) as $post): ?>
                 <div class="blog-card">
                     <div class="blog-meta" style="padding: 24px 24px 0;">
-                        <span style="color: var(--clr-primary-light); font-weight: 600;"><?php echo $post['category']; ?></span>
+                        <span style="color: var(--clr-brand-dark); font-weight: 700;"><?php echo $post['category']; ?></span>
                         <span>&bull;</span>
                         <span><?php echo $post['read_time']; ?></span>
                     </div>
@@ -226,8 +226,8 @@ require_once __DIR__ . '/includes/header.php';
                             <a href="<?php echo $base_url; ?>/blog-single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a>
                         </h3>
                         <p class="blog-summary"><?php echo $post['summary']; ?></p>
-                        <a href="<?php echo $base_url; ?>/blog-single.php?id=<?php echo $post['id']; ?>" style="color: var(--clr-primary-light); font-weight: 600; font-size: 0.9rem;">
-                            Read Full Article <i class="fa-solid fa-angle-right"></i>
+                        <a href="<?php echo $base_url; ?>/blog-single.php?id=<?php echo $post['id']; ?>" style="color: var(--clr-brand-dark); font-weight: 700; font-size: 0.9rem;">
+                            Read Full Article <i class="fa-solid fa-angle-right" style="color: var(--clr-brand-light);"></i>
                         </a>
                     </div>
                 </div>
@@ -239,12 +239,12 @@ require_once __DIR__ . '/includes/header.php';
 <!-- CTA Section -->
 <section class="section-padding" style="background: var(--grad-primary); text-align: center;">
     <div class="container">
-        <h2 style="font-size: 2.75rem; color: #fff; margin-bottom: 16px;">Ready to Scale Your Digital Infrastructure Globally?</h2>
+        <h2 style="font-size: 2.75rem; color: #ffffff; margin-bottom: 16px;">Ready to Scale Your Digital Infrastructure Globally?</h2>
         <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem; max-width: 700px; margin: 0 auto 32px;">
             Schedule a consultation with Septix Technologies tech architects and transform your business today.
         </p>
-        <a href="<?php echo $base_url; ?>/contact.php" class="btn" style="background: #ffffff; color: var(--clr-bg); font-size: 1.1rem; padding: 16px 36px;">
-            Book Free Tech Consultation <i class="fa-solid fa-calendar-check"></i>
+        <a href="<?php echo $base_url; ?>/contact.php" class="btn" style="background: #ffffff; color: var(--clr-brand-dark); font-size: 1.1rem; padding: 16px 36px;">
+            Book Free Tech Consultation <i class="fa-solid fa-calendar-check" style="color: var(--clr-brand-light);"></i>
         </a>
     </div>
 </section>

@@ -57,24 +57,24 @@ $case_studies = [
         <div class="portfolio-grid">
             <?php foreach ($case_studies as $project): ?>
                 <div class="portfolio-card">
-                    <div style="background: rgba(6, 182, 212, 0.08); padding: 36px 24px; text-align: center; border-bottom: 1px solid var(--clr-border); position: relative;">
+                    <div style="background: rgba(38, 18, 91, 0.05); padding: 36px 24px; text-align: center; border-bottom: 1px solid var(--clr-border); position: relative;">
                         <span class="portfolio-tag"><?php echo $project['category']; ?></span>
-                        <i class="fa-solid fa-diagram-project" style="font-size: 3.5rem; color: var(--clr-primary-light); margin-top: 16px;"></i>
+                        <i class="fa-solid fa-diagram-project" style="font-size: 3.5rem; color: var(--clr-brand-dark); margin-top: 16px;"></i>
                     </div>
                     <div class="portfolio-content">
-                        <span style="font-size: 0.85rem; color: var(--clr-text-dim); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">
+                        <span style="font-size: 0.85rem; color: var(--clr-text-dim); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">
                             <?php echo $project['client']; ?>
                         </span>
-                        <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: #fff;"><?php echo $project['title']; ?></h3>
+                        <h3 style="font-size: 1.35rem; margin-bottom: 12px; color: var(--clr-brand-dark);"><?php echo $project['title']; ?></h3>
                         <p style="color: var(--clr-text-muted); font-size: 0.95rem; margin-bottom: 20px;"><?php echo $project['summary']; ?></p>
                         
-                        <div style="background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.25); padding: 10px 14px; border-radius: var(--radius-sm); color: #4ade80; font-weight: 600; font-size: 0.9rem; margin-bottom: 20px;">
+                        <div style="background: rgba(34, 197, 94, 0.1); border: 1px solid rgba(34, 197, 94, 0.25); padding: 10px 14px; border-radius: var(--radius-sm); color: #15803d; font-weight: 700; font-size: 0.9rem; margin-bottom: 20px;">
                             <i class="fa-solid fa-chart-line" style="margin-right: 6px;"></i> Key Result: <?php echo $project['impact']; ?>
                         </div>
 
                         <div style="display: flex; flex-wrap: wrap; gap: 6px;">
                             <?php foreach ($project['tech'] as $t): ?>
-                                <span style="background: rgba(255,255,255,0.05); color: var(--clr-primary-light); padding: 4px 10px; border-radius: var(--radius-sm); font-size: 0.775rem;">
+                                <span style="background: rgba(38, 18, 91, 0.06); color: var(--clr-brand-dark); padding: 4px 10px; border-radius: var(--radius-sm); font-size: 0.775rem; font-weight: 600;">
                                     <?php echo $t; ?>
                                 </span>
                             <?php endforeach; ?>

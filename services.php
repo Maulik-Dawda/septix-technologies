@@ -29,21 +29,21 @@ require_once __DIR__ . '/includes/header.php';
                     <p class="service-desc"><?php echo $service['short_desc']; ?></p>
                     
                     <div style="margin-bottom: 24px;">
-                        <h4 style="font-size: 0.95rem; color: #fff; margin-bottom: 12px;">Key Capabilities:</h4>
+                        <h4 style="font-size: 0.95rem; color: var(--clr-brand-dark); margin-bottom: 12px;">Key Capabilities:</h4>
                         <ul style="display: flex; flex-direction: column; gap: 8px;">
                             <?php foreach ($service['features'] as $feature): ?>
                                 <li style="color: var(--clr-text-muted); font-size: 0.875rem; display: flex; align-items: center; gap: 8px;">
-                                    <i class="fa-solid fa-circle-check" style="color: var(--clr-primary-light); font-size: 0.85rem;"></i> <?php echo $feature; ?>
+                                    <i class="fa-solid fa-circle-check" style="color: var(--clr-brand-light); font-size: 0.85rem;"></i> <?php echo $feature; ?>
                                 </li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
 
                     <div style="margin-bottom: 24px; padding-top: 16px; border-top: 1px solid var(--clr-border);">
-                        <span style="color: var(--clr-text-dim); font-size: 0.8rem; font-weight: 600; display: block; margin-bottom: 8px;">TECH STACK:</span>
+                        <span style="color: var(--clr-text-dim); font-size: 0.8rem; font-weight: 700; display: block; margin-bottom: 8px;">TECH STACK:</span>
                         <div style="display: flex; flex-wrap: wrap; gap: 6px;">
                             <?php foreach ($service['tech_stack'] as $tech): ?>
-                                <span style="background: rgba(255,255,255,0.05); color: var(--clr-primary-light); padding: 4px 10px; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 500;">
+                                <span style="background: rgba(38, 18, 91, 0.06); color: var(--clr-brand-dark); padding: 4px 10px; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 600;">
                                     <?php echo $tech; ?>
                                 </span>
                             <?php endforeach; ?>
@@ -60,7 +60,7 @@ require_once __DIR__ . '/includes/header.php';
 </section>
 
 <!-- Development Methodology -->
-<section class="section-padding" style="background: rgba(13, 18, 36, 0.5);">
+<section class="section-padding" style="background: rgba(255, 255, 255, 0.6); border-top: 1px solid var(--clr-border);">
     <div class="container">
         <div style="text-align: center;">
             <div class="section-tag"><i class="fa-solid fa-gears"></i> Process Excellence</div>
@@ -69,27 +69,27 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin-top: 50px;">
-            <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); padding: 28px; border-radius: var(--radius-md); text-align: center;">
-                <div style="font-size: 2.5rem; font-weight: 800; color: var(--clr-primary-light); margin-bottom: 12px;">01</div>
-                <h4 style="font-size: 1.1rem; margin-bottom: 8px;">Discovery & Audit</h4>
+            <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); padding: 28px; border-radius: var(--radius-md); text-align: center;">
+                <div style="font-size: 2.5rem; font-weight: 800; color: var(--clr-brand-dark); margin-bottom: 12px;">01</div>
+                <h4 style="font-size: 1.1rem; color: var(--clr-brand-dark); margin-bottom: 8px;">Discovery & Audit</h4>
                 <p style="color: var(--clr-text-muted); font-size: 0.875rem;">In-depth business requirement mapping, architecture design, and feasibility analysis.</p>
             </div>
 
-            <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); padding: 28px; border-radius: var(--radius-md); text-align: center;">
-                <div style="font-size: 2.5rem; font-weight: 800; color: var(--clr-primary-light); margin-bottom: 12px;">02</div>
-                <h4 style="font-size: 1.1rem; margin-bottom: 8px;">Agile Engineering</h4>
+            <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); padding: 28px; border-radius: var(--radius-md); text-align: center;">
+                <div style="font-size: 2.5rem; font-weight: 800; color: var(--clr-brand-dark); margin-bottom: 12px;">02</div>
+                <h4 style="font-size: 1.1rem; color: var(--clr-brand-dark); margin-bottom: 8px;">Agile Engineering</h4>
                 <p style="color: var(--clr-text-muted); font-size: 0.875rem;">Sprint-based development cycles with continuous integration, review, and client feedback.</p>
             </div>
 
-            <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); padding: 28px; border-radius: var(--radius-md); text-align: center;">
-                <div style="font-size: 2.5rem; font-weight: 800; color: var(--clr-primary-light); margin-bottom: 12px;">03</div>
-                <h4 style="font-size: 1.1rem; margin-bottom: 8px;">QA & Security</h4>
+            <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); padding: 28px; border-radius: var(--radius-md); text-align: center;">
+                <div style="font-size: 2.5rem; font-weight: 800; color: var(--clr-brand-dark); margin-bottom: 12px;">03</div>
+                <h4 style="font-size: 1.1rem; color: var(--clr-brand-dark); margin-bottom: 8px;">QA & Security</h4>
                 <p style="color: var(--clr-text-muted); font-size: 0.875rem;">Automated testing, load testing, vulnerability scanning, and OWASP security compliance.</p>
             </div>
 
-            <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); padding: 28px; border-radius: var(--radius-md); text-align: center;">
-                <div style="font-size: 2.5rem; font-weight: 800; color: var(--clr-primary-light); margin-bottom: 12px;">04</div>
-                <h4 style="font-size: 1.1rem; margin-bottom: 8px;">Global Launch & Support</h4>
+            <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); padding: 28px; border-radius: var(--radius-md); text-align: center;">
+                <div style="font-size: 2.5rem; font-weight: 800; color: var(--clr-brand-dark); margin-bottom: 12px;">04</div>
+                <h4 style="font-size: 1.1rem; color: var(--clr-brand-dark); margin-bottom: 8px;">Global Launch & Support</h4>
                 <p style="color: var(--clr-text-muted); font-size: 0.875rem;">Zero-downtime deployment, continuous monitoring, and 24/7 SLA technical assistance.</p>
             </div>
         </div>

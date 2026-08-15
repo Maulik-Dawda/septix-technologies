@@ -25,7 +25,7 @@ $selected_service = isset($_GET['service']) ? $_GET['service'] : '';
             <!-- Left Info Column -->
             <div class="contact-info-card">
                 <div>
-                    <h2 style="font-size: 1.75rem; margin-bottom: 12px; color: #fff;">Get In Touch</h2>
+                    <h2 style="font-size: 1.75rem; margin-bottom: 12px; color: var(--clr-brand-dark);">Get In Touch</h2>
                     <p style="color: var(--clr-text-muted); font-size: 0.95rem;">
                         Reach out to our global team directly. We respond to all inquiries within 12 hours.
                     </p>
@@ -34,32 +34,32 @@ $selected_service = isset($_GET['service']) ? $_GET['service'] : '';
                 <div class="info-item">
                     <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
                     <div>
-                        <strong style="display: block; color: #fff; font-size: 0.95rem;">Global Inquiries Email:</strong>
-                        <a href="mailto:<?php echo CONTACT_EMAIL; ?>" style="color: var(--clr-primary-light); font-size: 0.9rem;"><?php echo CONTACT_EMAIL; ?></a>
+                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.95rem;">Global Inquiries Email:</strong>
+                        <a href="mailto:<?php echo CONTACT_EMAIL; ?>" style="color: var(--clr-brand-dark); font-weight: 700; font-size: 0.9rem;"><?php echo CONTACT_EMAIL; ?></a>
                     </div>
                 </div>
 
                 <div class="info-item">
                     <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
                     <div>
-                        <strong style="display: block; color: #fff; font-size: 0.95rem;">Direct Phone & WhatsApp:</strong>
-                        <a href="tel:<?php echo CONTACT_PHONE; ?>" style="color: var(--clr-primary-light); font-size: 0.9rem;"><?php echo CONTACT_PHONE; ?></a>
+                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.95rem;">Direct Phone & WhatsApp:</strong>
+                        <a href="tel:<?php echo CONTACT_PHONE; ?>" style="color: var(--clr-brand-dark); font-weight: 700; font-size: 0.9rem;"><?php echo CONTACT_PHONE; ?></a>
                     </div>
                 </div>
 
                 <div class="info-item">
                     <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
                     <div>
-                        <strong style="display: block; color: #fff; font-size: 0.95rem;">Global Headquarters:</strong>
+                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.95rem;">Global Headquarters:</strong>
                         <span style="color: var(--clr-text-muted); font-size: 0.9rem;"><?php echo HQ_ADDRESS; ?></span>
                     </div>
                 </div>
 
                 <div style="padding-top: 20px; border-top: 1px solid var(--clr-border);">
-                    <strong style="display: block; color: #fff; font-size: 0.9rem; margin-bottom: 12px;">Global Regional Presence:</strong>
+                    <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.9rem; margin-bottom: 12px;">Global Regional Presence:</strong>
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 0.85rem; color: var(--clr-text-muted);">
                         <div>🇺🇸 North America</div>
-                        <div>🇬bw Europe</div>
+                        <div>🇬🇧 Europe</div>
                         <div>🇦🇪 Middle East</div>
                         <div>🇮🇳 Asia Pacific</div>
                     </div>
@@ -68,7 +68,7 @@ $selected_service = isset($_GET['service']) ? $_GET['service'] : '';
 
             <!-- Right Interactive Form Column -->
             <div class="form-box">
-                <h3 style="font-size: 1.5rem; margin-bottom: 8px; color: #fff;">Send Us a Message</h3>
+                <h3 style="font-size: 1.5rem; margin-bottom: 8px; color: var(--clr-brand-dark);">Send Us a Message</h3>
                 <p style="color: var(--clr-text-muted); font-size: 0.9rem; margin-bottom: 24px;">Fill out the form below to receive a consultation & custom project quote.</p>
 
                 <div id="formAlert" class="form-alert"></div>
@@ -98,7 +98,7 @@ $selected_service = isset($_GET['service']) ? $_GET['service'] : '';
 
                     <div class="form-group">
                         <label class="form-label">Service Required *</label>
-                        <select name="service" class="form-control" style="background: var(--clr-bg-surface);" required>
+                        <select name="service" class="form-control" required>
                             <option value="">-- Select Required Service --</option>
                             <option value="website-development" <?php echo ($selected_service === 'website-development') ? 'selected' : ''; ?>>Website Development</option>
                             <option value="mobile-app-development" <?php echo ($selected_service === 'mobile-app-development') ? 'selected' : ''; ?>>Mobile Application Development</option>
@@ -124,7 +124,7 @@ $selected_service = isset($_GET['service']) ? $_GET['service'] : '';
 </section>
 
 <!-- General FAQ Accordion -->
-<section class="section-padding" style="background: rgba(13, 18, 36, 0.5);">
+<section class="section-padding" style="background: rgba(255, 255, 255, 0.6); border-top: 1px solid var(--clr-border);">
     <div class="container">
         <div style="text-align: center;">
             <div class="section-tag"><i class="fa-solid fa-circle-question"></i> Client FAQ</div>
