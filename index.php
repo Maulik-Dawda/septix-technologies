@@ -244,8 +244,8 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- PRE-FOOTER DARK SECTION (HIGH IMPACT CTA & LATEST INSIGHTS) -->
-<section class="section-padding pre-footer-dark-section">
+<!-- Latest Insights & Tech Blog Preview -->
+<section class="section-padding">
     <div class="container">
         <div style="text-align: center;">
             <div class="section-tag"><i class="fa-solid fa-newspaper"></i> Latest Insights</div>
@@ -275,19 +275,19 @@ require_once __DIR__ . '/includes/header.php';
             <?php endforeach; ?>
         </div>
 
-        <!-- Pre-Footer High-Impact CTA Box -->
+        <!-- High-Impact Pre-Footer CTA Box -->
         <div class="pre-footer-cta-box">
-            <h3 style="font-size: 2.25rem; color: #ffffff; margin-bottom: 16px; font-weight: 900;">
+            <h3 class="cta-heading">
                 Ready to Accelerate Your <span class="text-gradient">Digital Transformation?</span>
             </h3>
-            <p style="color: rgba(255, 255, 255, 0.85); font-size: 1.1rem; max-width: 700px; margin: 0 auto 32px; line-height: 1.7;">
+            <p class="cta-subtitle">
                 Partner with Septix Technologies to architect robust web platforms, custom ERPs, mobile applications, and AI engines built for global scale.
             </p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
                 <a href="<?php echo $base_url; ?>/contact.php" class="btn btn-primary">
                     Schedule Free Technical Consultation <i class="fa-solid fa-calendar-check"></i>
                 </a>
-                <a href="<?php echo $base_url; ?>/portfolio.php" class="btn btn-light-outline">
+                <a href="<?php echo $base_url; ?>/portfolio.php" class="btn btn-white">
                     View Enterprise Case Studies <i class="fa-solid fa-briefcase"></i>
                 </a>
             </div>
