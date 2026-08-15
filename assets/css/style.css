@@ -196,10 +196,10 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    padding: 16px 32px;
+    padding: 14px 28px;
     border-radius: var(--radius-md);
     font-family: var(--font-heading);
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 800;
     cursor: pointer;
     border: none;
@@ -248,13 +248,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-sm {
-    padding: 12px 24px;
-    font-size: 0.9rem;
+    padding: 10px 22px;
+    font-size: 0.875rem;
     white-space: nowrap;
 }
 
 /* ==========================================================================
-   HEADER & NAVIGATION BAR (FIXED & ALIGNED)
+   HEADER & NAVIGATION BAR (BALANCED MEDIUM LOGO & ALIGNED NAV)
    ========================================================================== */
 .site-header {
     position: fixed;
@@ -288,41 +288,41 @@ h1, h2, h3, h4, h5, h6 {
     flex-shrink: 0;
 }
 
-/* Substantially enlarged logo height: 105px on desktop, 82px when scrolled */
+/* Medium balanced logo height: 58px on desktop, 48px when scrolled */
 .brand-logo img {
-    height: 105px;
+    height: 58px;
     width: auto;
     object-fit: contain;
     transition: var(--transition);
 }
 
 .site-header.scrolled .brand-logo img {
-    height: 82px;
+    height: 48px;
 }
 
 @media (max-width: 1200px) {
     .brand-logo img {
-        height: 90px;
+        height: 54px;
     }
     .site-header.scrolled .brand-logo img {
-        height: 72px;
+        height: 45px;
     }
 }
 
 @media (max-width: 768px) {
     .brand-logo img {
-        height: 70px;
+        height: 48px;
     }
     .site-header.scrolled .brand-logo img {
-        height: 60px;
+        height: 42px;
     }
 }
 
-/* Navigation Menu Container (Single Horizontal Bar Alignment) */
+/* Navigation Menu Container */
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 28px;
 }
 
 .nav-links {
@@ -338,7 +338,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link {
     font-family: var(--font-heading);
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.975rem;
     color: var(--clr-brand-dark);
     padding: 8px 0;
     display: flex;
@@ -487,10 +487,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Hero Section (Adjusted top padding for enlarged logo) */
+/* Hero Section */
 .hero-section {
     position: relative;
-    padding: 195px 0 95px;
+    padding: 160px 0 95px;
     background: var(--grad-light-mesh);
     overflow: hidden;
 }
@@ -1184,7 +1184,7 @@ textarea.form-control {
 }
 
 .footer-brand img {
-    height: 95px;
+    height: 60px;
     width: auto;
     object-fit: contain;
 }
