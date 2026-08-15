@@ -200,8 +200,43 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- Latest Insights / Blog Preview -->
+<!-- Client Testimonials Section -->
 <section class="section-padding">
+    <div class="container">
+        <div style="text-align: center;">
+            <div class="section-tag"><i class="fa-solid fa-star"></i> Client Satisfaction</div>
+            <h2 class="section-title">Trusted By Global Leaders</h2>
+            <p class="section-subtitle">Read what executives around the world say about working with Septix Technologies.</p>
+        </div>
+
+        <div class="services-grid" style="margin-top: 40px;">
+            <?php foreach ($testimonials_data as $t): ?>
+                <div style="background: #ffffff; border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); padding: 32px; border-radius: var(--radius-lg); display: flex; flex-direction: column;">
+                    <div style="color: #f59e0b; margin-bottom: 16px; font-size: 1rem;">
+                        <?php for ($i=0; $i<$t['rating']; $i++): ?>
+                            <i class="fa-solid fa-star"></i>
+                        <?php endfor; ?>
+                    </div>
+                    <p style="color: var(--clr-text-muted); font-size: 0.95rem; line-height: 1.7; font-style: italic; margin-bottom: 24px; flex-grow: 1;">
+                        "<?php echo $t['quote']; ?>"
+                    </p>
+                    <div style="display: flex; align-items: center; gap: 14px; padding-top: 16px; border-top: 1px solid var(--clr-border);">
+                        <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--clr-brand-dark); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem;">
+                            <?php echo $t['avatar']; ?>
+                        </div>
+                        <div>
+                            <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.95rem;"><?php echo $t['name']; ?></strong>
+                            <span style="color: var(--clr-text-dim); font-size: 0.85rem;"><?php echo $t['role']; ?></span>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Insights / Blog Preview -->
+<section class="section-padding" style="background: rgba(255, 255, 255, 0.5); border-top: 1px solid var(--clr-border);">
     <div class="container">
         <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px;">
             <div>

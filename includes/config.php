@@ -16,18 +16,18 @@ $services_data = [
     'website-development' => [
         'id' => 'website-development',
         'title' => 'Website Development',
-        'short_desc' => 'High-performance, scalable web applications, custom enterprise platforms, and progressive web apps engineered for speed and conversion.',
+        'short_desc' => 'High-performance, scalable web applications, custom enterprise platforms, and progressive web apps engineered for speed, SEO, and global conversion.',
         'icon' => 'fa-laptop-code',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
             'Enterprise Web Applications & Single Page Apps (SPA)',
-            'Custom CMS & Headless E-Commerce Solutions',
+            'Custom Headless E-Commerce & B2B/B2C Portals',
             'Progressive Web Apps (PWA) with Offline Capabilities',
-            'API-First Microservices Architecture',
-            'SEO-Optimized & Speed-Accelerated Performance',
-            'Robust Web Application Security (OWASP Standard)'
+            'API-First Microservices & Jamstack Architecture',
+            'Core Web Vitals Accelerated Performance & SEO',
+            'OWASP Standard Web Security & Data Encryption'
         ],
-        'tech_stack' => ['PHP / Laravel', 'Node.js', 'React.js', 'Vue.js', 'Next.js', 'MySQL / PostgreSQL', 'REST / GraphQL APIs'],
+        'tech_stack' => ['PHP / Laravel', 'Node.js', 'React.js', 'Vue.js', 'Next.js', 'MySQL / PostgreSQL', 'REST / GraphQL APIs', 'Tailwind / Sass'],
         'workflow' => [
             'Discovery & Wireframing',
             'UI/UX Design & Prototyping',
@@ -39,18 +39,18 @@ $services_data = [
     'mobile-app-development' => [
         'id' => 'mobile-app-development',
         'title' => 'Mobile Application Development',
-        'short_desc' => 'Native iOS & Android mobile applications and cross-platform Flutter/React Native solutions built for seamless user experience.',
+        'short_desc' => 'Native iOS & Android mobile applications and cross-platform Flutter/React Native solutions built for intuitive user experience and hardware access.',
         'icon' => 'fa-mobile-screen-button',
         'banner_gradient' => 'linear-gradient(135deg, #1d0c47 0%, #3dc1d0 100%)',
         'features' => [
-            'Native iOS (Swift) & Android (Kotlin) Development',
-            'Cross-Platform Mobile Apps (Flutter & React Native)',
-            'Intuitive Human Interface UI/UX Design',
-            'Real-Time Offline Data Synchronization',
-            'Push Notifications & In-App Payment Gateways',
-            'App Store (iOS) & Google Play Publishing Support'
+            'Native iOS (Swift) & Android (Kotlin) App Engineering',
+            'Cross-Platform Development (Flutter & React Native)',
+            'Intuitive Human Interface (HI) UI/UX Design System',
+            'Real-Time Offline Data Sync & Cloud Backends',
+            'Biometric Auth, Push Notifications & Payment Gateways',
+            'Apple App Store & Google Play Store Publishing'
         ],
-        'tech_stack' => ['Flutter', 'React Native', 'Swift', 'Kotlin', 'Firebase', 'AWS Amplify', 'SQLite / Realm'],
+        'tech_stack' => ['Flutter', 'React Native', 'Swift', 'Kotlin', 'Firebase', 'AWS Amplify', 'SQLite / Realm', 'GraphQL'],
         'workflow' => [
             'Concept & User Journey Mapping',
             'UX Architecture & Visual Design',
@@ -62,18 +62,18 @@ $services_data = [
     'custom-erp-software' => [
         'id' => 'custom-erp-software',
         'title' => 'Custom ERP Software',
-        'short_desc' => 'Tailor-made Enterprise Resource Planning systems to automate business workflows, supply chain, financial analytics, and HR operations.',
+        'short_desc' => 'Tailor-made Enterprise Resource Planning systems to automate complex business workflows, supply chain, financial analytics, and HR operations.',
         'icon' => 'fa-cubes',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #298d9e 100%)',
         'features' => [
             'End-to-End Enterprise Workflow Automation',
-            'Financial Accounting & Invoicing Systems',
-            'Supply Chain, Warehouse & Inventory Control',
-            'Human Capital Management (HCM) & Payroll',
-            'Custom BI Dashboards & Executive Analytics',
-            'Role-Based Access Control & Multi-Branch Support'
+            'Financial Accounting, Invoicing & Tax Compliance',
+            'Supply Chain, Multi-Warehouse & Inventory Control',
+            'Human Capital Management (HCM) & Automated Payroll',
+            'Real-Time Business Intelligence & Executive Analytics',
+            'Multi-Branch, Multi-Currency & Role-Based Security'
         ],
-        'tech_stack' => ['PHP Enterprise Frameworks', 'Python / Django', 'PostgreSQL / SQL Server', 'Docker / Kubernetes', 'Redis', 'Chart.js / D3.js'],
+        'tech_stack' => ['PHP Enterprise Frameworks', 'Python / Django', 'PostgreSQL / SQL Server', 'Docker / Kubernetes', 'Redis', 'Chart.js / D3.js', 'Microservices'],
         'workflow' => [
             'Business Audit & Requirements Mapping',
             'Data Architecture & Module Specs',
@@ -89,14 +89,14 @@ $services_data = [
         'icon' => 'fa-chart-line',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
-            'Technical & On-Page SEO Optimization',
-            'PPC Campaign Management (Google, Bing, Social)',
-            'Social Media Brand Strategy & Management',
+            'International SEO & Technical Audit Optimization',
+            'PPC Performance Campaigns (Google, Bing, Social)',
+            'Social Media Brand Strategy & Audience Engagement',
             'Content Marketing & Thought Leadership Copywriting',
             'Conversion Rate Optimization (CRO) & Funnel Design',
-            'Real-Time ROI Analytics & Performance Reporting'
+            'Real-Time ROI Analytics & Attribution Dashboards'
         ],
-        'tech_stack' => ['Google Analytics 4', 'SEMrush / Ahrefs', 'Meta Ads Manager', 'Google Tag Manager', 'HubSpot / Mailchimp'],
+        'tech_stack' => ['Google Analytics 4', 'SEMrush / Ahrefs', 'Meta Ads Manager', 'Google Tag Manager', 'HubSpot / Mailchimp', 'Looker Studio'],
         'workflow' => [
             'Market Audit & Competitor Intelligence',
             'Multi-Channel Strategy Formulation',
@@ -112,9 +112,9 @@ $services_data = [
         'icon' => 'fa-brain',
         'banner_gradient' => 'linear-gradient(135deg, #1d0c47 0%, #3dc1d0 100%)',
         'features' => [
-            'Generative AI & LLM Custom Integrations',
-            'Predictive Analytics & Forecasting Models',
-            'Natural Language Processing (NLP) & AI Chatbots',
+            'Generative AI & LLM Custom Enterprise Integrations',
+            'Predictive Analytics & Financial Forecasting Models',
+            'Natural Language Processing (NLP) & Contextual Chatbots',
             'Computer Vision & Automated Image Processing',
             'Business Process Intelligence & Robotic Automation',
             'Model Fine-Tuning, Training & MLOps Pipelines'
@@ -135,11 +135,11 @@ $services_data = [
         'icon' => 'fa-network-wired',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
-            'Enterprise Infrastructure & WAN/LAN Design',
-            'Cloud Migration (AWS, Google Cloud, Azure)',
-            'Cybersecurity Audits & Vulnerability Testing',
+            'Enterprise Infrastructure & WAN/LAN Network Architecture',
+            'Multi-Cloud Migration & Hybrid Cloud (AWS/GCP/Azure)',
+            'Cybersecurity Audits & Vulnerability Penetration Testing',
             'Managed SD-WAN & Secure Remote Access VPNs',
-            'Disaster Recovery & Automated Backup Systems',
+            'Disaster Recovery & Automated Backup Protocols',
             '24/7 Managed IT Support & SLA Guarantee'
         ],
         'tech_stack' => ['AWS', 'Google Cloud', 'Cisco / Fortinet', 'Kubernetes / Docker', 'Terraform', 'Wireshark', 'Grafana / Prometheus'],
@@ -150,6 +150,31 @@ $services_data = [
             'Security Hardening & Penetration Test',
             '24/7 Proactive Monitoring & Support'
         ]
+    ]
+];
+
+// Testimonials Data
+$testimonials_data = [
+    [
+        'name' => 'Jonathan Sterling',
+        'role' => 'CTO, Global Logistics Corp (USA)',
+        'quote' => 'Septix Technologies delivered a custom ERP that revolutionized our supply chain tracking across 14 countries. Their engineering quality and 24/7 responsiveness are exceptional.',
+        'rating' => 5,
+        'avatar' => 'JS'
+    ],
+    [
+        'name' => 'Sophia Martinez',
+        'role' => 'VP of Digital, Nexus Financial (UK)',
+        'quote' => 'Our cross-platform mobile wallet built by Septix handles millions of dollars in daily transactions with zero downtime. They are our trusted long-term IT engineering partner.',
+        'rating' => 5,
+        'avatar' => 'SM'
+    ],
+    [
+        'name' => 'Tariq Al-Mansoor',
+        'role' => 'Managing Director, Horizon Retail (UAE)',
+        'quote' => 'The AI recommendation engine and web portal designed by Septix boosted our customer conversion rate by 45% within three months of deployment.',
+        'rating' => 5,
+        'avatar' => 'TA'
     ]
 ];
 
