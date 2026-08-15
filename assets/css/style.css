@@ -85,28 +85,15 @@ img {
     display: block;
 }
 
-/* ==========================================================================
-   KEYFRAME ANIMATIONS (WEBSITE IS ALIVE)
-   ========================================================================== */
-
+/* Keyframe Animations */
 @keyframes floatAnim {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
 }
 
-@keyframes pulseGlow {
-    0%, 100% { opacity: 0.6; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.05); }
-}
-
 @keyframes btnShine {
     0% { left: -100%; }
     100% { left: 200%; }
-}
-
-@keyframes spinSlow {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
 }
 
 @keyframes badgeBounce {
@@ -124,39 +111,6 @@ img {
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
-}
-
-.reveal-left {
-    opacity: 0;
-    transform: translateX(-40px);
-    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.reveal-left.active {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.reveal-right {
-    opacity: 0;
-    transform: translateX(40px);
-    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.reveal-right.active {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-.reveal-scale {
-    opacity: 0;
-    transform: scale(0.92);
-    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.reveal-scale.active {
-    opacity: 1;
-    transform: scale(1);
 }
 
 /* Typography Helpers */
@@ -221,7 +175,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Container */
 .container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1320px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -294,27 +248,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-sm {
-    padding: 10px 24px;
-    font-size: 0.875rem;
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    white-space: nowrap;
 }
 
-/* Header & Navbar (Logo Size Increased) */
+/* ==========================================================================
+   HEADER & NAVIGATION BAR (FIXED & ALIGNED)
+   ========================================================================== */
 .site-header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 22px 0;
+    padding: 16px 0;
     transition: var(--transition);
 }
 
 .site-header.scrolled {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.96);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--clr-border);
-    padding: 14px 0;
+    padding: 10px 0;
     box-shadow: 0 6px 25px rgba(38, 18, 91, 0.08);
 }
 
@@ -322,33 +279,56 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 24px;
 }
 
-/* Logo size enlarged from 48px to 68px */
+.brand-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* Substantially enlarged logo height: 105px on desktop, 82px when scrolled */
 .brand-logo img {
-    height: 68px;
+    height: 105px;
     width: auto;
     object-fit: contain;
     transition: var(--transition);
 }
 
 .site-header.scrolled .brand-logo img {
-    height: 58px;
+    height: 82px;
+}
+
+@media (max-width: 1200px) {
+    .brand-logo img {
+        height: 90px;
+    }
+    .site-header.scrolled .brand-logo img {
+        height: 72px;
+    }
 }
 
 @media (max-width: 768px) {
     .brand-logo img {
-        height: 54px;
+        height: 70px;
     }
     .site-header.scrolled .brand-logo img {
-        height: 48px;
+        height: 60px;
     }
+}
+
+/* Navigation Menu Container (Single Horizontal Bar Alignment) */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }
 
 .nav-links {
     display: flex;
     align-items: center;
-    gap: 34px;
+    gap: 28px;
 }
 
 .nav-item {
@@ -365,6 +345,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     gap: 6px;
     position: relative;
+    white-space: nowrap;
 }
 
 .nav-link::before {
@@ -465,15 +446,16 @@ h1, h2, h3, h4, h5, h6 {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 300px;
+        width: 310px;
         height: 100vh;
         background: #ffffff;
-        padding: 80px 24px 30px;
+        padding: 90px 24px 30px;
         box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
         transition: var(--transition);
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        align-items: flex-start;
+        gap: 24px;
         overflow-y: auto;
     }
 
@@ -505,10 +487,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Hero Section (Choicy Split Animated Layout) */
+/* Hero Section (Adjusted top padding for enlarged logo) */
 .hero-section {
     position: relative;
-    padding: 170px 0 95px;
+    padding: 195px 0 95px;
     background: var(--grad-light-mesh);
     overflow: hidden;
 }
@@ -664,7 +646,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
-/* Choicy Service Cards with Animated Zoom & Elevation */
+/* Choicy Service Cards */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
@@ -1201,9 +1183,8 @@ textarea.form-control {
     padding: 85px 0 35px;
 }
 
-/* Footer logo enlarged */
 .footer-brand img {
-    height: 64px;
+    height: 95px;
     width: auto;
     object-fit: contain;
 }

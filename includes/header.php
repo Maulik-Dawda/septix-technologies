@@ -70,12 +70,10 @@ $current_page = $current_page ?? 'home';
                     </li>
                 </ul>
 
-                <!-- Header CTA -->
-                <div style="margin-left: 20px;">
-                    <a href="<?php echo $base_url; ?>/contact.php" class="btn btn-primary btn-sm">
-                        Get a Quote <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
+                <!-- Header CTA Button -->
+                <a href="<?php echo $base_url; ?>/contact.php" class="btn btn-primary btn-sm">
+                    Get a Quote <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </nav>
         </div>
     </header>
