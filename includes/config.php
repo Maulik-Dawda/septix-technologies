@@ -11,13 +11,14 @@ define('CONTACT_EMAIL', 'info@septixtechnologies.com');
 define('CONTACT_PHONE', '+1 (800) 592-7378');
 define('HQ_ADDRESS', 'Septix Global Tech Park, Innovation Way, Tech Hub');
 
-// Services List Data
+// Services List Data (with verified image paths)
 $services_data = [
     'website-development' => [
         'id' => 'website-development',
         'title' => 'Website Development',
         'short_desc' => 'High-performance, scalable web applications, custom enterprise platforms, and progressive web apps engineered for speed, SEO, and global conversion.',
         'icon' => 'fa-laptop-code',
+        'image' => 'assets/images/services/web-dev.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
             'Enterprise Web Applications & Single Page Apps (SPA)',
@@ -41,6 +42,7 @@ $services_data = [
         'title' => 'Mobile Application Development',
         'short_desc' => 'Native iOS & Android mobile applications and cross-platform Flutter/React Native solutions built for intuitive user experience and hardware access.',
         'icon' => 'fa-mobile-screen-button',
+        'image' => 'assets/images/services/mobile-app.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #1d0c47 0%, #3dc1d0 100%)',
         'features' => [
             'Native iOS (Swift) & Android (Kotlin) App Engineering',
@@ -64,6 +66,7 @@ $services_data = [
         'title' => 'Custom ERP Software',
         'short_desc' => 'Tailor-made Enterprise Resource Planning systems to automate complex business workflows, supply chain, financial analytics, and HR operations.',
         'icon' => 'fa-cubes',
+        'image' => 'assets/images/services/erp-software.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #298d9e 100%)',
         'features' => [
             'End-to-End Enterprise Workflow Automation',
@@ -87,6 +90,7 @@ $services_data = [
         'title' => 'Digital Marketing',
         'short_desc' => 'Data-driven growth strategies, search engine optimization (SEO), performance marketing, and conversion rate optimization for global brand reach.',
         'icon' => 'fa-chart-line',
+        'image' => 'assets/images/services/web-dev.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
             'International SEO & Technical Audit Optimization',
@@ -110,6 +114,7 @@ $services_data = [
         'title' => 'AI/ML Solutions',
         'short_desc' => 'Cutting-edge Artificial Intelligence, Machine Learning models, predictive analytics, NLP, and intelligent business automation solutions.',
         'icon' => 'fa-brain',
+        'image' => 'assets/images/services/ai-ml.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #1d0c47 0%, #3dc1d0 100%)',
         'features' => [
             'Generative AI & LLM Custom Enterprise Integrations',
@@ -133,6 +138,7 @@ $services_data = [
         'title' => 'IT Networking Solutions',
         'short_desc' => 'Secure enterprise networking, cloud migration, cybersecurity audits, VPN infrastructure, and 24/7 managed IT services for global connectivity.',
         'icon' => 'fa-network-wired',
+        'image' => 'assets/images/services/erp-software.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
             'Enterprise Infrastructure & WAN/LAN Network Architecture',
@@ -154,7 +160,7 @@ $services_data = [
 ];
 
 // Testimonials Data
-$testimonials_data = [
+$testimonials = [
     [
         'name' => 'Jonathan Sterling',
         'role' => 'CTO, Global Logistics Corp (USA)',
@@ -178,7 +184,7 @@ $testimonials_data = [
     ]
 ];
 
-// Blog Posts Data
+// Blog Posts Data (with verified image paths)
 $blog_posts = [
     [
         'id' => 1,
@@ -188,7 +194,7 @@ $blog_posts = [
         'date' => 'August 12, 2026',
         'author' => 'Alex Turner, Chief AI Officer',
         'read_time' => '6 min read',
-        'image' => 'assets/images/blog/ai-trends.jpg',
+        'image' => 'assets/images/services/ai-ml.jpg',
         'summary' => 'Explore how generative AI models, vector search, and autonomous agent workflows are driving unprecedented efficiency across enterprise systems globally.',
         'content' => 'Artificial Intelligence has transcended simple predictive models into autonomous agentic workflows. Modern enterprise software now incorporates contextual AI assistants capable of parsing complex unstructured business data, automating supply chain logistics, and delivering real-time decision intelligence.'
     ],
@@ -200,7 +206,7 @@ $blog_posts = [
         'date' => 'July 28, 2026',
         'author' => 'Elena Rostova, Principal Software Architect',
         'read_time' => '8 min read',
-        'image' => 'assets/images/blog/erp-architecture.jpg',
+        'image' => 'assets/images/services/erp-software.jpg',
         'summary' => 'A comprehensive guide on transitioning legacy monolith ERP systems to microservices, containerized databases, and multi-region cloud networks.',
         'content' => 'Global enterprises demand 99.99% uptime and low-latency database transactions across multiple continents. Switching from rigid legacy ERP software to modular cloud-native architectures ensures seamless scalability, automated multi-currency compliance, and real-time inventory synchronization.'
     ],
@@ -212,7 +218,7 @@ $blog_posts = [
         'date' => 'July 15, 2026',
         'author' => 'David Chen, Head of Mobile Engineering',
         'read_time' => '5 min read',
-        'image' => 'assets/images/blog/mobile-dev.jpg',
+        'image' => 'assets/images/services/mobile-app.jpg',
         'summary' => 'Compare performance benchmarks, UI fidelity, ecosystem maturity, and developer velocity for Flutter and React Native in 2026.',
         'content' => 'Building cross-platform mobile apps enables businesses to target both iOS and Android simultaneously while reducing engineering overhead. In this article, we analyze hardware access speed, rendering engine performance, and state management strategies.'
     ],

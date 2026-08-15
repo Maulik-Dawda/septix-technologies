@@ -5,14 +5,10 @@ $current_page = "home";
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<!-- Dynamic Animated Background Floating Ambient Orbs & Micro Icons -->
+<!-- Dynamic Ambient Floating Orbs -->
 <div class="bg-floating-orb orb-1"></div>
 <div class="bg-floating-orb orb-2"></div>
 <div class="bg-floating-orb orb-3"></div>
-
-<div class="floating-tech-icon tech-icon-1"><i class="fa-solid fa-code"></i></div>
-<div class="floating-tech-icon tech-icon-2"><i class="fa-solid fa-microchip"></i></div>
-<div class="floating-tech-icon tech-icon-3"><i class="fa-solid fa-network-wired"></i></div>
 
 <!-- Choicy Theme Hero Section (Split Layout) -->
 <section class="hero-section">
@@ -57,19 +53,19 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Animated Stats Counter Banner -->
         <div class="stats-banner">
             <div class="stat-item">
-                <div class="stat-number" data-target="250" data-suffix="+">0+</div>
+                <div class="stat-number" data-target="250" data-suffix="+">250+</div>
                 <div class="stat-label">Projects Completed</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="50" data-suffix="+">0+</div>
+                <div class="stat-number" data-target="50" data-suffix="+">50+</div>
                 <div class="stat-label">Global Clients</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="99" data-suffix="%">0%</div>
+                <div class="stat-number" data-target="99" data-suffix="%">99%</div>
                 <div class="stat-label">Client Retention Rate</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="24" data-suffix="/7">0/7</div>
+                <div class="stat-number" data-target="24" data-suffix="/7">24/7</div>
                 <div class="stat-label">Global Support SLA</div>
             </div>
         </div>

@@ -22,37 +22,42 @@ require_once __DIR__ . '/includes/header.php';
         <div class="services-grid">
             <?php foreach ($services_data as $key => $service): ?>
                 <div class="service-card" id="<?php echo $key; ?>">
-                    <div class="service-icon-box">
-                        <i class="fa-solid <?php echo $service['icon']; ?>"></i>
-                    </div>
-                    <h3 class="service-title"><?php echo $service['title']; ?></h3>
-                    <p class="service-desc"><?php echo $service['short_desc']; ?></p>
-                    
-                    <div style="margin-bottom: 24px;">
-                        <h4 style="font-size: 0.95rem; color: var(--clr-brand-dark); margin-bottom: 12px;">Key Capabilities:</h4>
-                        <ul style="display: flex; flex-direction: column; gap: 8px;">
-                            <?php foreach ($service['features'] as $feature): ?>
-                                <li style="color: var(--clr-text-muted); font-size: 0.875rem; display: flex; align-items: center; gap: 8px;">
-                                    <i class="fa-solid fa-circle-check" style="color: var(--clr-brand-light); font-size: 0.85rem;"></i> <?php echo $feature; ?>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-
-                    <div style="margin-bottom: 24px; padding-top: 16px; border-top: 1px solid var(--clr-border);">
-                        <span style="color: var(--clr-text-dim); font-size: 0.8rem; font-weight: 700; display: block; margin-bottom: 8px;">TECH STACK:</span>
-                        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-                            <?php foreach ($service['tech_stack'] as $tech): ?>
-                                <span style="background: rgba(38, 18, 91, 0.06); color: var(--clr-brand-dark); padding: 4px 10px; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 600;">
-                                    <?php echo $tech; ?>
-                                </span>
-                            <?php endforeach; ?>
+                    <div class="service-card-img">
+                        <img src="<?php echo $base_url . '/' . $service['image']; ?>" alt="<?php echo $service['title']; ?>">
+                        <div class="service-icon-floating">
+                            <i class="fa-solid <?php echo $service['icon']; ?>"></i>
                         </div>
                     </div>
+                    <div class="service-card-body">
+                        <h3 class="service-title"><?php echo $service['title']; ?></h3>
+                        <p class="service-desc"><?php echo $service['short_desc']; ?></p>
+                        
+                        <div style="margin-bottom: 24px;">
+                            <h4 style="font-size: 0.95rem; color: var(--clr-brand-dark); margin-bottom: 12px;">Key Capabilities:</h4>
+                            <ul style="display: flex; flex-direction: column; gap: 8px;">
+                                <?php foreach ($service['features'] as $feature): ?>
+                                    <li style="color: var(--clr-text-muted); font-size: 0.875rem; display: flex; align-items: center; gap: 8px;">
+                                        <i class="fa-solid fa-circle-check" style="color: var(--clr-brand-light); font-size: 0.85rem;"></i> <?php echo $feature; ?>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
 
-                    <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>.php" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center; margin-top: auto;">
-                        View Dedicated Service Page <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                        <div style="margin-bottom: 24px; padding-top: 16px; border-top: 1px solid var(--clr-border);">
+                            <span style="color: var(--clr-text-dim); font-size: 0.8rem; font-weight: 700; display: block; margin-bottom: 8px;">TECH STACK:</span>
+                            <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+                                <?php foreach ($service['tech_stack'] as $tech): ?>
+                                    <span style="background: rgba(38, 18, 91, 0.06); color: var(--clr-brand-dark); padding: 4px 10px; border-radius: var(--radius-sm); font-size: 0.8rem; font-weight: 600;">
+                                        <?php echo $tech; ?>
+                                    </span>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+
+                        <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>.php" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center; margin-top: auto;">
+                            View Dedicated Service Page <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             <?php endforeach; ?>
         </div>
