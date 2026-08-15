@@ -24,11 +24,11 @@ require_once __DIR__ . '/includes/header.php';
                 <div class="service-card" id="<?php echo $key; ?>">
                     <div class="service-card-img">
                         <img src="<?php echo $base_url . '/' . $service['image']; ?>" alt="<?php echo $service['title']; ?>">
-                        <div class="service-icon-floating">
-                            <i class="fa-solid <?php echo $service['icon']; ?>"></i>
-                        </div>
                     </div>
                     <div class="service-card-body">
+                        <div class="service-card-icon">
+                            <i class="fa-solid <?php echo $service['icon']; ?>"></i>
+                        </div>
                         <h3 class="service-title"><?php echo $service['title']; ?></h3>
                         <p class="service-desc"><?php echo $service['short_desc']; ?></p>
                         
