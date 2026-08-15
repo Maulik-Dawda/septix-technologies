@@ -16,7 +16,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- Company Story Section -->
+<!-- Company Story Section (Choicy Style Visual Grid) -->
 <section class="section-padding">
     <div class="container">
         <div class="global-grid">
@@ -26,53 +26,71 @@ require_once __DIR__ . '/includes/header.php';
                 <p style="color: var(--clr-text-muted); font-size: 1.05rem; margin-bottom: 20px;">
                     Founded with a passion for technological excellence, Septix Technologies has grown from a specialized web and mobile software studio into a full-service global IT technology provider.
                 </p>
-                <p style="color: var(--clr-text-muted); font-size: 1rem; margin-bottom: 24px;">
+                <p style="color: var(--clr-text-muted); font-size: 1rem; margin-bottom: 28px;">
                     We collaborate closely with visionary tech founders, enterprise leaders, and mid-sized enterprises to build mission-critical digital products that operate seamlessly across worldwide markets.
                 </p>
                 <div style="display: flex; gap: 24px; flex-wrap: wrap;">
                     <div>
-                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 800;">100%</h3>
-                        <span style="color: var(--clr-text-muted); font-size: 0.9rem;">Client Transparency</span>
+                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 900;">100%</h3>
+                        <span style="color: var(--clr-text-muted); font-size: 0.9rem; font-weight: 600;">Client Transparency</span>
                     </div>
                     <div>
-                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 800;">50+</h3>
-                        <span style="color: var(--clr-text-muted); font-size: 0.9rem;">Global Markets</span>
+                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 900;">50+</h3>
+                        <span style="color: var(--clr-text-muted); font-size: 0.9rem; font-weight: 600;">Global Markets</span>
                     </div>
                     <div>
-                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 800;">24/7</h3>
-                        <span style="color: var(--clr-text-muted); font-size: 0.9rem;">SLA Support</span>
+                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 900;">24/7</h3>
+                        <span style="color: var(--clr-text-muted); font-size: 0.9rem; font-weight: 600;">SLA Support</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Vision / Mission Cards -->
-            <div style="display: flex; flex-direction: column; gap: 24px;">
-                <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); border-radius: var(--radius-lg); padding: 32px;">
-                    <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(61, 193, 208, 0.15); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
-                        <i class="fa-solid fa-eye"></i>
+            <!-- About Stock Visual Container -->
+            <div class="hero-image-box">
+                <img src="<?php echo $base_url; ?>/assets/images/hero-banner.jpg" alt="Septix Technologies Global Team">
+                <div class="floating-badge">
+                    <div class="floating-badge-icon">
+                        <i class="fa-solid fa-earth-americas"></i>
                     </div>
-                    <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: var(--clr-brand-dark);">Our Vision</h3>
-                    <p style="color: var(--clr-text-muted); font-size: 0.95rem;">
-                        To be the premier global IT partner recognized for creating scalable, secure, and intelligent digital infrastructure that shapes the future of global enterprise.
-                    </p>
-                </div>
-
-                <div style="background: var(--clr-bg-card); border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); border-radius: var(--radius-lg); padding: 32px;">
-                    <div style="width: 48px; height: 48px; border-radius: var(--radius-md); background: rgba(38, 18, 91, 0.15); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 16px;">
-                        <i class="fa-solid fa-bullseye"></i>
+                    <div>
+                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 1rem;">Globally Trusted Engineering</strong>
+                        <span style="color: var(--clr-text-muted); font-size: 0.85rem;">Serving Clients in 50+ Countries</span>
                     </div>
-                    <h3 style="font-size: 1.35rem; margin-bottom: 10px; color: var(--clr-brand-dark);">Our Mission</h3>
-                    <p style="color: var(--clr-text-muted); font-size: 0.95rem;">
-                        To architect cutting-edge web applications, enterprise ERP systems, mobile software, and AI solutions that drive operational efficiency and sustainable business growth.
-                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Core Values Section -->
+<!-- Vision & Mission Cards -->
 <section class="section-padding" style="background: rgba(255, 255, 255, 0.6); border-top: 1px solid var(--clr-border);">
+    <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+            <div style="background: #ffffff; border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); border-radius: var(--radius-xl); padding: 40px;">
+                <div style="width: 52px; height: 52px; border-radius: var(--radius-md); background: rgba(61, 193, 208, 0.15); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; margin-bottom: 20px;">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 12px; color: var(--clr-brand-dark);">Our Vision</h3>
+                <p style="color: var(--clr-text-muted); font-size: 1rem; line-height: 1.7;">
+                    To be the premier global IT partner recognized for creating scalable, secure, and intelligent digital infrastructure that shapes the future of global enterprise.
+                </p>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); border-radius: var(--radius-xl); padding: 40px;">
+                <div style="width: 52px; height: 52px; border-radius: var(--radius-md); background: rgba(38, 18, 91, 0.15); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; margin-bottom: 20px;">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 12px; color: var(--clr-brand-dark);">Our Mission</h3>
+                <p style="color: var(--clr-text-muted); font-size: 1rem; line-height: 1.7;">
+                    To architect cutting-edge web applications, enterprise ERP systems, mobile software, and AI solutions that drive operational efficiency and sustainable business growth.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Core Values Section -->
+<section class="section-padding">
     <div class="container">
         <div style="text-align: center;">
             <div class="section-tag"><i class="fa-solid fa-gem"></i> Principles</div>
@@ -82,21 +100,27 @@ require_once __DIR__ . '/includes/header.php';
 
         <div class="services-grid" style="margin-top: 40px;">
             <div class="service-card">
-                <div class="service-icon-box"><i class="fa-solid fa-lightbulb"></i></div>
-                <h3 class="service-title">Relentless Innovation</h3>
-                <p class="service-desc">We continuously adopt emerging technologies, framework improvements, and modern AI algorithms to give our clients a competitive edge.</p>
+                <div class="service-card-body">
+                    <div class="service-icon-box" style="margin-bottom: 20px;"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3 class="service-title">Relentless Innovation</h3>
+                    <p class="service-desc">We continuously adopt emerging technologies, framework improvements, and modern AI algorithms to give our clients a competitive edge.</p>
+                </div>
             </div>
 
             <div class="service-card">
-                <div class="service-icon-box"><i class="fa-solid fa-shield-halved"></i></div>
-                <h3 class="service-title">Security & Reliability</h3>
-                <p class="service-desc">Security is embedded into every layer of our dev cycle, enforcing strict data compliance, encryption, and zero-trust safeguards.</p>
+                <div class="service-card-body">
+                    <div class="service-icon-box" style="margin-bottom: 20px;"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3 class="service-title">Security & Reliability</h3>
+                    <p class="service-desc">Security is embedded into every layer of our dev cycle, enforcing strict data compliance, encryption, and zero-trust safeguards.</p>
+                </div>
             </div>
 
             <div class="service-card">
-                <div class="service-icon-box"><i class="fa-solid fa-globe"></i></div>
-                <h3 class="service-title">Global Perspective</h3>
-                <p class="service-desc">We design multi-region, multi-currency, and localization-ready digital products that perform flawlessly across global markets.</p>
+                <div class="service-card-body">
+                    <div class="service-icon-box" style="margin-bottom: 20px;"><i class="fa-solid fa-globe"></i></div>
+                    <h3 class="service-title">Global Perspective</h3>
+                    <p class="service-desc">We design multi-region, multi-currency, and localization-ready digital products that perform flawlessly across global markets.</p>
+                </div>
             </div>
         </div>
     </div>

@@ -5,27 +5,44 @@ $current_page = "home";
 require_once __DIR__ . '/includes/header.php';
 ?>
 
-<!-- Hero Section -->
+<!-- Hero Section (Choicy Theme Split Layout) -->
 <section class="hero-section">
     <div class="container">
-        <div class="hero-content">
-            <div class="section-tag">
-                <i class="fa-solid fa-earth-americas"></i> Proudly Serving Clients Globally
+        <div class="hero-grid">
+            <!-- Left Hero Content -->
+            <div>
+                <div class="section-tag">
+                    <i class="fa-solid fa-earth-americas"></i> Proudly Serving Clients Globally
+                </div>
+                <h1 class="hero-headline">
+                    Architecting Next-Gen <br>
+                    <span class="text-gradient">Digital Solutions & Enterprise Tech</span>
+                </h1>
+                <p class="hero-description">
+                    Septix Technologies empowers forward-thinking companies worldwide with high-performance Web Applications, Native Mobile Platforms, Custom ERP Systems, AI/ML Engines, and Secure IT Infrastructure.
+                </p>
+                <div class="hero-actions">
+                    <a href="<?php echo $base_url; ?>/contact.php" class="btn btn-primary">
+                        Start a Project <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="<?php echo $base_url; ?>/services.php" class="btn btn-outline">
+                        Explore Services <i class="fa-solid fa-cubes"></i>
+                    </a>
+                </div>
             </div>
-            <h1 class="hero-headline">
-                Architecting Next-Gen <br>
-                <span class="text-gradient">Digital Solutions & Enterprise Tech</span>
-            </h1>
-            <p class="hero-description">
-                Septix Technologies empowers forward-thinking companies worldwide with high-performance Web Applications, Native Mobile Platforms, Custom ERP Systems, AI/ML Engines, and Secure IT Infrastructure.
-            </p>
-            <div class="hero-actions">
-                <a href="<?php echo $base_url; ?>/contact.php" class="btn btn-primary">
-                    Start a Project <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                <a href="<?php echo $base_url; ?>/services.php" class="btn btn-outline">
-                    Explore Services <i class="fa-solid fa-cubes"></i>
-                </a>
+
+            <!-- Right Hero Image Visual (Choicy Theme Style) -->
+            <div class="hero-image-box">
+                <img src="<?php echo $base_url; ?>/assets/images/hero-banner.jpg" alt="Septix Technologies Global IT Agency Team">
+                <div class="floating-badge">
+                    <div class="floating-badge-icon">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <div>
+                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 1rem;">250+ Enterprise Projects</strong>
+                        <span style="color: var(--clr-text-muted); font-size: 0.85rem;">Delivered Worldwide with 99.8% SLA</span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -51,7 +68,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- Core Services Showcase -->
+<!-- Core Services Showcase (Choicy Image Cards) -->
 <section class="section-padding">
     <div class="container">
         <div style="text-align: center;">
@@ -63,29 +80,161 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <div class="services-grid">
-            <?php foreach ($services_data as $key => $service): ?>
-                <div class="service-card">
-                    <div class="service-icon-box">
-                        <i class="fa-solid <?php echo $service['icon']; ?>"></i>
+            <!-- 1. Web Dev -->
+            <div class="service-card">
+                <div class="service-card-img">
+                    <img src="<?php echo $base_url; ?>/assets/images/services/web-dev.jpg" alt="Website Development">
+                    <div class="service-icon-floating">
+                        <i class="fa-solid fa-laptop-code"></i>
                     </div>
-                    <h3 class="service-title"><?php echo $service['title']; ?></h3>
-                    <p class="service-desc"><?php echo $service['short_desc']; ?></p>
+                </div>
+                <div class="service-card-body">
+                    <h3 class="service-title">Website Development</h3>
+                    <p class="service-desc"><?php echo $services_data['website-development']['short_desc']; ?></p>
                     
-                    <div style="margin-bottom: 20px;">
-                        <ul style="display: flex; flex-direction: column; gap: 8px;">
-                            <?php foreach (array_slice($service['features'], 0, 3) as $feat): ?>
-                                <li style="color: var(--clr-text-muted); font-size: 0.875rem; display: flex; align-items: center; gap: 8px;">
-                                    <i class="fa-solid fa-check" style="color: var(--clr-brand-light); font-size: 0.85rem;"></i> <?php echo $feat; ?>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
+                    <ul style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+                        <?php foreach (array_slice($services_data['website-development']['features'], 0, 3) as $feat): ?>
+                            <li style="color: var(--clr-text-muted); font-size: 0.875rem; display: flex; align-items: center; gap: 8px;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--clr-brand-light); font-size: 0.85rem;"></i> <?php echo $feat; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
 
-                    <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>.php" class="service-link">
+                    <a href="<?php echo $base_url; ?>/services/website-development.php" class="service-link">
                         Dedicated Service Page <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
-            <?php endforeach; ?>
+            </div>
+
+            <!-- 2. Mobile App -->
+            <div class="service-card">
+                <div class="service-card-img">
+                    <img src="<?php echo $base_url; ?>/assets/images/services/mobile-app.jpg" alt="Mobile Application Development">
+                    <div class="service-icon-floating">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </div>
+                </div>
+                <div class="service-card-body">
+                    <h3 class="service-title">Mobile Application Development</h3>
+                    <p class="service-desc"><?php echo $services_data['mobile-app-development']['short_desc']; ?></p>
+                    
+                    <ul style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+                        <?php foreach (array_slice($services_data['mobile-app-development']['features'], 0, 3) as $feat): ?>
+                            <li style="color: var(--clr-text-muted); font-size: 0.875rem; display: flex; align-items: center; gap: 8px;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--clr-brand-light); font-size: 0.85rem;"></i> <?php echo $feat; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                    <a href="<?php echo $base_url; ?>/services/mobile-app-development.php" class="service-link">
+                        Dedicated Service Page <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3. Custom ERP -->
+            <div class="service-card">
+                <div class="service-card-img">
+                    <img src="<?php echo $base_url; ?>/assets/images/services/erp-software.jpg" alt="Custom ERP Software">
+                    <div class="service-icon-floating">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                </div>
+                <div class="service-card-body">
+                    <h3 class="service-title">Custom ERP Software</h3>
+                    <p class="service-desc"><?php echo $services_data['custom-erp-software']['short_desc']; ?></p>
+                    
+                    <ul style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+                        <?php foreach (array_slice($services_data['custom-erp-software']['features'], 0, 3) as $feat): ?>
+                            <li style="color: var(--clr-text-muted); font-size: 0.875rem; display: flex; align-items: center; gap: 8px;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--clr-brand-light); font-size: 0.85rem;"></i> <?php echo $feat; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                    <a href="<?php echo $base_url; ?>/services/custom-erp-software.php" class="service-link">
+                        Dedicated Service Page <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4. Digital Marketing -->
+            <div class="service-card">
+                <div class="service-card-img">
+                    <img src="<?php echo $base_url; ?>/assets/images/hero-banner.jpg" alt="Digital Marketing">
+                    <div class="service-icon-floating">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                </div>
+                <div class="service-card-body">
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-desc"><?php echo $services_data['digital-marketing']['short_desc']; ?></p>
+                    
+                    <ul style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+                        <?php foreach (array_slice($services_data['digital-marketing']['features'], 0, 3) as $feat): ?>
+                            <li style="color: var(--clr-text-muted); font-size: 0.875rem; display: flex; align-items: center; gap: 8px;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--clr-brand-light); font-size: 0.85rem;"></i> <?php echo $feat; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                    <a href="<?php echo $base_url; ?>/services/digital-marketing.php" class="service-link">
+                        Dedicated Service Page <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 5. AI/ML Solutions -->
+            <div class="service-card">
+                <div class="service-card-img">
+                    <img src="<?php echo $base_url; ?>/assets/images/services/ai-ml.jpg" alt="AI ML Solutions">
+                    <div class="service-icon-floating">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                </div>
+                <div class="service-card-body">
+                    <h3 class="service-title">AI/ML Solutions</h3>
+                    <p class="service-desc"><?php echo $services_data['ai-ml-solutions']['short_desc']; ?></p>
+                    
+                    <ul style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+                        <?php foreach (array_slice($services_data['ai-ml-solutions']['features'], 0, 3) as $feat): ?>
+                            <li style="color: var(--clr-text-muted); font-size: 0.875rem; display: flex; align-items: center; gap: 8px;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--clr-brand-light); font-size: 0.85rem;"></i> <?php echo $feat; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                    <a href="<?php echo $base_url; ?>/services/ai-ml-solutions.php" class="service-link">
+                        Dedicated Service Page <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 6. IT Networking -->
+            <div class="service-card">
+                <div class="service-card-img">
+                    <img src="<?php echo $base_url; ?>/assets/images/services/erp-software.jpg" alt="IT Networking Solutions">
+                    <div class="service-icon-floating">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                </div>
+                <div class="service-card-body">
+                    <h3 class="service-title">IT Networking Solutions</h3>
+                    <p class="service-desc"><?php echo $services_data['it-networking-solutions']['short_desc']; ?></p>
+                    
+                    <ul style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px;">
+                        <?php foreach (array_slice($services_data['it-networking-solutions']['features'], 0, 3) as $feat): ?>
+                            <li style="color: var(--clr-text-muted); font-size: 0.875rem; display: flex; align-items: center; gap: 8px;">
+                                <i class="fa-solid fa-circle-check" style="color: var(--clr-brand-light); font-size: 0.85rem;"></i> <?php echo $feat; ?>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                    <a href="<?php echo $base_url; ?>/services/it-networking-solutions.php" class="service-link">
+                        Dedicated Service Page <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -102,14 +251,14 @@ require_once __DIR__ . '/includes/header.php';
                 </p>
                 <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 30px;">
                     <div style="display: flex; align-items: center; gap: 14px;">
-                        <div class="info-icon" style="width:36px; height:36px; font-size:1rem;"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="info-icon" style="width:38px; height:38px; font-size:1rem;"><i class="fa-solid fa-shield-halved"></i></div>
                         <div>
                             <strong style="display: block; color: var(--clr-brand-dark);">Global Security & Compliance</strong>
                             <span style="color: var(--clr-text-muted); font-size: 0.9rem;">ISO 27001, GDPR, and HIPAA compliant data protection standards.</span>
                         </div>
                     </div>
                     <div style="display: flex; align-items: center; gap: 14px;">
-                        <div class="info-icon" style="width:36px; height:36px; font-size:1rem;"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="info-icon" style="width:38px; height:38px; font-size:1rem;"><i class="fa-solid fa-bolt"></i></div>
                         <div>
                             <strong style="display: block; color: var(--clr-brand-dark);">Rapid Deployment Velocity</strong>
                             <span style="color: var(--clr-text-muted); font-size: 0.9rem;">Agile sprint cycles ensuring faster time-to-market.</span>
@@ -211,7 +360,7 @@ require_once __DIR__ . '/includes/header.php';
 
         <div class="services-grid" style="margin-top: 40px;">
             <?php foreach ($testimonials_data as $t): ?>
-                <div style="background: #ffffff; border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); padding: 32px; border-radius: var(--radius-lg); display: flex; flex-direction: column;">
+                <div style="background: #ffffff; border: 1px solid var(--clr-border); box-shadow: var(--shadow-card); padding: 32px; border-radius: var(--radius-xl); display: flex; flex-direction: column;">
                     <div style="color: #f59e0b; margin-bottom: 16px; font-size: 1rem;">
                         <?php for ($i=0; $i<$t['rating']; $i++): ?>
                             <i class="fa-solid fa-star"></i>

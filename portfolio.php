@@ -11,7 +11,8 @@ $case_studies = [
         'client' => 'TransGlobal Logistics (USA & EU)',
         'summary' => 'Architected a multi-region cloud ERP managing 15,000+ freight assets with real-time GPS tracking, automated customs invoicing, and route optimization.',
         'impact' => '32% Reduction in Fuel & Transit Costs',
-        'tech' => ['PHP Enterprise', 'Python AI', 'PostgreSQL', 'Flutter', 'AWS']
+        'tech' => ['PHP Enterprise', 'Python AI', 'PostgreSQL', 'Flutter', 'AWS'],
+        'image' => 'assets/images/services/erp-software.jpg'
     ],
     [
         'title' => 'FinTech Cross-Border Payment & Mobile Wallet',
@@ -19,7 +20,8 @@ $case_studies = [
         'client' => 'NexusPay International (UAE)',
         'summary' => 'Built a high-security cross-border remittance app supporting multi-currency conversion, biometric login, and instant settlement APIs.',
         'impact' => 'Over $120M Processed Annually',
-        'tech' => ['Flutter', 'Node.js', 'Redis', 'Zero-Trust Security']
+        'tech' => ['Flutter', 'Node.js', 'Redis', 'Zero-Trust Security'],
+        'image' => 'assets/images/services/mobile-app.jpg'
     ],
     [
         'title' => 'AI-Powered E-Commerce Recommendation Engine',
@@ -27,7 +29,8 @@ $case_studies = [
         'client' => 'Aura Retail Group (Singapore)',
         'summary' => 'Integrated personalized recommendation models and high-speed web application infrastructure for a global luxury retail brand.',
         'impact' => '45% Boost in Conversion Rate',
-        'tech' => ['React.js', 'Next.js', 'PyTorch', 'FastAPI']
+        'tech' => ['React.js', 'Next.js', 'PyTorch', 'FastAPI'],
+        'image' => 'assets/images/services/web-dev.jpg'
     ],
     [
         'title' => 'Multi-Campus Enterprise Network & Cloud SD-WAN',
@@ -35,7 +38,8 @@ $case_studies = [
         'client' => 'Apex Healthcare Network (Australia)',
         'summary' => 'Designed zero-downtime hybrid cloud infrastructure connecting 12 regional hospitals with HIPAA-compliant encryption.',
         'impact' => '99.999% Network Uptime Guarantee',
-        'tech' => ['AWS Cloud', 'Cisco SD-WAN', 'Terraform', 'Grafana']
+        'tech' => ['AWS Cloud', 'Cisco SD-WAN', 'Terraform', 'Grafana'],
+        'image' => 'assets/images/services/ai-ml.jpg'
     ]
 ];
 ?>
@@ -57,9 +61,9 @@ $case_studies = [
         <div class="portfolio-grid">
             <?php foreach ($case_studies as $project): ?>
                 <div class="portfolio-card">
-                    <div style="background: rgba(38, 18, 91, 0.05); padding: 36px 24px; text-align: center; border-bottom: 1px solid var(--clr-border); position: relative;">
+                    <div class="portfolio-card-img">
+                        <img src="<?php echo $base_url . '/' . $project['image']; ?>" alt="<?php echo $project['title']; ?>">
                         <span class="portfolio-tag"><?php echo $project['category']; ?></span>
-                        <i class="fa-solid fa-diagram-project" style="font-size: 3.5rem; color: var(--clr-brand-dark); margin-top: 16px;"></i>
                     </div>
                     <div class="portfolio-content">
                         <span style="font-size: 0.85rem; color: var(--clr-text-dim); font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">
