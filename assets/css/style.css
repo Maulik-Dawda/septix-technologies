@@ -254,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   HEADER & NAVIGATION BAR (BALANCED MEDIUM LOGO & ALIGNED NAV)
+   HEADER & NAVIGATION BAR (EXACTLY 75PX LOGO)
    ========================================================================== */
 .site-header {
     position: fixed;
@@ -288,33 +288,33 @@ h1, h2, h3, h4, h5, h6 {
     flex-shrink: 0;
 }
 
-/* Medium balanced logo height: 58px on desktop, 48px when scrolled */
+/* Header logo height set to exactly 75px on desktop, 60px when scrolled */
 .brand-logo img {
-    height: 58px;
+    height: 75px;
     width: auto;
     object-fit: contain;
     transition: var(--transition);
 }
 
 .site-header.scrolled .brand-logo img {
-    height: 48px;
+    height: 60px;
 }
 
 @media (max-width: 1200px) {
     .brand-logo img {
-        height: 54px;
+        height: 68px;
     }
     .site-header.scrolled .brand-logo img {
-        height: 45px;
+        height: 54px;
     }
 }
 
 @media (max-width: 768px) {
     .brand-logo img {
-        height: 48px;
+        height: 58px;
     }
     .site-header.scrolled .brand-logo img {
-        height: 42px;
+        height: 48px;
     }
 }
 
@@ -490,7 +490,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero-section {
     position: relative;
-    padding: 160px 0 95px;
+    padding: 175px 0 95px;
     background: var(--grad-light-mesh);
     overflow: hidden;
 }
@@ -1184,7 +1184,7 @@ textarea.form-control {
 }
 
 .footer-brand img {
-    height: 60px;
+    height: 70px;
     width: auto;
     object-fit: contain;
 }
