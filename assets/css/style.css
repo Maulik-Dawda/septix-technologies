@@ -4,7 +4,7 @@
    Brand Colors:
    - Primary Dark: #26125b (Deep Royal Purple)
    - Primary Light Accent: #3dc1d0 (Vibrant Cyan)
-   - Background: #f4f6f9 (Clean Light Grey)
+   - Background: #f4f6f9 (Clean Light Grey with Tech Mesh Grid)
    ========================================================================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
@@ -26,7 +26,7 @@
     --clr-border: rgba(38, 18, 91, 0.08);
     --clr-border-glow: rgba(61, 193, 208, 0.45);
 
-    /* Gradients */
+    /* Gradients & Background Mesh */
     --grad-primary: linear-gradient(135deg, #26125b 0%, #3dc1d0 100%);
     --grad-accent: linear-gradient(135deg, #3dc1d0 0%, #26125b 100%);
     --grad-text: linear-gradient(135deg, #26125b 0%, #3dc1d0 100%);
@@ -48,7 +48,7 @@
     --shadow-card-hover: 0 25px 55px rgba(38, 18, 91, 0.16);
 }
 
-/* Global Reset */
+/* Global Reset & Subtle Tech Dot Pattern */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -62,11 +62,15 @@ html {
 
 body {
     background-color: var(--clr-bg);
+    /* Subtle Light Geometric Tech Grid Pattern */
+    background-image: radial-gradient(rgba(38, 18, 91, 0.06) 1.2px, transparent 1.2px);
+    background-size: 32px 32px;
     color: var(--clr-text-main);
     font-family: var(--font-body);
     line-height: 1.6;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
+    position: relative;
 }
 
 a {
@@ -85,7 +89,80 @@ img {
     display: block;
 }
 
-/* Keyframe Animations */
+/* ==========================================================================
+   DYNAMIC ANIMATED BACKGROUND FLOATING SHAPES
+   ========================================================================== */
+
+.bg-floating-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+    pointer-events: none;
+    z-index: 0;
+    animation: floatOrb 14s ease-in-out infinite alternate;
+}
+
+.orb-1 {
+    width: 380px;
+    height: 380px;
+    top: 5%;
+    left: -100px;
+    background: rgba(61, 193, 208, 0.22);
+}
+
+.orb-2 {
+    width: 450px;
+    height: 450px;
+    top: 35%;
+    right: -120px;
+    background: rgba(38, 18, 91, 0.12);
+    animation-delay: -5s;
+}
+
+.orb-3 {
+    width: 320px;
+    height: 320px;
+    bottom: 15%;
+    left: -80px;
+    background: rgba(61, 193, 208, 0.18);
+    animation-delay: -9s;
+}
+
+/* Floating Tech Micro Icons */
+.floating-tech-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(38, 18, 91, 0.08);
+    border: 1px solid var(--clr-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-brand-light);
+    font-size: 1.25rem;
+    pointer-events: none;
+    z-index: 1;
+    animation: floatElement 7s ease-in-out infinite alternate;
+}
+
+.tech-icon-1 { top: 18%; left: 6%; animation-delay: 0s; }
+.tech-icon-2 { top: 42%; right: 5%; animation-delay: -2.5s; color: var(--clr-brand-dark); }
+.tech-icon-3 { top: 72%; left: 4%; animation-delay: -4s; }
+
+@keyframes floatOrb {
+    0% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(40px, 30px) scale(1.08); }
+    100% { transform: translate(-30px, 50px) scale(0.95); }
+}
+
+@keyframes floatElement {
+    0% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(6deg); }
+    100% { transform: translateY(0) rotate(0deg); }
+}
+
 @keyframes floatAnim {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
@@ -178,10 +255,13 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 24px;
+    position: relative;
+    z-index: 2;
 }
 
 .section-padding {
     padding: 95px 0;
+    position: relative;
 }
 
 @media (max-width: 768px) {
@@ -253,9 +333,7 @@ h1, h2, h3, h4, h5, h6 {
     white-space: nowrap;
 }
 
-/* ==========================================================================
-   HEADER & NAVIGATION BAR (EXACTLY 75PX LOGO)
-   ========================================================================== */
+/* Header & Navbar */
 .site-header {
     position: fixed;
     top: 0;
@@ -288,7 +366,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-shrink: 0;
 }
 
-/* Header logo height set to exactly 75px on desktop, 60px when scrolled */
 .brand-logo img {
     height: 75px;
     width: auto;
@@ -1175,18 +1252,27 @@ textarea.form-control {
     color: var(--clr-brand-light);
 }
 
-/* Footer - Choicy Deep Grounding Footer */
+/* Footer - Deep Royal Grounding Footer with White Logo Inversion & High Contrast Text */
 .site-footer {
     background: #190a3e;
     color: #ffffff;
     border-top: 1px solid var(--clr-border);
     padding: 85px 0 35px;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Filter transforms dark text logo to brilliant pure white with cyan ambient glow */
 .footer-brand img {
     height: 70px;
     width: auto;
     object-fit: contain;
+    filter: brightness(0) invert(1) drop-shadow(0 2px 10px rgba(61, 193, 208, 0.45));
+    transition: var(--transition);
+}
+
+.footer-brand img:hover {
+    transform: scale(1.04);
 }
 
 .footer-grid {
@@ -1209,15 +1295,17 @@ textarea.form-control {
 }
 
 .footer-brand p {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(255, 255, 255, 0.9);
     font-size: 0.95rem;
     margin: 18px 0 24px;
+    line-height: 1.6;
 }
 
 .footer-title {
     font-size: 1.15rem;
     margin-bottom: 20px;
     color: #ffffff;
+    font-weight: 800;
 }
 
 .footer-links {
@@ -1227,8 +1315,8 @@ textarea.form-control {
 }
 
 .footer-links a {
-    color: rgba(255, 255, 255, 0.75);
-    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.925rem;
     transition: var(--transition);
 }
 
@@ -1246,8 +1334,8 @@ textarea.form-control {
     width: 42px;
     height: 42px;
     border-radius: var(--radius-sm);
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1263,13 +1351,13 @@ textarea.form-control {
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
     padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 0.875rem;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 @media (max-width: 768px) {
