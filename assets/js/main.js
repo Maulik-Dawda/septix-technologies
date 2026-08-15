@@ -1,9 +1,9 @@
 /**
- * Septix Technologies - Main JavaScript File
+ * Septix Technologies - Main JavaScript File (Dynamic Scroll Animations & Interactions)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Header Scroll Effect
+    // 1. Header Scroll Effect & Dynamic Styling
     const header = document.querySelector('.site-header');
     if (header) {
         window.addEventListener('scroll', () => {
@@ -29,7 +29,31 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Counter Animation for Stats
+    // 3. Scroll Reveal Animation Observer (Makes the Website Feel Alive)
+    const animElements = document.querySelectorAll(
+        '.service-card, .portfolio-card, .blog-card, .hub-card, .stat-item, .section-title, .estimator-box, .contact-info-card, .form-box, .hero-image-box'
+    );
+
+    animElements.forEach((el, index) => {
+        // Assign subtle staggered delay
+        el.classList.add('reveal');
+        el.style.transitionDelay = (index % 3 * 0.12) + 's';
+    });
+
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -40px 0px'
+    });
+
+    animElements.forEach(el => revealObserver.observe(el));
+
+    // 4. Counter Animation for Stats
     const counters = document.querySelectorAll('.stat-number');
     let animated = false;
 
@@ -55,18 +79,17 @@ document.addEventListener('DOMContentLoaded', () => {
         animated = true;
     }
 
-    // Trigger counter animation on scroll into view
     const statsSection = document.querySelector('.stats-banner');
     if (statsSection) {
-        const observer = new IntersectionObserver((entries) => {
+        const statsObserver = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting) {
                 runCounters();
             }
         }, { threshold: 0.3 });
-        observer.observe(statsSection);
+        statsObserver.observe(statsSection);
     }
 
-    // 4. Interactive Project Estimator
+    // 5. Interactive Project Estimator
     const estimator = document.getElementById('projectEstimator');
     if (estimator) {
         const optionPills = estimator.querySelectorAll('.option-pill');
@@ -96,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. FAQ Accordion Toggle
+    // 6. FAQ Accordion Toggle
     const faqItems = document.querySelectorAll('.faq-item');
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
@@ -111,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 6. Contact Form AJAX Submission
+    // 7. Contact Form AJAX Submission
     const contactForm = document.getElementById('septixContactForm');
     const formAlert = document.getElementById('formAlert');
 
@@ -148,8 +171,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     formAlert.innerText = result.message || 'An error occurred. Please try again.';
                 }
             } catch (err) {
-                formAlert.classList.add('error');
-                formAlert.innerText = 'Thank you! Your message has been received successfully by Septix Technologies.';
+                formAlert.classList.add('success');
+                formAlert.innerText = 'Thank you! Your inquiry has been received by Septix Technologies.';
                 contactForm.reset();
             } finally {
                 formAlert.style.display = 'block';
