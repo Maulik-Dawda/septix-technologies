@@ -1444,7 +1444,7 @@ textarea.form-control {
     gap: 40px;
 }
 
-/* Central Animated Vertical Line */
+/* Central Animated Vertical Line (Behind Node Icons) */
 .timeline-line {
     position: absolute;
     top: 0;
@@ -1469,7 +1469,7 @@ textarea.form-control {
     box-shadow: 0 0 15px rgba(61, 193, 208, 0.6);
 }
 
-/* Timeline Item Layout */
+/* Timeline Item Layout (Stacked Above Progress Line) */
 .timeline-item {
     position: relative;
     width: 50%;
@@ -1478,6 +1478,7 @@ textarea.form-control {
     opacity: 1;
     transform: translateY(0);
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 5;
 }
 
 /* Left side cards (Odd steps: 1, 3, 5) */
@@ -1492,7 +1493,7 @@ textarea.form-control {
     padding-left: 45px;
 }
 
-/* Central Node Marker */
+/* Central Node Marker (Highest Z-Index Layer) */
 .timeline-node {
     position: absolute;
     top: 24px;
@@ -1508,7 +1509,7 @@ textarea.form-control {
     font-size: 1.25rem;
     box-shadow: 0 8px 25px rgba(38, 18, 91, 0.25);
     transition: var(--transition);
-    z-index: 3;
+    z-index: 10;
 }
 
 .timeline-node i {
