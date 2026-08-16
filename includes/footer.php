@@ -46,11 +46,11 @@ $base_url = get_base_url();
                     </ul>
                 </div>
 
-                <!-- Global Contact Info -->
+                <!-- Countries Served Info -->
                 <div>
-                    <h4 class="footer-title">Global Presence</h4>
+                    <h4 class="footer-title">Regional Presence</h4>
                     <p style="color: var(--clr-text-muted); font-size: 0.9rem; margin-bottom: 16px;">
-                        <i class="fa-solid fa-earth-americas" style="color: var(--clr-brand-light);"></i> Proudly serving enterprises globally across 50+ countries.
+                        <i class="fa-solid fa-earth-americas" style="color: var(--clr-brand-light);"></i> Proudly serving enterprises across <strong>India & UAE</strong>.
                     </p>
                     <ul class="footer-links" style="gap: 10px;">
                         <li style="color: var(--clr-brand-dark); font-size: 0.875rem; font-weight: 600;"><i class="fa-solid fa-envelope" style="color: var(--clr-brand-light);"></i> <?php echo CONTACT_EMAIL; ?></li>

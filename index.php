@@ -103,15 +103,15 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- Global Reach & Regional Hubs Section -->
+<!-- Countries We Serve Section -->
 <section class="section-padding global-section">
     <div class="container">
         <div class="global-grid">
             <div>
-                <div class="section-tag"><i class="fa-solid fa-globe"></i> Global Footprint</div>
-                <h2 class="section-title">Serving Clients <br><span class="text-gradient">Across the Globe</span></h2>
+                <div class="section-tag"><i class="fa-solid fa-globe"></i> Countries We Serve</div>
+                <h2 class="section-title">Serving Clients In <br><span class="text-gradient">India & UAE</span></h2>
                 <p style="color: var(--clr-text-muted); font-size: 1.05rem; margin-bottom: 24px;">
-                    Septix Technologies operates across major tech hubs worldwide. We provide seamless 24/7 delivery, multi-currency integration, and localized compliance support.
+                    Septix Technologies provides end-to-end software engineering, custom enterprise platforms, and digital transformation tailored for businesses across India and the United Arab Emirates.
                 </p>
                 <div style="display: flex; gap: 16px; flex-wrap: wrap;">
                     <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary btn-sm">Connect With Us</a>
@@ -119,47 +119,19 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <div class="hubs-grid">
-                <div class="hub-card">
-                    <div class="hub-flag">🇺🇸</div>
+            <div class="hubs-grid" style="grid-template-columns: 1fr 1fr;">
+                <div class="hub-card" style="padding: 24px;">
+                    <div class="hub-flag" style="font-size: 2.5rem;">🇮🇳</div>
                     <div>
-                        <div class="hub-name">United States</div>
-                        <div class="hub-city">New York & Tech Hubs</div>
+                        <div class="hub-name" style="font-size: 1.25rem;">India</div>
+                        <div class="hub-city">R&D Engineering Center</div>
                     </div>
                 </div>
-                <div class="hub-card">
-                    <div class="hub-flag">🇬🇧</div>
+                <div class="hub-card" style="padding: 24px;">
+                    <div class="hub-flag" style="font-size: 2.5rem;">🇦🇪</div>
                     <div>
-                        <div class="hub-name">United Kingdom</div>
-                        <div class="hub-city">London Operations</div>
-                    </div>
-                </div>
-                <div class="hub-card">
-                    <div class="hub-flag">🇦🇪</div>
-                    <div>
-                        <div class="hub-name">UAE / Middle East</div>
+                        <div class="hub-name" style="font-size: 1.25rem;">UAE</div>
                         <div class="hub-city">Dubai Regional Office</div>
-                    </div>
-                </div>
-                <div class="hub-card">
-                    <div class="hub-flag">🇮🇳</div>
-                    <div>
-                        <div class="hub-name">India</div>
-                        <div class="hub-city">R&D Development Center</div>
-                    </div>
-                </div>
-                <div class="hub-card">
-                    <div class="hub-flag">🇦🇺</div>
-                    <div>
-                        <div class="hub-name">Australia</div>
-                        <div class="hub-city">Sydney Representative</div>
-                    </div>
-                </div>
-                <div class="hub-card">
-                    <div class="hub-flag">🇸🇬</div>
-                    <div>
-                        <div class="hub-name">Singapore</div>
-                        <div class="hub-city">APAC Innovation Hub</div>
                     </div>
                 </div>
             </div>
