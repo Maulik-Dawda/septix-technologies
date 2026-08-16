@@ -60,6 +60,7 @@
 html {
     scroll-behavior: smooth;
     font-size: 16px;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -72,6 +73,22 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     position: relative;
+}
+
+/* SEMrush Mobile Friendliness & Touch Target Optimization */
+a, button, input, select, textarea, .btn, .social-link, .nav-link {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    touch-action: manipulation;
+}
+
+/* Optimization for INP & Render Performance */
+.service-card, .portfolio-card, .blog-card, .step-card {
+    content-visibility: auto;
+    contain-intrinsic-size: 350px;
 }
 
 a {

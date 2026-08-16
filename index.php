@@ -19,8 +19,7 @@ require_once __DIR__ . '/includes/header.php';
                     <i class="fa-solid fa-earth-americas"></i> Proudly Serving Clients Globally
                 </div>
                 <h1 class="hero-headline">
-                    Architecting Next-Gen <br>
-                    <span class="text-gradient">Digital Solutions</span> & Enterprise Tech
+                    Architecting Next-Gen <span class="text-gradient">Digital Solutions</span>
                 </h1>
                 <p class="hero-description">
                     Septix Technologies empowers forward-thinking companies worldwide with high-performance Web Applications, Native Mobile Platforms, Custom ERP Systems, AI/ML Engines, and Secure IT Infrastructure.
