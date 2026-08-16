@@ -180,4 +180,40 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 8. Timeline Scroll Animation & Progress Line Fill
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const timelineProgressBar = document.querySelector('.timeline-line-progress');
+    const timelineWrapper = document.querySelector('.timeline-wrapper');
+
+    if (timelineItems.length > 0) {
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.2,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        timelineItems.forEach(item => timelineObserver.observe(item));
+
+        if (timelineProgressBar && timelineWrapper) {
+            const updateTimelineProgress = () => {
+                const rect = timelineWrapper.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                const totalHeight = rect.height;
+                const currentProgress = windowHeight - rect.top;
+                
+                let percentage = (currentProgress / (totalHeight + windowHeight * 0.3)) * 100;
+                percentage = Math.max(0, Math.min(100, percentage));
+                timelineProgressBar.style.height = percentage + '%';
+            };
+
+            window.addEventListener('scroll', updateTimelineProgress);
+            updateTimelineProgress();
+        }
+    }
 });

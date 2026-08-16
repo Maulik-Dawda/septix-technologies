@@ -211,6 +211,141 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
+<!-- Interactive Project Development Timeline Section -->
+<section class="section-padding timeline-section">
+    <div class="container">
+        <div style="text-align: center;">
+            <div class="section-tag"><i class="fa-solid fa-timeline"></i> How We Build</div>
+            <h2 class="section-title">Our Proven Project <br><span class="text-gradient">Development Timeline</span></h2>
+            <p class="section-subtitle">From initial architecture discovery to global deployment, explore how Septix Technologies turns complex requirements into enterprise digital products.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+            <!-- Central Animated Vertical Line -->
+            <div class="timeline-line">
+                <div class="timeline-line-progress"></div>
+            </div>
+
+            <!-- Phase 01 -->
+            <div class="timeline-item">
+                <div class="timeline-node">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <span class="timeline-phase-badge">Phase 01 &bull; Discovery</span>
+                        <span class="timeline-timeframe"><i class="fa-solid fa-clock"></i> Week 1</span>
+                    </div>
+                    <h3 class="timeline-title">Strategic Discovery & System Blueprint</h3>
+                    <p class="timeline-desc">
+                        We audit business objectives, map user journeys, define data schemas, and draft technical SRS specifications to guarantee zero ambiguity before writing code.
+                    </p>
+                    <div class="timeline-deliverables-title">Key Deliverables:</div>
+                    <div class="timeline-deliverables">
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> Architecture SRS</span>
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> User Flow Maps</span>
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> DB Schema Specs</span>
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> Tech Stack Selection</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 02 -->
+            <div class="timeline-item">
+                <div class="timeline-node">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <span class="timeline-phase-badge">Phase 02 &bull; Design</span>
+                        <span class="timeline-timeframe"><i class="fa-solid fa-clock"></i> Weeks 2 - 3</span>
+                    </div>
+                    <h3 class="timeline-title">Human-Centered UI/UX Design System</h3>
+                    <p class="timeline-desc">
+                        Our designers create interactive Figma prototypes, accessible UI components, and custom design tokens engineered for high conversion and intuitive user experience.
+                    </p>
+                    <div class="timeline-deliverables-title">Key Deliverables:</div>
+                    <div class="timeline-deliverables">
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> Figma Interactive Prototype</span>
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> Design System Tokens</span>
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> Responsive Layout Systems</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 03 -->
+            <div class="timeline-item">
+                <div class="timeline-node">
+                    <i class="fa-solid fa-code-branch"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <span class="timeline-phase-badge">Phase 03 &bull; Development</span>
+                        <span class="timeline-timeframe"><i class="fa-solid fa-clock"></i> Weeks 4 - 8</span>
+                    </div>
+                    <h3 class="timeline-title">Agile Software & API Engineering</h3>
+                    <p class="timeline-desc">
+                        Engineers build clean, modular frontend & backend microservices across 2-week sprints with automated CI/CD unit testing and real-time client demo reviews.
+                    </p>
+                    <div class="timeline-deliverables-title">Key Deliverables:</div>
+                    <div class="timeline-deliverables">
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> Modular REST/GraphQL APIs</span>
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> Bi-Weekly Sprint Demos</span>
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> Git Repository Access</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 04 -->
+            <div class="timeline-item">
+                <div class="timeline-node">
+                    <i class="fa-solid fa-shield-cat"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <span class="timeline-phase-badge">Phase 04 &bull; QA & Security</span>
+                        <span class="timeline-timeframe"><i class="fa-solid fa-clock"></i> Week 9</span>
+                    </div>
+                    <h3 class="timeline-title">Rigorous QA & OWASP Security Audit</h3>
+                    <p class="timeline-desc">
+                        We execute automated unit testing, cross-browser compatibility checks, high-load stress testing, and vulnerability penetration testing enforcing OWASP standards.
+                    </p>
+                    <div class="timeline-deliverables-title">Key Deliverables:</div>
+                    <div class="timeline-deliverables">
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> Vulnerability Audit Report</span>
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> Load Test Benchmarks</span>
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> 100% QA Sign-Off</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase 05 -->
+            <div class="timeline-item">
+                <div class="timeline-node">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <span class="timeline-phase-badge">Phase 05 &bull; Launch & Scale</span>
+                        <span class="timeline-timeframe"><i class="fa-solid fa-clock"></i> Week 10+</span>
+                    </div>
+                    <h3 class="timeline-title">Zero-Downtime Launch & 24/7 Care</h3>
+                    <p class="timeline-desc">
+                        We deploy containerized infrastructure across multi-region cloud servers (AWS/GCP), enable automated backups, and provide 24/7 SLA maintenance and monitoring.
+                    </p>
+                    <div class="timeline-deliverables-title">Key Deliverables:</div>
+                    <div class="timeline-deliverables">
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> Multi-Region Cloud Deployment</span>
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> Real-Time Analytics</span>
+                        <span class="deliverable-pill"><i class="fa-solid fa-circle-check"></i> 24/7 SLA Technical Support</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <!-- Client Testimonials & Social Proof -->
 <section class="section-padding" style="background: rgba(255, 255, 255, 0.6); border-top: 1px solid var(--clr-border);">
     <div class="container">
