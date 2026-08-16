@@ -103,15 +103,15 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- Countries We Serve Section -->
+<!-- Global Reach Section -->
 <section class="section-padding global-section">
     <div class="container">
         <div class="global-grid">
             <div>
-                <div class="section-tag"><i class="fa-solid fa-globe"></i> Countries We Serve</div>
-                <h2 class="section-title">Serving Clients In <br><span class="text-gradient">India & UAE</span></h2>
+                <div class="section-tag"><i class="fa-solid fa-globe"></i> Global Reach</div>
+                <h2 class="section-title">Serving Clients <br><span class="text-gradient">Globally</span></h2>
                 <p style="color: var(--clr-text-muted); font-size: 1.05rem; margin-bottom: 24px;">
-                    Septix Technologies provides end-to-end software engineering, custom enterprise platforms, and digital transformation tailored for businesses across India and the United Arab Emirates.
+                    Septix Technologies delivers high-performance software engineering, custom enterprise platforms, and digital transformation for organizations and scaling businesses worldwide.
                 </p>
                 <div style="display: flex; gap: 16px; flex-wrap: wrap;">
                     <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary btn-sm">Connect With Us</a>
@@ -119,19 +119,44 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
             </div>
 
-            <div class="hubs-grid" style="grid-template-columns: 1fr 1fr;">
-                <div class="hub-card" style="padding: 24px;">
-                    <div class="hub-flag" style="font-size: 2.5rem;">🇮🇳</div>
+            <div class="hubs-grid" style="grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div class="hub-card" style="padding: 20px;">
+                    <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(61, 193, 208, 0.15); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
                     <div>
-                        <div class="hub-name" style="font-size: 1.25rem;">India</div>
-                        <div class="hub-city">R&D Engineering Center</div>
+                        <div class="hub-name" style="font-size: 1.05rem;">24/7 Global SLA</div>
+                        <div class="hub-city">Round-the-clock technical support</div>
                     </div>
                 </div>
-                <div class="hub-card" style="padding: 24px;">
-                    <div class="hub-flag" style="font-size: 2.5rem;">🇦🇪</div>
+
+                <div class="hub-card" style="padding: 20px;">
+                    <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(38, 18, 91, 0.12); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
                     <div>
-                        <div class="hub-name" style="font-size: 1.25rem;">UAE</div>
-                        <div class="hub-city">Dubai Regional Office</div>
+                        <div class="hub-name" style="font-size: 1.05rem;">Enterprise Security</div>
+                        <div class="hub-city">OWASP & data privacy standards</div>
+                    </div>
+                </div>
+
+                <div class="hub-card" style="padding: 20px;">
+                    <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(38, 18, 91, 0.12); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <div>
+                        <div class="hub-name" style="font-size: 1.05rem;">Multi-Region Cloud</div>
+                        <div class="hub-city">Low-latency scalable infrastructure</div>
+                    </div>
+                </div>
+
+                <div class="hub-card" style="padding: 20px;">
+                    <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(61, 193, 208, 0.15); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <div>
+                        <div class="hub-name" style="font-size: 1.05rem;">Expert Engineers</div>
+                        <div class="hub-city">Dedicated product development</div>
                     </div>
                 </div>
             </div>

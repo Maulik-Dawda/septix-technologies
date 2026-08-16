@@ -35,8 +35,8 @@ require_once __DIR__ . '/includes/header.php';
                         <span style="color: var(--clr-text-muted); font-size: 0.9rem; font-weight: 600;">Client Transparency</span>
                     </div>
                     <div>
-                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 900;">2</h3>
-                        <span style="color: var(--clr-text-muted); font-size: 0.9rem; font-weight: 600;">Key Hubs (India & UAE)</span>
+                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 900;">Global</h3>
+                        <span style="color: var(--clr-text-muted); font-size: 0.9rem; font-weight: 600;">Reach & Delivery</span>
                     </div>
                     <div>
                         <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 900;">24/7</h3>
@@ -53,8 +53,8 @@ require_once __DIR__ . '/includes/header.php';
                         <i class="fa-solid fa-earth-americas"></i>
                     </div>
                     <div>
-                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 1rem;">Trusted Engineering</strong>
-                        <span style="color: var(--clr-text-muted); font-size: 0.85rem;">Serving Clients in India & UAE</span>
+                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 1rem;">Globally Trusted Engineering</strong>
+                        <span style="color: var(--clr-text-muted); font-size: 0.85rem;">Serving Clients Globally</span>
                     </div>
                 </div>
             </div>
