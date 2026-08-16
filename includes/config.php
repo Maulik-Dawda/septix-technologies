@@ -3,13 +3,40 @@
  * Septix Technologies - Global Configuration & Helper Utilities
  */
 
-// Site Info
-define('SITE_NAME', 'Septix Technologies');
-define('SITE_TAGLINE', 'Innovating Digital Solutions Globally');
-define('SITE_URL', 'http://localhost:8000');
-define('CONTACT_EMAIL', 'info@septixtechnologies.com');
-define('CONTACT_PHONE', '+1 (800) 592-7378');
-define('HQ_ADDRESS', 'Septix Global Tech Park, Innovation Way, Tech Hub');
+if (!defined('SITE_NAME')) {
+    define('SITE_NAME', 'Septix Technologies');
+    define('SITE_TAGLINE', 'Innovating Digital Solutions Globally');
+    define('SITE_DOMAIN', 'septixtechnologies.com');
+    define('CONTACT_EMAIL', 'info@septixtechnologies.com');
+    define('CONTACT_PHONE', '+1 (800) 592-7378');
+    define('HQ_ADDRESS', 'Septix Global Tech Park, Innovation Way, Tech Hub');
+
+    // Database Configuration (MySQL / phpMyAdmin)
+    define('DB_HOST', '127.0.0.1');
+    define('DB_PORT', '3306');
+    define('DB_NAME', 'septix_db');
+    define('DB_USER', 'root');
+    define('DB_PASS', '');
+
+    // SMTP Email Configuration for OTP & Notifications
+    define('SMTP_HOST', 'smtp.gmail.com');
+    define('SMTP_PORT', 587);
+    define('SMTP_USER', 'noreply@septixtechnologies.com');
+    define('SMTP_PASS', '');
+    define('SMTP_FROM', 'info@septixtechnologies.com');
+    define('SMTP_FROM_NAME', 'Septix Technologies Security');
+}
+
+/**
+ * Base URL helper function
+ */
+function get_base_url() {
+    $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
+    $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost:8000';
+    return $protocol . '://' . $host;
+}
+
+$base_url = get_base_url();
 
 // Services List Data (with verified image paths)
 $services_data = [
@@ -242,12 +269,11 @@ function is_active($page_name, $current_page) {
 }
 
 // Helper Function: Get Base URL
-function get_base_url() {
-    $script_dir = dirname($_SERVER['SCRIPT_NAME'] ?? '');
-    $script_dir = str_replace('\\', '/', $script_dir);
-    if ($script_dir === '/' || $script_dir === '.') {
-        return '';
+if (!function_exists('get_base_url')) {
+    function get_base_url() {
+        $protocol = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
+        $host = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost:8000';
+        return $protocol . '://' . $host;
     }
-    return rtrim($script_dir, '/');
 }
 ?>

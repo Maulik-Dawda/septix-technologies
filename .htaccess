@@ -2,6 +2,9 @@
     RewriteEngine On
     RewriteBase /
 
+    # Dynamic Blog Single Slug Route (/blog/article-slug)
+    RewriteRule ^blog/([a-zA-Z0-9-]+)/?$ blog-single.php?slug=$1 [L,QSA]
+
     # Redirect .php requests to extensionless URLs (canonical redirect)
     RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\ ]+)\.php\ HTTP/
     RewriteRule ^([^\ ]+)\.php$ /$1 [R=301,L]

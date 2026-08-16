@@ -342,25 +342,47 @@ require_once __DIR__ . '/includes/header.php';
         </div>
 
         <div class="blog-grid">
-            <?php foreach ($blog_posts as $post): ?>
+            <?php
+            require_once __DIR__ . '/includes/db.php';
+            $pdo = get_db_connection();
+            $stmt = $pdo->query("SELECT * FROM blogs WHERE status = 'published' ORDER BY id DESC LIMIT 3");
+            $home_blogs = $stmt->fetchAll();
+
+            foreach ($home_blogs as $post):
+                $postUrl = $base_url . '/blog/' . htmlspecialchars($post['slug']);
+                $formattedDate = date('M d, Y', strtotime($post['created_at']));
+                $imgUrl = (strpos($post['image'], 'http') === 0) ? $post['image'] : ($base_url . '/' . ltrim($post['image'], '/'));
+            ?>
                 <div class="blog-card">
                     <div class="service-card-img" style="height: 190px;">
-                        <img src="<?php echo $base_url . '/' . $post['image']; ?>" alt="<?php echo $post['title']; ?>">
+                        <img src="<?php echo $imgUrl; ?>" alt="<?php echo htmlspecialchars($post['title']); ?>">
                     </div>
                     <div class="service-card-body">
                         <div class="blog-meta">
-                            <span><i class="fa-solid fa-calendar-days"></i> <?php echo $post['date']; ?></span>
+                            <span><i class="fa-solid fa-calendar-days"></i> <?php echo $formattedDate; ?></span>
                             <span>•</span>
-                            <span><i class="fa-solid fa-user"></i> <?php echo $post['author']; ?></span>
+                            <span><i class="fa-solid fa-folder"></i> <?php echo htmlspecialchars($post['category']); ?></span>
                         </div>
-                        <h3 class="blog-title"><?php echo $post['title']; ?></h3>
-                        <p class="blog-summary"><?php echo $post['summary']; ?></p>
-                        <a href="<?php echo $base_url; ?>/blog-single?id=<?php echo $post['id']; ?>" class="service-link">
+                        <h3 class="blog-title" style="font-size: 1.15rem; margin-top: 8px; font-weight: 800; line-height: 1.4;">
+                            <a href="<?php echo $postUrl; ?>" style="color: var(--clr-brand-dark); text-decoration: none; transition: var(--transition);">
+                                <?php echo htmlspecialchars($post['title']); ?>
+                            </a>
+                        </h3>
+                        <p class="blog-summary" style="font-size: 0.9rem; color: var(--clr-text-muted); margin-bottom: 16px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                            <?php echo htmlspecialchars($post['summary']); ?>
+                        </p>
+                        <a href="<?php echo $postUrl; ?>" class="service-link">
                             Read Full Article <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
             <?php endforeach; ?>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+            <a href="<?php echo $base_url; ?>/blog" class="btn btn-outline btn-lg">
+                Explore All Insights & Articles <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </div>
 
         <!-- High-Impact Pre-Footer CTA Box -->
