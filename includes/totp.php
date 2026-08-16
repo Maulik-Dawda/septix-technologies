@@ -56,12 +56,13 @@ class TotpHelper {
     }
 
     /**
-     * Generate MS Authenticator / Google Authenticator OTPAuth URL
+     * Generate MS Authenticator / Google Authenticator OTPAuth URL with Septix branding
      */
     public static function get_qr_url($user, $secret, $title = 'Septix Technologies') {
-        $user = urlencode($user);
-        $title = urlencode($title);
-        $otpauth = "otpauth://totp/{$title}:{$user}?secret={$secret}&issuer={$title}";
+        $issuerStr = 'Septix Technologies';
+        $issuer = rawurlencode($issuerStr);
+        $account = rawurlencode($user);
+        $otpauth = "otpauth://totp/{$issuer}:{$account}?secret={$secret}&issuer={$issuer}&algorithm=SHA1&digits=6&period=30";
         return "https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=" . urlencode($otpauth);
     }
 

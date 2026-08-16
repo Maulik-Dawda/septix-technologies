@@ -98,7 +98,9 @@ function complete_admin_login($user) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2FA Microsoft Authenticator Verification - Septix Technologies</title>
+    <title>2FA Authenticator - Septix Technologies</title>
+    <link rel="icon" type="image/png" href="<?php echo get_base_url(); ?>/assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="<?php echo get_base_url(); ?>/assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo get_base_url(); ?>/assets/css/style.css">
@@ -162,8 +164,10 @@ function complete_admin_login($user) {
 
 <div class="mfa-box">
     <div style="text-align: center; margin-bottom: 24px;">
+        <img src="<?php echo get_base_url(); ?>/assets/images/favicon.png" alt="Septix Technologies Favicon" style="height: 52px; width: 52px; object-fit: contain; margin-bottom: 12px;">
+        <br>
         <span class="timeline-phase-badge" style="background: rgba(61, 193, 208, 0.15); color: var(--clr-brand-dark);">
-            <i class="fa-solid fa-mobile-screen-button"></i> Microsoft Authenticator 2FA
+            <i class="fa-solid fa-mobile-screen-button"></i> Septix Authenticator 2FA
         </span>
         <h2 style="font-size: 1.5rem; color: var(--clr-brand-dark); font-weight: 800; margin-top: 8px;">
             <?php echo ($action === 'setup') ? 'Setup 2FA Authenticator' : (($action === 'otp') ? 'Enter Email Security OTP' : 'Verify Authenticator Code'); ?>

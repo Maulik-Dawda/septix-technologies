@@ -1,6 +1,6 @@
 <?php
 /**
- * Septix Technologies - Blog Creator & Editor Suite
+ * Septix Technologies - Blog Creator & Editor Suite with Photo Upload
  */
 
 $adminPageKey = 'blog-edit';
@@ -37,42 +37,69 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $read_time = trim($_POST['read_time']);
     $status = trim($_POST['status']);
 
+    // Handle Cover Photograph File Upload
+    if (isset($_FILES['blog_image_file']) && $_FILES['blog_image_file']['error'] === UPLOAD_ERR_OK) {
+        $fileTmpPath = $_FILES['blog_image_file']['tmp_name'];
+        $fileName = $_FILES['blog_image_file']['name'];
+        $fileExtension = strtolower(pathinfo($fileName, PATHINFO_EXTENSION));
+
+        $allowedExtensions = ['jpg', 'jpeg', 'png', 'webp', 'gif', 'svg'];
+        if (in_array($fileExtension, $allowedExtensions)) {
+            $uploadDir = __DIR__ . '/assets/images/blog/';
+            if (!is_dir($uploadDir)) {
+                @mkdir($uploadDir, 0777, true);
+            }
+            $newFileName = 'blog_cover_' . time() . '_' . rand(1000, 9999) . '.' . $fileExtension;
+            $destPath = $uploadDir . $newFileName;
+
+            if (move_uploaded_file($fileTmpPath, $destPath)) {
+                $image = 'assets/images/blog/' . $newFileName;
+            } else {
+                $error = "Failed to save uploaded image file. Please check folder permissions.";
+            }
+        } else {
+            $error = "Invalid photograph format. Allowed formats: JPG, JPEG, PNG, WEBP, GIF, SVG.";
+        }
+    }
+
     // Ensure slug is clean and hypenated
     $slug = !empty($userSlug) ? create_slug($userSlug) : create_slug($title);
 
-    if (empty($title) || empty($category) || empty($summary) || empty($content)) {
-        $error = "Please fill in all required fields (Title, Category, Summary, Content).";
-    } else {
-        if ($post) {
-            // Check slug uniqueness excluding current ID
-            $check = $pdo->prepare("SELECT COUNT(*) FROM blogs WHERE slug = ? AND id != ?");
-            $check->execute([$slug, $post['id']]);
-            if ($check->fetchColumn() > 0) {
-                $slug .= '-' . time();
-            }
-
-            $stmt = $pdo->prepare("UPDATE blogs SET slug = ?, title = ?, category = ?, author = ?, image = ?, summary = ?, content = ?, read_time = ?, status = ?, updated_at = ? WHERE id = ?");
-            $stmt->execute([$slug, $title, $category, $author, $image, $summary, $content, $read_time, $status, date('Y-m-d H:i:s'), $post['id']]);
-            $msg = "Article updated successfully!";
-            
-            // Reload post
-            $stmt = $pdo->prepare("SELECT * FROM blogs WHERE id = ?");
-            $stmt->execute([$post['id']]);
-            $post = $stmt->fetch();
+    if (empty($error)) {
+        if (empty($title) || empty($category) || empty($summary) || empty($content)) {
+            $error = "Please fill in all required fields (Title, Category, Summary, Content).";
         } else {
-            // Check slug uniqueness
-            $check = $pdo->prepare("SELECT COUNT(*) FROM blogs WHERE slug = ?");
-            $check->execute([$slug]);
-            if ($check->fetchColumn() > 0) {
-                $slug .= '-' . time();
+            if ($post) {
+                // Check slug uniqueness excluding current ID
+                $check = $pdo->prepare("SELECT COUNT(*) FROM blogs WHERE slug = ? AND id != ?");
+                $check->execute([$slug, $post['id']]);
+                if ($check->fetchColumn() > 0) {
+                    $slug .= '-' . time();
+                }
+
+                $stmt = $pdo->prepare("UPDATE blogs SET slug = ?, title = ?, category = ?, author = ?, image = ?, summary = ?, content = ?, read_time = ?, status = ?, updated_at = ? WHERE id = ?");
+                $stmt->execute([$slug, $title, $category, $author, $image, $summary, $content, $read_time, $status, date('Y-m-d H:i:s'), $post['id']]);
+                $msg = "Article & Photograph updated successfully!";
+                
+                // Reload post
+                $stmt = $pdo->prepare("SELECT * FROM blogs WHERE id = ?");
+                $stmt->execute([$post['id']]);
+                $post = $stmt->fetch();
+            } else {
+                // Check slug uniqueness
+                $check = $pdo->prepare("SELECT COUNT(*) FROM blogs WHERE slug = ?");
+                $check->execute([$slug]);
+                if ($check->fetchColumn() > 0) {
+                    $slug .= '-' . time();
+                }
+
+                $stmt = $pdo->prepare("INSERT INTO blogs (slug, title, category, author, image, summary, content, read_time, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                $stmt->execute([$slug, $title, $category, $author, $image, $summary, $content, $read_time, $status]);
+                $newId = $pdo->lastInsertId();
+
+                header("Location: " . get_base_url() . "/admin-septix-technologies-blog-edit?id=" . $newId . "&msg=created");
+                exit;
             }
-
-            $stmt = $pdo->prepare("INSERT INTO blogs (slug, title, category, author, image, summary, content, read_time, status) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
-            $stmt->execute([$slug, $title, $category, $author, $image, $summary, $content, $read_time, $status]);
-            $newId = $pdo->lastInsertId();
-
-            header("Location: " . get_base_url() . "/admin-septix-technologies-blog-edit?id=" . $newId . "&msg=created");
-            exit;
         }
     }
 }
@@ -97,8 +124,8 @@ $presetCategories = ['Web Development', 'Mobile Apps', 'Custom ERP Software', 'A
     </div>
 <?php endif; ?>
 
-<!-- Form Container -->
-<form action="" method="POST" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: var(--radius-xl); padding: 36px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);">
+<!-- Form Container with File Upload Enctype -->
+<form action="" method="POST" enctype="multipart/form-data" style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: var(--radius-xl); padding: 36px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);">
     <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 32px;" class="editor-grid">
         
         <!-- Left Side: Main Content Fields -->
@@ -139,9 +166,36 @@ $presetCategories = ['Web Development', 'Mobile Apps', 'Custom ERP Software', 'A
             </div>
         </div>
 
-        <!-- Right Side: Meta & Publishing Controls -->
+        <!-- Right Side: Photograph Upload & Publishing Controls -->
         <div style="display: flex; flex-direction: column; gap: 24px;">
             
+            <!-- Photograph Upload Section -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-lg); padding: 24px;">
+                <h4 style="font-size: 1.05rem; font-weight: 800; color: #0f172a; margin-bottom: 16px;">
+                    <i class="fa-solid fa-camera" style="color: var(--clr-brand-light);"></i> Blog Photograph / Cover Photo
+                </h4>
+                
+                <div id="imagePreviewBox" style="margin-bottom: 14px; text-align: center; background: #ffffff; border: 2px dashed #cbd5e1; border-radius: var(--radius-md); padding: 10px;">
+                    <?php 
+                        $currentImgUrl = ($post && !empty($post['image'])) ? ((strpos($post['image'], 'http') === 0) ? $post['image'] : (get_base_url() . '/' . ltrim($post['image'], '/'))) : (get_base_url() . '/assets/images/service-web.jpg');
+                    ?>
+                    <img id="imgPreview" src="<?php echo $currentImgUrl; ?>" alt="Blog Photograph Preview" style="max-height: 180px; width: 100%; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+                </div>
+
+                <div style="margin-bottom: 14px;">
+                    <label style="display: block; font-weight: 700; font-size: 0.85rem; color: #334155; margin-bottom: 6px;">Upload New Photograph</label>
+                    <input type="file" name="blog_image_file" id="blogImageFile" accept="image/*"
+                           style="width: 100%; padding: 10px; border-radius: var(--radius-md); border: 1px solid #cbd5e1; font-size: 0.85rem; background: #ffffff;">
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                    <label style="display: block; font-weight: 600; font-size: 0.775rem; color: #64748b; margin-bottom: 4px;">Or Image Path / URL:</label>
+                    <input type="text" id="blogImagePath" name="image" value="<?php echo htmlspecialchars($post ? $post['image'] : 'assets/images/service-web.jpg'); ?>" placeholder="assets/images/..."
+                           style="width: 100%; padding: 8px 12px; border-radius: var(--radius-md); border: 1px solid #cbd5e1; font-size: 0.85rem;">
+                </div>
+            </div>
+
+            <!-- Publishing Options -->
             <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: var(--radius-lg); padding: 24px;">
                 <h4 style="font-size: 1.05rem; font-weight: 800; color: #0f172a; margin-bottom: 16px;">Publishing Options</h4>
                 
@@ -170,16 +224,10 @@ $presetCategories = ['Web Development', 'Mobile Apps', 'Custom ERP Software', 'A
                            style="width: 100%; padding: 10px; border-radius: var(--radius-md); border: 1px solid #cbd5e1; font-size: 0.9rem;">
                 </div>
 
-                <div style="margin-bottom: 16px;">
+                <div style="margin-bottom: 20px;">
                     <label style="display: block; font-weight: 700; font-size: 0.85rem; color: #334155; margin-bottom: 6px;">Estimated Read Time</label>
                     <input type="text" name="read_time" value="<?php echo htmlspecialchars($post ? $post['read_time'] : '5 min read'); ?>"
                            style="width: 100%; padding: 10px; border-radius: var(--radius-md); border: 1px solid #cbd5e1; font-size: 0.9rem;">
-                </div>
-
-                <div style="margin-bottom: 20px;">
-                    <label style="display: block; font-weight: 700; font-size: 0.85rem; color: #334155; margin-bottom: 6px;">Cover Image Path or URL</label>
-                    <input type="text" name="image" value="<?php echo htmlspecialchars($post ? $post['image'] : 'assets/images/service-web.jpg'); ?>" placeholder="assets/images/..."
-                           style="width: 100%; padding: 10px; border-radius: var(--radius-md); border: 1px solid #cbd5e1; font-size: 0.85rem;">
                 </div>
 
                 <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; border-radius: var(--radius-md);">
@@ -199,6 +247,18 @@ $presetCategories = ['Web Development', 'Mobile Apps', 'Custom ERP Software', 'A
 </form>
 
 <script>
+// Live Image Preview on File Selection
+document.getElementById('blogImageFile').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(evt) {
+            document.getElementById('imgPreview').src = evt.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
 // Auto Generate Slug on Title Typing
 document.getElementById('blogTitle').addEventListener('keyup', function() {
     const slugInput = document.getElementById('blogSlug');
