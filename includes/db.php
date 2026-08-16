@@ -19,30 +19,38 @@ function get_db_connection() {
     $dbPass = defined('DB_PASS') ? DB_PASS : '';
 
     try {
-        // First try connecting to MySQL server
-        $dsn = "mysql:host={$dbHost};port={$dbPort};charset=utf8mb4";
-        $tmpPdo = new PDO($dsn, $dbUser, $dbPass, [
+        // First try connecting directly to the target MySQL database (Hostinger & cPanel compatible)
+        $dsn = "mysql:host={$dbHost};port={$dbPort};dbname={$dbName};charset=utf8mb4";
+        $pdo = new PDO($dsn, $dbUser, $dbPass, [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         ]);
-
-        // Auto-create database if missing in phpMyAdmin / MySQL
-        $tmpPdo->exec("CREATE DATABASE IF NOT EXISTS `{$dbName}` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;");
-        $tmpPdo->exec("USE `{$dbName}`;");
-        $pdo = $tmpPdo;
         $isSqlite = false;
     } catch (Exception $e) {
-        // Fallback to zero-config SQLite if local MySQL server is not running
-        $sqliteDir = __DIR__ . '/../database';
-        if (!is_dir($sqliteDir)) {
-            @mkdir($sqliteDir, 0777, true);
+        try {
+            // Fallback for local dev server: create database if missing
+            $dsnNoDb = "mysql:host={$dbHost};port={$dbPort};charset=utf8mb4";
+            $tmpPdo = new PDO($dsnNoDb, $dbUser, $dbPass, [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            ]);
+            @$tmpPdo->exec("CREATE DATABASE IF NOT EXISTS `{$dbName}` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;");
+            $tmpPdo->exec("USE `{$dbName}`;");
+            $pdo = $tmpPdo;
+            $isSqlite = false;
+        } catch (Exception $ex) {
+            // Fallback to zero-config SQLite if local MySQL server is not running
+            $sqliteDir = __DIR__ . '/../database';
+            if (!is_dir($sqliteDir)) {
+                @mkdir($sqliteDir, 0777, true);
+            }
+            $sqliteFile = $sqliteDir . '/septix_db.sqlite';
+            $pdo = new PDO("sqlite:" . $sqliteFile, null, null, [
+                PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            ]);
+            $isSqlite = true;
         }
-        $sqliteFile = $sqliteDir . '/septix_db.sqlite';
-        $pdo = new PDO("sqlite:" . $sqliteFile, null, null, [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-        ]);
-        $isSqlite = true;
     }
 
     // Initialize tables if they don't exist

@@ -1,8 +1,5 @@
 -- Septix Technologies - Complete Database Schema & Initial Data Dump
--- Suitable for phpMyAdmin / MySQL 5.7+ / 8.0+
-
-CREATE DATABASE IF NOT EXISTS `septix_db` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE `septix_db`;
+-- Compatible with Hostinger, cPanel, and phpMyAdmin (Import directly into your selected DB)
 
 -- --------------------------------------------------------
 -- Table structure for `admin_users`
