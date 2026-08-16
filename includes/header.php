@@ -2,28 +2,76 @@
 require_once __DIR__ . '/config.php';
 $base_url = get_base_url();
 $current_page = $current_page ?? 'home';
+
+// Resolve 100/100 SEO variables
+$page_title_full = isset($page_title) ? $page_title . ' | ' . SITE_NAME : SITE_NAME . ' - Enterprise IT & Software Engineering';
+$page_desc = isset($page_desc) ? $page_desc : 'Septix Technologies is a premier IT consulting & software engineering firm specializing in Website Development, Custom ERPs, Mobile Apps, AI Engine integration, and Managed IT Services.';
+$current_uri = strtok($_SERVER['REQUEST_URI'] ?? '', '?');
+$canonical_url = rtrim($base_url, '/') . ($current_uri === '/' ? '' : $current_uri);
+$page_og_image = isset($page_image) ? (strpos($page_image, 'http') === 0 ? $page_image : $base_url . '/' . ltrim($page_image, '/')) : $base_url . '/assets/images/hero-banner.jpg';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo isset($page_title) ? $page_title . ' | ' . SITE_NAME : SITE_NAME . ' - ' . SITE_TAGLINE; ?></title>
-    <meta name="description" content="<?php echo isset($page_desc) ? $page_desc : 'Septix Technologies is a global IT solutions provider specializing in Website Development, Mobile Apps, Custom ERP, Digital Marketing, AI/ML Solutions, and IT Networking.'; ?>">
+    <title><?php echo htmlspecialchars($page_title_full); ?></title>
+    <meta name="description" content="<?php echo htmlspecialchars($page_desc); ?>">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="author" content="Septix Technologies">
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
+
+    <!-- Resource Hints for Core Web Vitals Optimization -->
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Open Graph (OG) Meta Tags for Social Sharing -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="<?php echo isset($og_type) ? $og_type : 'website'; ?>">
+    <meta property="og:title" content="<?php echo htmlspecialchars($page_title_full); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($page_desc); ?>">
+    <meta property="og:url" content="<?php echo htmlspecialchars($canonical_url); ?>">
+    <meta property="og:site_name" content="Septix Technologies">
+    <meta property="og:image" content="<?php echo htmlspecialchars($page_og_image); ?>">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($page_title_full); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($page_desc); ?>">
+    <meta name="twitter:image" content="<?php echo htmlspecialchars($page_og_image); ?>">
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="<?php echo $base_url; ?>/assets/images/favicon.png">
     
-    <!-- FontAwesome 6 CDN (Direct Link for 100% Icon Reliability) -->
+    <!-- FontAwesome 6 CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/style.css">
+
+    <!-- JSON-LD Structured Data Schema Markup (Google Rich Snippets) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Septix Technologies",
+      "url": "<?php echo $base_url; ?>",
+      "logo": "<?php echo $base_url; ?>/assets/images/logo.png",
+      "description": "Global enterprise software engineering and IT consulting firm specializing in Web Platforms, Custom ERPs, Mobile Apps, AI Solutions, and IT Infrastructure.",
+      "telephone": "+1-800-592-7378",
+      "email": "info@septixtechnologies.com",
+      "sameAs": [
+        "https://linkedin.com/company/septix-technologies",
+        "https://twitter.com/septixtech",
+        "https://facebook.com/septixtechnologies"
+      ]
+    }
+    </script>
 </head>
 <body>
 

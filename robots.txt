@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /admin-septix-login
+Disallow: /admin-septix-technologies-dashboard
+Disallow: /admin-septix-technologies-blogs
+Disallow: /admin-septix-technologies-blog-edit
+Disallow: /admin-septix-technologies-users
+Disallow: /admin-septix-technologies-mfa
+Disallow: /admin-septix-technologies-forgot-password
+Disallow: /admin-septix-technologies-logout
+Disallow: /includes/
+Disallow: /router.php
+
+Sitemap: https://septixtechnologies.com/sitemap.xml
