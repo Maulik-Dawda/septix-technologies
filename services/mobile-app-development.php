@@ -16,7 +16,7 @@ require_once __DIR__ . '/../includes/header.php';
             <?php echo $service['short_desc']; ?>
         </p>
         <div class="hero-actions">
-            <a href="<?php echo $base_url; ?>/contact.php?service=mobile-app-development" class="btn btn-primary">
+            <a href="<?php echo $base_url; ?>/contact?service=mobile-app-development" class="btn btn-primary">
                 Build Mobile App <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>

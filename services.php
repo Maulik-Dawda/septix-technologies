@@ -54,7 +54,7 @@ require_once __DIR__ . '/includes/header.php';
                             </div>
                         </div>
 
-                        <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>.php" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center; margin-top: auto;">
+                        <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center; margin-top: auto;">
                             View Dedicated Service Page <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>

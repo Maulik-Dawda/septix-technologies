@@ -31,7 +31,7 @@ $current_page = $current_page ?? 'home';
     <header class="site-header">
         <div class="container nav-wrapper">
             <!-- Brand Logo -->
-            <a href="<?php echo $base_url; ?>/index.php" class="brand-logo">
+            <a href="<?php echo $base_url; ?>/index" class="brand-logo">
                 <img src="<?php echo $base_url; ?>/assets/images/logo.png" alt="Septix Technologies Logo">
             </a>
 
@@ -44,20 +44,20 @@ $current_page = $current_page ?? 'home';
             <nav class="nav-menu">
                 <ul class="nav-links">
                     <li class="nav-item">
-                        <a href="<?php echo $base_url; ?>/index.php" class="nav-link <?php echo is_active('home', $current_page); ?>">Home</a>
+                        <a href="<?php echo $base_url; ?>/index" class="nav-link <?php echo is_active('home', $current_page); ?>">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?php echo $base_url; ?>/about.php" class="nav-link <?php echo is_active('about', $current_page); ?>">About Us</a>
+                        <a href="<?php echo $base_url; ?>/about" class="nav-link <?php echo is_active('about', $current_page); ?>">About Us</a>
                     </li>
                     
                     <!-- Services Dropdown -->
                     <li class="nav-item">
-                        <a href="<?php echo $base_url; ?>/services.php" class="nav-link <?php echo is_active('services', $current_page); ?>">
+                        <a href="<?php echo $base_url; ?>/services" class="nav-link <?php echo is_active('services', $current_page); ?>">
                             Services <i class="fa-solid fa-chevron-down" style="font-size: 0.75rem;"></i>
                         </a>
                         <div class="dropdown-menu">
                             <?php foreach ($services_data as $key => $service): ?>
-                                <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>.php" class="dropdown-item">
+                                <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>" class="dropdown-item">
                                     <i class="fa-solid <?php echo $service['icon']; ?>"></i>
                                     <div>
                                         <strong style="display:block; color:var(--clr-brand-dark); font-size:0.9rem;"><?php echo $service['title']; ?></strong>
@@ -68,18 +68,18 @@ $current_page = $current_page ?? 'home';
                     </li>
 
                     <li class="nav-item">
-                        <a href="<?php echo $base_url; ?>/portfolio.php" class="nav-link <?php echo is_active('portfolio', $current_page); ?>">Portfolio</a>
+                        <a href="<?php echo $base_url; ?>/portfolio" class="nav-link <?php echo is_active('portfolio', $current_page); ?>">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?php echo $base_url; ?>/blog.php" class="nav-link <?php echo is_active('blog', $current_page); ?>">Blog</a>
+                        <a href="<?php echo $base_url; ?>/blog" class="nav-link <?php echo is_active('blog', $current_page); ?>">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a href="<?php echo $base_url; ?>/contact.php" class="nav-link <?php echo is_active('contact', $current_page); ?>">Contact</a>
+                        <a href="<?php echo $base_url; ?>/contact" class="nav-link <?php echo is_active('contact', $current_page); ?>">Contact</a>
                     </li>
                 </ul>
 
                 <!-- Header CTA Button -->
-                <a href="<?php echo $base_url; ?>/contact.php" class="btn btn-primary btn-sm">
+                <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary btn-sm">
                     Get a Quote <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </nav>

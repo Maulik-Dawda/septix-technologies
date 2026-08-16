@@ -26,10 +26,10 @@ require_once __DIR__ . '/includes/header.php';
                     Septix Technologies empowers forward-thinking companies worldwide with high-performance Web Applications, Native Mobile Platforms, Custom ERP Systems, AI/ML Engines, and Secure IT Infrastructure.
                 </p>
                 <div class="hero-actions">
-                    <a href="<?php echo $base_url; ?>/contact.php" class="btn btn-primary">
+                    <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary">
                         Start a Project <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    <a href="<?php echo $base_url; ?>/services.php" class="btn btn-outline">
+                    <a href="<?php echo $base_url; ?>/services" class="btn btn-outline">
                         Explore Services <i class="fa-solid fa-cubes"></i>
                     </a>
                 </div>
@@ -93,7 +93,7 @@ require_once __DIR__ . '/includes/header.php';
                         </div>
                         <h3 class="service-title"><?php echo $service['title']; ?></h3>
                         <p class="service-desc"><?php echo $service['short_desc']; ?></p>
-                        <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>.php" class="service-link">
+                        <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>" class="service-link">
                             Learn More <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -114,8 +114,8 @@ require_once __DIR__ . '/includes/header.php';
                     Septix Technologies operates across major tech hubs worldwide. We provide seamless 24/7 delivery, multi-currency integration, and localized compliance support.
                 </p>
                 <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                    <a href="<?php echo $base_url; ?>/contact.php" class="btn btn-primary btn-sm">Connect With Us</a>
-                    <a href="<?php echo $base_url; ?>/about.php" class="btn btn-outline btn-sm">About Our Company</a>
+                    <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary btn-sm">Connect With Us</a>
+                    <a href="<?php echo $base_url; ?>/about" class="btn btn-outline btn-sm">About Our Company</a>
                 </div>
             </div>
 
@@ -203,7 +203,7 @@ require_once __DIR__ . '/includes/header.php';
                     <span style="font-size: 0.875rem; color: var(--clr-text-muted); font-weight: 700; display: block; text-transform: uppercase;">Estimated Investment Range:</span>
                     <div class="estimate-price" id="estimatedPrice">$3,500 - $4,725</div>
                 </div>
-                <a href="<?php echo $base_url; ?>/contact.php" class="btn btn-primary">
+                <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary">
                     Request Formal Proposal <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
@@ -267,7 +267,7 @@ require_once __DIR__ . '/includes/header.php';
                         </div>
                         <h3 class="blog-title"><?php echo $post['title']; ?></h3>
                         <p class="blog-summary"><?php echo $post['summary']; ?></p>
-                        <a href="<?php echo $base_url; ?>/blog-single.php?id=<?php echo $post['id']; ?>" class="service-link">
+                        <a href="<?php echo $base_url; ?>/blog-single?id=<?php echo $post['id']; ?>" class="service-link">
                             Read Full Article <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -284,10 +284,10 @@ require_once __DIR__ . '/includes/header.php';
                 Partner with Septix Technologies to architect robust web platforms, custom ERPs, mobile applications, and AI engines built for global scale.
             </p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <a href="<?php echo $base_url; ?>/contact.php" class="btn btn-primary">
+                <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary">
                     Schedule Free Technical Consultation <i class="fa-solid fa-calendar-check"></i>
                 </a>
-                <a href="<?php echo $base_url; ?>/portfolio.php" class="btn btn-white">
+                <a href="<?php echo $base_url; ?>/portfolio" class="btn btn-white">
                     View Enterprise Case Studies <i class="fa-solid fa-briefcase"></i>
                 </a>
             </div>

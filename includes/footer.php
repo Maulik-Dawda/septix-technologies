@@ -8,7 +8,7 @@ $base_url = get_base_url();
             <div class="footer-grid">
                 <!-- Brand Info -->
                 <div class="footer-brand">
-                    <a href="<?php echo $base_url; ?>/index.php">
+                    <a href="<?php echo $base_url; ?>/index">
                         <img src="<?php echo $base_url; ?>/assets/images/logo.png" alt="Septix Technologies" style="height: 75px; width: auto; object-fit: contain;">
                     </a>
                     <p>Septix Technologies is a premier global IT consulting & software engineering firm. We build high-impact web apps, enterprise ERPs, mobile platforms, AI models, and secure IT infrastructure for companies worldwide.</p>
@@ -24,12 +24,12 @@ $base_url = get_base_url();
                 <div>
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="<?php echo $base_url; ?>/index.php"><i class="fa-solid fa-angle-right"></i> Home</a></li>
-                        <li><a href="<?php echo $base_url; ?>/about.php"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
-                        <li><a href="<?php echo $base_url; ?>/services.php"><i class="fa-solid fa-angle-right"></i> All Services</a></li>
-                        <li><a href="<?php echo $base_url; ?>/portfolio.php"><i class="fa-solid fa-angle-right"></i> Case Studies</a></li>
-                        <li><a href="<?php echo $base_url; ?>/blog.php"><i class="fa-solid fa-angle-right"></i> Tech Blog</a></li>
-                        <li><a href="<?php echo $base_url; ?>/contact.php"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+                        <li><a href="<?php echo $base_url; ?>/index"><i class="fa-solid fa-angle-right"></i> Home</a></li>
+                        <li><a href="<?php echo $base_url; ?>/about"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
+                        <li><a href="<?php echo $base_url; ?>/services"><i class="fa-solid fa-angle-right"></i> All Services</a></li>
+                        <li><a href="<?php echo $base_url; ?>/portfolio"><i class="fa-solid fa-angle-right"></i> Case Studies</a></li>
+                        <li><a href="<?php echo $base_url; ?>/blog"><i class="fa-solid fa-angle-right"></i> Tech Blog</a></li>
+                        <li><a href="<?php echo $base_url; ?>/contact"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
                     </ul>
                 </div>
 
@@ -37,12 +37,12 @@ $base_url = get_base_url();
                 <div>
                     <h4 class="footer-title">Our Services</h4>
                     <ul class="footer-links">
-                        <li><a href="<?php echo $base_url; ?>/services/website-development.php">Website Development</a></li>
-                        <li><a href="<?php echo $base_url; ?>/services/mobile-app-development.php">Mobile Applications</a></li>
-                        <li><a href="<?php echo $base_url; ?>/services/custom-erp-software.php">Custom ERP Systems</a></li>
-                        <li><a href="<?php echo $base_url; ?>/services/digital-marketing.php">Digital Marketing</a></li>
-                        <li><a href="<?php echo $base_url; ?>/services/ai-ml-solutions.php">AI & ML Solutions</a></li>
-                        <li><a href="<?php echo $base_url; ?>/services/it-networking-solutions.php">IT Networking</a></li>
+                        <li><a href="<?php echo $base_url; ?>/services/website-development">Website Development</a></li>
+                        <li><a href="<?php echo $base_url; ?>/services/mobile-app-development">Mobile Applications</a></li>
+                        <li><a href="<?php echo $base_url; ?>/services/custom-erp-software">Custom ERP Systems</a></li>
+                        <li><a href="<?php echo $base_url; ?>/services/digital-marketing">Digital Marketing</a></li>
+                        <li><a href="<?php echo $base_url; ?>/services/ai-ml-solutions">AI & ML Solutions</a></li>
+                        <li><a href="<?php echo $base_url; ?>/services/it-networking-solutions">IT Networking</a></li>
                     </ul>
                 </div>
 
@@ -64,8 +64,8 @@ $base_url = get_base_url();
             <div class="footer-bottom">
                 <p>&copy; <?php echo date('Y'); ?> Septix Technologies. All Rights Reserved. Empowering Enterprise Innovation Worldwide.</p>
                 <div style="display: flex; gap: 20px;">
-                    <a href="<?php echo $base_url; ?>/contact.php" style="color: var(--clr-text-dim);">Privacy Policy</a>
-                    <a href="<?php echo $base_url; ?>/contact.php" style="color: var(--clr-text-dim);">Terms of Service</a>
+                    <a href="<?php echo $base_url; ?>/contact" style="color: var(--clr-text-dim);">Privacy Policy</a>
+                    <a href="<?php echo $base_url; ?>/contact" style="color: var(--clr-text-dim);">Terms of Service</a>
                 </div>
             </div>
         </div>

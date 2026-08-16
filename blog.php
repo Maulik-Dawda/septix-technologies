@@ -32,12 +32,12 @@ require_once __DIR__ . '/includes/header.php';
                             <span><?php echo $post['read_time']; ?></span>
                         </div>
                         <h2 class="blog-title" style="font-size: 1.3rem;">
-                            <a href="<?php echo $base_url; ?>/blog-single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a>
+                            <a href="<?php echo $base_url; ?>/blog-single?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a>
                         </h2>
                         <p class="blog-summary"><?php echo $post['summary']; ?></p>
                         <div style="margin-top: auto; padding-top: 16px; border-top: 1px solid var(--clr-border); display: flex; align-items: center; justify-content: space-between;">
                             <span style="font-size: 0.8rem; color: var(--clr-text-dim);"><?php echo $post['date']; ?></span>
-                            <a href="<?php echo $base_url; ?>/blog-single.php?id=<?php echo $post['id']; ?>" class="btn btn-outline btn-sm">
+                            <a href="<?php echo $base_url; ?>/blog-single?id=<?php echo $post['id']; ?>" class="btn btn-outline btn-sm">
                                 Read Article <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>

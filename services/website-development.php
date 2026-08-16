@@ -16,7 +16,7 @@ require_once __DIR__ . '/../includes/header.php';
             <?php echo $service['short_desc']; ?>
         </p>
         <div class="hero-actions">
-            <a href="<?php echo $base_url; ?>/contact.php?service=website-development" class="btn btn-primary">
+            <a href="<?php echo $base_url; ?>/contact?service=website-development" class="btn btn-primary">
                 Build Your Web App <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
@@ -36,7 +36,7 @@ require_once __DIR__ . '/../includes/header.php';
                 <p style="color: var(--clr-text-muted); font-size: 1rem; margin-bottom: 24px;">
                     Whether you require a custom enterprise portal, an API-first headless e-commerce store, or a Progressive Web Application (PWA), our team utilizes modern web engineering standards to drive user engagement and conversion.
                 </p>
-                <a href="<?php echo $base_url; ?>/contact.php" class="btn btn-outline">
+                <a href="<?php echo $base_url; ?>/contact" class="btn btn-outline">
                     Discuss Your Web Requirements <i class="fa-solid fa-comments"></i>
                 </a>
             </div>

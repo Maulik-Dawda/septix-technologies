@@ -68,10 +68,10 @@ require_once __DIR__ . '/includes/header.php';
 
             <!-- Author & Share Box -->
             <div style="margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--clr-border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
-                <a href="<?php echo $base_url; ?>/blog.php" class="btn btn-outline btn-sm">
+                <a href="<?php echo $base_url; ?>/blog" class="btn btn-outline btn-sm">
                     <i class="fa-solid fa-arrow-left"></i> Back to All Articles
                 </a>
-                <a href="<?php echo $base_url; ?>/contact.php" class="btn btn-primary btn-sm">
+                <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary btn-sm">
                     Discuss This Solution <i class="fa-solid fa-paper-plane"></i>
                 </a>
             </div>
