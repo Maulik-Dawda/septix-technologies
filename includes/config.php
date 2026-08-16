@@ -11,20 +11,46 @@ if (!defined('SITE_NAME')) {
     define('CONTACT_PHONE', '+1 (800) 592-7378');
     define('HQ_ADDRESS', 'Septix Global Tech Park, Innovation Way, Tech Hub');
 
+    // Load local .env environment file if present (ignored by Git)
+    $envFile = __DIR__ . '/../.env';
+    if (file_exists($envFile)) {
+        $lines = file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+        foreach ($lines as $line) {
+            $line = trim($line);
+            if ($line === '' || strpos($line, '#') === 0) continue;
+            if (strpos($line, '=') !== false) {
+                list($name, $value) = explode('=', $line, 2);
+                $name = trim($name);
+                $value = trim($value, " \t\n\r\0\x0B\"'");
+                if (!empty($name) && getenv($name) === false) {
+                    putenv("{$name}={$value}");
+                    $_ENV[$name] = $value;
+                    $_SERVER[$name] = $value;
+                }
+            }
+        }
+    }
+
+    // Load local config overrides if present (ignored by Git)
+    $localConfigFile = __DIR__ . '/config.local.php';
+    if (file_exists($localConfigFile)) {
+        require_once $localConfigFile;
+    }
+
     // Database Configuration (MySQL / phpMyAdmin)
-    define('DB_HOST', '127.0.0.1');
-    define('DB_PORT', '3306');
-    define('DB_NAME', 'septix_db');
-    define('DB_USER', 'root');
-    define('DB_PASS', '');
+    if (!defined('DB_HOST')) define('DB_HOST', getenv('DB_HOST') !== false ? getenv('DB_HOST') : '127.0.0.1');
+    if (!defined('DB_PORT')) define('DB_PORT', getenv('DB_PORT') !== false ? getenv('DB_PORT') : '3306');
+    if (!defined('DB_NAME')) define('DB_NAME', getenv('DB_NAME') !== false ? getenv('DB_NAME') : 'septix_db');
+    if (!defined('DB_USER')) define('DB_USER', getenv('DB_USER') !== false ? getenv('DB_USER') : 'root');
+    if (!defined('DB_PASS')) define('DB_PASS', getenv('DB_PASS') !== false ? getenv('DB_PASS') : '');
 
     // SMTP Email Configuration for OTP & Notifications
-    define('SMTP_HOST', 'smtp.gmail.com');
-    define('SMTP_PORT', 587);
-    define('SMTP_USER', 'noreply@septixtechnologies.com');
-    define('SMTP_PASS', '');
-    define('SMTP_FROM', 'info@septixtechnologies.com');
-    define('SMTP_FROM_NAME', 'Septix Technologies Security');
+    if (!defined('SMTP_HOST')) define('SMTP_HOST', getenv('SMTP_HOST') !== false ? getenv('SMTP_HOST') : 'smtp.gmail.com');
+    if (!defined('SMTP_PORT')) define('SMTP_PORT', getenv('SMTP_PORT') !== false ? getenv('SMTP_PORT') : 587);
+    if (!defined('SMTP_USER')) define('SMTP_USER', getenv('SMTP_USER') !== false ? getenv('SMTP_USER') : 'noreply@septixtechnologies.com');
+    if (!defined('SMTP_PASS')) define('SMTP_PASS', getenv('SMTP_PASS') !== false ? getenv('SMTP_PASS') : '');
+    if (!defined('SMTP_FROM')) define('SMTP_FROM', getenv('SMTP_FROM') !== false ? getenv('SMTP_FROM') : 'info@septixtechnologies.com');
+    if (!defined('SMTP_FROM_NAME')) define('SMTP_FROM_NAME', getenv('SMTP_FROM_NAME') !== false ? getenv('SMTP_FROM_NAME') : 'Septix Technologies Security');
 }
 
 /**

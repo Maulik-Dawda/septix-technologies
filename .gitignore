@@ -1,0 +1,17 @@
+# Database credentials and environment files
+.env
+.env.local
+.env.*.local
+config.local.php
+
+# Local SQLite databases and database files
+database/*.sqlite
+database/*.db
+*.sqlite
+*.db
+
+# Temporary & system files
+.ds_store
+Thumbs.db
+*.log
+scratch/
