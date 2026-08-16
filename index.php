@@ -167,50 +167,6 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- Interactive Project Cost Estimator -->
-<section class="section-padding">
-    <div class="container">
-        <div style="text-align: center;">
-            <div class="section-tag"><i class="fa-solid fa-calculator"></i> Quick Estimation</div>
-            <h2 class="section-title">Interactive Project <br><span class="text-gradient">Budget Estimator</span></h2>
-            <p class="section-subtitle">Select your technology requirements to get an instant estimated project scope budget.</p>
-        </div>
-
-        <div class="estimator-box" id="projectEstimator">
-            <div class="estimator-step">
-                <span class="estimator-label">1. Choose Primary Service Required:</span>
-                <div class="options-pill-grid">
-                    <div class="option-pill selected" data-cost="3500">Website Development</div>
-                    <div class="option-pill" data-cost="5500">Mobile App Development</div>
-                    <div class="option-pill" data-cost="9000">Custom ERP Software</div>
-                    <div class="option-pill" data-cost="2500">Digital Marketing Campaign</div>
-                    <div class="option-pill" data-cost="7500">AI / ML Solution</div>
-                    <div class="option-pill" data-cost="4000">IT Networking Setup</div>
-                </div>
-            </div>
-
-            <div class="estimator-step">
-                <span class="estimator-label">2. Select Project Scale & Complexity:</span>
-                <div class="options-pill-grid">
-                    <div class="option-pill selected" data-mult="1.0">Startup / MVP</div>
-                    <div class="option-pill" data-mult="1.5">Growing Business</div>
-                    <div class="option-pill" data-mult="2.2">Enterprise Grade</div>
-                </div>
-            </div>
-
-            <div class="estimate-result-bar">
-                <div>
-                    <span style="font-size: 0.875rem; color: var(--clr-text-muted); font-weight: 700; display: block; text-transform: uppercase;">Estimated Investment Range:</span>
-                    <div class="estimate-price" id="estimatedPrice">$3,500 - $4,725</div>
-                </div>
-                <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary">
-                    Request Formal Proposal <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Interactive Project Development Timeline Section -->
 <section class="section-padding timeline-section">
     <div class="container">
