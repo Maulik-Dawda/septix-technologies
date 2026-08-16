@@ -43,8 +43,8 @@ require_once __DIR__ . '/includes/header.php';
                         <i class="fa-solid fa-award"></i>
                     </div>
                     <div>
-                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 1rem;">250+ Enterprise Projects</strong>
-                        <span style="color: var(--clr-text-muted); font-size: 0.85rem;">Delivered Worldwide with 99.8% SLA</span>
+                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 1rem;">10+ Enterprise Projects</strong>
+                        <span style="color: var(--clr-text-muted); font-size: 0.85rem;">Delivered with 99% Retention Rate</span>
                     </div>
                 </div>
             </div>
@@ -53,12 +53,12 @@ require_once __DIR__ . '/includes/header.php';
         <!-- Animated Stats Counter Banner -->
         <div class="stats-banner">
             <div class="stat-item">
-                <div class="stat-number" data-target="250" data-suffix="+">250+</div>
+                <div class="stat-number" data-target="10" data-suffix="+">10+</div>
                 <div class="stat-label">Projects Completed</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" data-target="50" data-suffix="+">50+</div>
-                <div class="stat-label">Global Clients</div>
+                <div class="stat-number" data-target="2" data-suffix="+">2+</div>
+                <div class="stat-label">Countries Served</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number" data-target="99" data-suffix="%">99%</div>
