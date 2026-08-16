@@ -9,7 +9,7 @@ $base_url = get_base_url();
                 <!-- Brand Info -->
                 <div class="footer-brand">
                     <a href="<?php echo $base_url; ?>/index.php">
-                        <img src="<?php echo $base_url; ?>/assets/images/logo.png" alt="Septix Technologies" style="height: 48px;">
+                        <img src="<?php echo $base_url; ?>/assets/images/logo.png" alt="Septix Technologies" style="height: 75px; width: auto; object-fit: contain;">
                     </a>
                     <p>Septix Technologies is a premier global IT consulting & software engineering firm. We build high-impact web apps, enterprise ERPs, mobile platforms, AI models, and secure IT infrastructure for companies worldwide.</p>
                     <div class="social-links">
@@ -50,12 +50,12 @@ $base_url = get_base_url();
                 <div>
                     <h4 class="footer-title">Global Presence</h4>
                     <p style="color: var(--clr-text-muted); font-size: 0.9rem; margin-bottom: 16px;">
-                        <i class="fa-solid fa-earth-americas" style="color: var(--clr-primary-light);"></i> Proudly serving enterprises globally across 50+ countries.
+                        <i class="fa-solid fa-earth-americas" style="color: var(--clr-brand-light);"></i> Proudly serving enterprises globally across 50+ countries.
                     </p>
                     <ul class="footer-links" style="gap: 10px;">
-                        <li style="color: #fff; font-size: 0.875rem;"><i class="fa-solid fa-envelope" style="color: var(--clr-primary-light);"></i> <?php echo CONTACT_EMAIL; ?></li>
-                        <li style="color: #fff; font-size: 0.875rem;"><i class="fa-solid fa-phone" style="color: var(--clr-primary-light);"></i> <?php echo CONTACT_PHONE; ?></li>
-                        <li style="color: #fff; font-size: 0.875rem;"><i class="fa-solid fa-clock" style="color: var(--clr-primary-light);"></i> 24/7 Global IT Support SLA</li>
+                        <li style="color: var(--clr-brand-dark); font-size: 0.875rem; font-weight: 600;"><i class="fa-solid fa-envelope" style="color: var(--clr-brand-light);"></i> <?php echo CONTACT_EMAIL; ?></li>
+                        <li style="color: var(--clr-brand-dark); font-size: 0.875rem; font-weight: 600;"><i class="fa-solid fa-phone" style="color: var(--clr-brand-light);"></i> <?php echo CONTACT_PHONE; ?></li>
+                        <li style="color: var(--clr-brand-dark); font-size: 0.875rem; font-weight: 600;"><i class="fa-solid fa-clock" style="color: var(--clr-brand-light);"></i> 24/7 Global IT Support SLA</li>
                     </ul>
                 </div>
             </div>

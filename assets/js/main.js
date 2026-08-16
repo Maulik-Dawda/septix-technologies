@@ -152,8 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const formData = new FormData(contactForm);
 
             try {
-                const baseUrl = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
-                const targetUrl = (baseUrl ? baseUrl : '') + '/process-contact.php';
+                const targetUrl = contactForm.getAttribute('action') || 'process-contact.php';
                 
                 const response = await fetch(targetUrl, {
                     method: 'POST',
