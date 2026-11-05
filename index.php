@@ -1,6 +1,6 @@
 <?php
-$page_title = "Septix Technologies - Innovating Digital Solutions Globally";
-$page_desc = "Septix Technologies is an international IT engineering firm delivering Website Development, Mobile Apps, Enterprise ERP, Digital Marketing, AI/ML, and IT Networking.";
+$page_title = "IT Solutions & Software Company Dubai UAE";
+$page_desc = "Septix Technologies is an enterprise IT firm in Dubai, UAE. We build custom ERPs, mobile apps, web platforms, and AI engines.";
 $current_page = "home";
 require_once __DIR__ . '/includes/header.php';
 ?>
@@ -16,34 +16,34 @@ require_once __DIR__ . '/includes/header.php';
         <div class="hero-grid">
             <div>
                 <div class="section-tag">
-                    <i class="fa-solid fa-earth-americas"></i> Proudly Serving Clients Globally
+                    <i class="fa-solid fa-gem"></i> Trusted IT Partner in Dubai & UAE
                 </div>
                 <h1 class="hero-headline">
-                    Architecting Next-Gen <span class="text-gradient">Digital Solutions</span>
+                    Architecting Next-Gen <span class="text-gradient">Digital Solutions</span> in Dubai & UAE
                 </h1>
                 <p class="hero-description">
-                    Septix Technologies empowers forward-thinking companies worldwide with high-performance Web Applications, Native Mobile Platforms, Custom ERP Systems, AI/ML Engines, and Secure IT Infrastructure.
+                    Septix Technologies accelerates enterprise digital transformation across Dubai, the UAE, and worldwide. We build high-performance Web Applications, iOS & Android Apps, FTA VAT-Ready Custom ERPs, and Intelligent AI Systems tailored for regional market leaders.
                 </p>
                 <div class="hero-actions">
                     <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary">
-                        Start a Project <i class="fa-solid fa-arrow-right"></i>
+                        Schedule UAE Consultation <i class="fa-solid fa-arrow-right"></i>
                     </a>
                     <a href="<?php echo $base_url; ?>/services" class="btn btn-outline">
-                        Explore Services <i class="fa-solid fa-cubes"></i>
+                        Explore Solutions <i class="fa-solid fa-cubes"></i>
                     </a>
                 </div>
             </div>
 
             <!-- Choicy Hero Image Visual Container -->
             <div class="hero-image-box">
-                <img src="<?php echo $base_url; ?>/assets/images/hero-banner.jpg" alt="Septix Technologies Global IT Engineering Team">
+                <img src="<?php echo $base_url; ?>/assets/images/hero-banner.jpg" alt="Septix Technologies Dubai UAE IT Software Team">
                 <div class="floating-badge">
                     <div class="floating-badge-icon">
                         <i class="fa-solid fa-award"></i>
                     </div>
                     <div>
-                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 1rem;">10+ Enterprise Projects</strong>
-                        <span style="color: var(--clr-text-muted); font-size: 0.85rem;">Delivered with 99% Retention Rate</span>
+                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 1rem;">10+ Enterprise Deployments</strong>
+                        <span style="color: var(--clr-text-muted); font-size: 0.85rem;">Dubai, UAE & Global Success</span>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@ require_once __DIR__ . '/includes/header.php';
             </div>
             <div class="stat-item">
                 <div class="stat-number" data-target="2" data-suffix="+">2+</div>
-                <div class="stat-label">Countries Served</div>
+                <div class="stat-label">Key Hubs: UAE & India</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number" data-target="99" data-suffix="%">99%</div>
@@ -65,7 +65,7 @@ require_once __DIR__ . '/includes/header.php';
             </div>
             <div class="stat-item">
                 <div class="stat-number" data-target="24" data-suffix="/7">24/7</div>
-                <div class="stat-label">Global Support SLA</div>
+                <div class="stat-label">GCC (GST) & Global SLA</div>
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@ require_once __DIR__ . '/includes/header.php';
         <div style="text-align: center;">
             <div class="section-tag"><i class="fa-solid fa-layer-group"></i> What We Do</div>
             <h2 class="section-title">Comprehensive Enterprise <br><span class="text-gradient">IT & Software Services</span></h2>
-            <p class="section-subtitle">Delivering end-to-end digital transformation tailored to scale your global operations.</p>
+            <p class="section-subtitle">Delivering high-impact technology solutions tailored to scale Dubai businesses and global organizations.</p>
         </div>
 
         <div class="services-grid">
@@ -102,18 +102,18 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- Global Reach Section -->
+<!-- Global Reach & UAE Enterprise Presence Section -->
 <section class="section-padding global-section">
     <div class="container">
         <div class="global-grid">
             <div>
-                <div class="section-tag"><i class="fa-solid fa-globe"></i> Global Reach</div>
-                <h2 class="section-title">Serving Clients <br><span class="text-gradient">Globally</span></h2>
+                <div class="section-tag"><i class="fa-solid fa-landmark"></i> Strategic Presence</div>
+                <h2 class="section-title">Powering Dubai, UAE & <br><span class="text-gradient">Global Innovation</span></h2>
                 <p style="color: var(--clr-text-muted); font-size: 1.05rem; margin-bottom: 24px;">
-                    Septix Technologies delivers high-performance software engineering, custom enterprise platforms, and digital transformation for organizations and scaling businesses worldwide.
+                    Septix Technologies bridges international software engineering standards with direct regional GCC business acumen. From Dubai Silicon Oasis and Business Bay to DIFC and global tech ecosystems, we build resilient digital platforms designed to win in competitive markets.
                 </p>
                 <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                    <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary btn-sm">Connect With Us</a>
+                    <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary btn-sm">Consult Our Dubai Team</a>
                     <a href="<?php echo $base_url; ?>/about" class="btn btn-outline btn-sm">About Our Company</a>
                 </div>
             </div>
@@ -124,18 +124,18 @@ require_once __DIR__ . '/includes/header.php';
                         <i class="fa-solid fa-clock"></i>
                     </div>
                     <div>
-                        <div class="hub-name" style="font-size: 1.05rem;">24/7 Global SLA</div>
-                        <div class="hub-city">Round-the-clock technical support</div>
+                        <div class="hub-name" style="font-size: 1.05rem;">GCC Time-Zone (GST)</div>
+                        <div class="hub-city">Real-time support during UAE hours</div>
                     </div>
                 </div>
 
                 <div class="hub-card" style="padding: 20px;">
                     <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(38, 18, 91, 0.12); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
-                        <i class="fa-solid fa-shield-halved"></i>
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
                     </div>
                     <div>
-                        <div class="hub-name" style="font-size: 1.05rem;">Enterprise Security</div>
-                        <div class="hub-city">OWASP & data privacy standards</div>
+                        <div class="hub-name" style="font-size: 1.05rem;">UAE VAT & Compliance</div>
+                        <div class="hub-city">FTA compliant systems & e-invoicing</div>
                     </div>
                 </div>
 
@@ -144,18 +144,18 @@ require_once __DIR__ . '/includes/header.php';
                         <i class="fa-solid fa-server"></i>
                     </div>
                     <div>
-                        <div class="hub-name" style="font-size: 1.05rem;">Multi-Region Cloud</div>
-                        <div class="hub-city">Low-latency scalable infrastructure</div>
+                        <div class="hub-name" style="font-size: 1.05rem;">UAE Low-Latency Cloud</div>
+                        <div class="hub-city">AWS UAE & Azure UAE North nodes</div>
                     </div>
                 </div>
 
                 <div class="hub-card" style="padding: 20px;">
                     <div style="width: 44px; height: 44px; border-radius: 10px; background: rgba(61, 193, 208, 0.15); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;">
-                        <i class="fa-solid fa-users-gear"></i>
+                        <i class="fa-solid fa-language"></i>
                     </div>
                     <div>
-                        <div class="hub-name" style="font-size: 1.05rem;">Expert Engineers</div>
-                        <div class="hub-city">Dedicated product development</div>
+                        <div class="hub-name" style="font-size: 1.05rem;">Arabic & English Ready</div>
+                        <div class="hub-city">Bilingual RTL & LTR interfaces</div>
                     </div>
                 </div>
             </div>
@@ -387,14 +387,14 @@ require_once __DIR__ . '/includes/header.php';
         <!-- High-Impact Pre-Footer CTA Box -->
         <div class="pre-footer-cta-box">
             <h3 class="cta-heading">
-                Ready to Accelerate Your <span class="text-gradient">Digital Transformation?</span>
+                Accelerate Your Enterprise <span class="text-gradient">in Dubai & Worldwide</span>
             </h3>
             <p class="cta-subtitle">
-                Partner with Septix Technologies to architect robust web platforms, custom ERPs, mobile applications, and AI engines built for global scale.
+                Partner with Septix Technologies to architect high-performance web platforms, custom ERPs, mobile applications, and AI engines built for UAE and global market leadership.
             </p>
             <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
                 <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary">
-                    Schedule Free Technical Consultation <i class="fa-solid fa-calendar-check"></i>
+                    Book Dubai Consultation <i class="fa-solid fa-calendar-check"></i>
                 </a>
                 <a href="<?php echo $base_url; ?>/portfolio" class="btn btn-white">
                     View Enterprise Case Studies <i class="fa-solid fa-briefcase"></i>

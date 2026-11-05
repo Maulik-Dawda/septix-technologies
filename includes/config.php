@@ -5,11 +5,13 @@
 
 if (!defined('SITE_NAME')) {
     define('SITE_NAME', 'Septix Technologies');
-    define('SITE_TAGLINE', 'Innovating Digital Solutions Globally');
+    define('SITE_TAGLINE', 'Enterprise IT & Software Solutions in Dubai, UAE');
     define('SITE_DOMAIN', 'septixtechnologies.com');
     define('CONTACT_EMAIL', 'info@septixtechnologies.com');
     define('CONTACT_PHONE', '+1 (800) 592-7378');
-    define('HQ_ADDRESS', 'Septix Global Tech Park, Innovation Way, Tech Hub');
+    define('UAE_CONTACT_PHONE', '+971 4 249 8765');
+    define('HQ_ADDRESS', 'Business Bay & Dubai Silicon Oasis, Dubai, UAE');
+    define('GLOBAL_OFFICE', 'Innovation Way, Global Tech Hub');
 
     // Load local .env environment file if present (ignored by Git)
     $envFile = __DIR__ . '/../.env';
@@ -69,16 +71,16 @@ $services_data = [
     'website-development' => [
         'id' => 'website-development',
         'title' => 'Website Development',
-        'short_desc' => 'High-performance, scalable web applications, custom enterprise platforms, and progressive web apps engineered for speed, SEO, and global conversion.',
+        'short_desc' => 'High-performance enterprise web platforms, bilingual English/Arabic corporate portals, and scalable e-commerce engineered for Dubai and global markets.',
         'icon' => 'fa-laptop-code',
         'image' => 'assets/images/services/web-dev.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
             'Enterprise Web Applications & Single Page Apps (SPA)',
+            'Bilingual English & Arabic RTL/LTR Interface Architecture',
             'Custom Headless E-Commerce & B2B/B2C Portals',
             'Progressive Web Apps (PWA) with Offline Capabilities',
-            'API-First Microservices & Jamstack Architecture',
-            'Core Web Vitals Accelerated Performance & SEO',
+            'Core Web Vitals Accelerated Performance & UAE Local SEO',
             'OWASP Standard Web Security & Data Encryption'
         ],
         'tech_stack' => ['PHP / Laravel', 'Node.js', 'React.js', 'Vue.js', 'Next.js', 'MySQL / PostgreSQL', 'REST / GraphQL APIs', 'Tailwind / Sass'],
@@ -93,17 +95,17 @@ $services_data = [
     'mobile-app-development' => [
         'id' => 'mobile-app-development',
         'title' => 'Mobile Application Development',
-        'short_desc' => 'Native iOS & Android mobile applications and cross-platform Flutter/React Native solutions built for intuitive user experience and hardware access.',
+        'short_desc' => 'Bespoke iOS & Android mobile apps with Apple Pay, UAE payment gateways, and multilingual Arabic/English UX built for Dubai enterprises.',
         'icon' => 'fa-mobile-screen-button',
         'image' => 'assets/images/services/mobile-app.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #1d0c47 0%, #3dc1d0 100%)',
         'features' => [
             'Native iOS (Swift) & Android (Kotlin) App Engineering',
             'Cross-Platform Development (Flutter & React Native)',
-            'Intuitive Human Interface (HI) UI/UX Design System',
+            'UAE Payment Gateways (Apple Pay, Telr, Network International, Stripe)',
+            'Bilingual English & Arabic UI/UX Localization',
             'Real-Time Offline Data Sync & Cloud Backends',
-            'Biometric Auth, Push Notifications & Payment Gateways',
-            'Apple App Store & Google Play Store Publishing'
+            'Apple App Store & Google Play Store Publishing in UAE & Global'
         ],
         'tech_stack' => ['Flutter', 'React Native', 'Swift', 'Kotlin', 'Firebase', 'AWS Amplify', 'SQLite / Realm', 'GraphQL'],
         'workflow' => [
@@ -117,17 +119,17 @@ $services_data = [
     'custom-erp-software' => [
         'id' => 'custom-erp-software',
         'title' => 'Custom ERP Software',
-        'short_desc' => 'Tailor-made Enterprise Resource Planning systems to automate complex business workflows, supply chain, financial analytics, and HR operations.',
+        'short_desc' => 'FTA VAT-compliant, multi-currency (AED/USD) enterprise ERP software for Dubai free zones, corporate tax tracking, and supply chain automation.',
         'icon' => 'fa-cubes',
         'image' => 'assets/images/services/erp-software.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #298d9e 100%)',
         'features' => [
-            'End-to-End Enterprise Workflow Automation',
-            'Financial Accounting, Invoicing & Tax Compliance',
-            'Supply Chain, Multi-Warehouse & Inventory Control',
-            'Human Capital Management (HCM) & Automated Payroll',
+            'UAE FTA VAT & Corporate Tax Ready Invoicing Systems',
+            'Multi-Currency (AED, USD, EUR, SAR) & Multi-Entity Ledger',
+            'Supply Chain, Multi-Warehouse & Dubai Free Zone Inventory Control',
+            'Human Capital Management (HCM) & UAE WPS Automated Payroll',
             'Real-Time Business Intelligence & Executive Analytics',
-            'Multi-Branch, Multi-Currency & Role-Based Security'
+            'Role-Based Security, Audit Trails & Multi-Branch Management'
         ],
         'tech_stack' => ['PHP Enterprise Frameworks', 'Python / Django', 'PostgreSQL / SQL Server', 'Docker / Kubernetes', 'Redis', 'Chart.js / D3.js', 'Microservices'],
         'workflow' => [
@@ -141,17 +143,17 @@ $services_data = [
     'digital-marketing' => [
         'id' => 'digital-marketing',
         'title' => 'Digital Marketing',
-        'short_desc' => 'Data-driven growth strategies, search engine optimization (SEO), performance marketing, and conversion rate optimization for global brand reach.',
+        'short_desc' => 'Targeted Dubai & UAE SEO, bilingual PPC campaigns, and conversion strategies engineered to capture high-value GCC customers.',
         'icon' => 'fa-chart-line',
         'image' => 'assets/images/services/web-dev.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
-            'International SEO & Technical Audit Optimization',
-            'PPC Performance Campaigns (Google, Bing, Social)',
-            'Social Media Brand Strategy & Audience Engagement',
-            'Content Marketing & Thought Leadership Copywriting',
-            'Conversion Rate Optimization (CRO) & Funnel Design',
-            'Real-Time ROI Analytics & Attribution Dashboards'
+            'Dubai & UAE Local SEO & Google Maps Top Rankings',
+            'Bilingual English/Arabic PPC (Google, Meta, TikTok, LinkedIn)',
+            'GCC & Middle East Audience Targeting & Funnel Design',
+            'High-Conversion Landing Page & Lead Funnel Architecture',
+            'Omnichannel Attribution & Executive ROI Dashboards',
+            'Brand Positioning & Authority Building in the UAE'
         ],
         'tech_stack' => ['Google Analytics 4', 'SEMrush / Ahrefs', 'Meta Ads Manager', 'Google Tag Manager', 'HubSpot / Mailchimp', 'Looker Studio'],
         'workflow' => [
@@ -165,17 +167,17 @@ $services_data = [
     'ai-ml-solutions' => [
         'id' => 'ai-ml-solutions',
         'title' => 'AI/ML Solutions',
-        'short_desc' => 'Cutting-edge Artificial Intelligence, Machine Learning models, predictive analytics, NLP, and intelligent business automation solutions.',
+        'short_desc' => 'Enterprise AI & Machine Learning solutions aligned with the UAE AI 2031 Vision, intelligent automation, and bilingual GPT agents.',
         'icon' => 'fa-brain',
         'image' => 'assets/images/services/ai-ml.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #1d0c47 0%, #3dc1d0 100%)',
         'features' => [
+            'Bilingual English & Arabic Conversational AI Assistants',
+            'Predictive Analytics for Dubai Real Estate, FinTech & Retail',
             'Generative AI & LLM Custom Enterprise Integrations',
-            'Predictive Analytics & Financial Forecasting Models',
-            'Natural Language Processing (NLP) & Contextual Chatbots',
-            'Computer Vision & Automated Image Processing',
-            'Business Process Intelligence & Robotic Automation',
-            'Model Fine-Tuning, Training & MLOps Pipelines'
+            'Computer Vision & Automated Document Intelligence',
+            'Intelligent Robotic Process Automation (RPA)',
+            'Model Fine-Tuning, Training & MLOps Infrastructure'
         ],
         'tech_stack' => ['Python', 'PyTorch / TensorFlow', 'OpenAI / Gemini APIs', 'Scikit-Learn', 'LangChain', 'FastAPI', 'Pinecone / Vector DBs'],
         'workflow' => [
@@ -189,17 +191,17 @@ $services_data = [
     'it-networking-solutions' => [
         'id' => 'it-networking-solutions',
         'title' => 'IT Networking Solutions',
-        'short_desc' => 'Secure enterprise networking, cloud migration, cybersecurity audits, VPN infrastructure, and 24/7 managed IT services for global connectivity.',
+        'short_desc' => 'Enterprise cloud infrastructure, UAE low-latency data center optimization (AWS UAE/Azure UAE North), and corporate cybersecurity.',
         'icon' => 'fa-network-wired',
         'image' => 'assets/images/services/erp-software.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
-            'Enterprise Infrastructure & WAN/LAN Network Architecture',
-            'Multi-Cloud Migration & Hybrid Cloud (AWS/GCP/Azure)',
-            'Cybersecurity Audits & Vulnerability Penetration Testing',
-            'Managed SD-WAN & Secure Remote Access VPNs',
-            'Disaster Recovery & Automated Backup Protocols',
-            '24/7 Managed IT Support & SLA Guarantee'
+            'UAE Cloud Latency Optimization (AWS UAE / Azure UAE North)',
+            'Cybersecurity Audits, Penetration Testing & OWASP Compliance',
+            'Enterprise WAN/LAN Network Architecture & SD-WAN',
+            'Disaster Recovery, Automated Backups & UAE Data Sovereignty',
+            'Corporate Office VPN & Zero-Trust Access Hardening',
+            '24/7 Managed IT Support & Guaranteed SLA Response'
         ],
         'tech_stack' => ['AWS', 'Google Cloud', 'Cisco / Fortinet', 'Kubernetes / Docker', 'Terraform', 'Wireshark', 'Grafana / Prometheus'],
         'workflow' => [

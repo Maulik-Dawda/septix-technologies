@@ -1,6 +1,6 @@
 <?php
-$page_title = "Our IT Services & Technology Solutions";
-$page_desc = "Explore Septix Technologies core services: Website Development, Mobile Apps, Custom ERP, Digital Marketing, AI/ML Solutions, and IT Networking.";
+$page_title = "IT Services & Solutions Company Dubai UAE";
+$page_desc = "Explore Septix Technologies enterprise IT services in Dubai, UAE: Web Development, Custom ERPs, Mobile Apps, AI/ML, and Marketing.";
 $current_page = "services";
 require_once __DIR__ . '/includes/header.php';
 ?>
@@ -8,10 +8,10 @@ require_once __DIR__ . '/includes/header.php';
 <!-- Services Hero Header -->
 <section class="hero-section" style="padding: 140px 0 70px;">
     <div class="container" style="text-align: center;">
-        <div class="section-tag"><i class="fa-solid fa-cubes"></i> Global Service Offerings</div>
+        <div class="section-tag"><i class="fa-solid fa-cubes"></i> UAE & Global Service Offerings</div>
         <h1 class="hero-headline">End-to-End Enterprise <br><span class="text-gradient">Technology Services</span></h1>
         <p class="hero-description" style="max-width: 760px; margin-left: auto; margin-right: auto;">
-            We engineer bespoke software, intelligent automation, and cloud networks tailored to accelerate digital transformation for global enterprises.
+            We engineer bespoke software, intelligent automation, and cloud networks tailored to accelerate digital transformation for Dubai enterprises and global organizations.
         </p>
     </div>
 </section>

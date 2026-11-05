@@ -1,6 +1,6 @@
 <?php
-$page_title = "Custom ERP Software Solutions - Septix Technologies";
-$page_desc = "Tailor-made Enterprise Resource Planning (ERP) systems, inventory control, HRMS, CRM, and supply chain automation software.";
+$page_title = "Custom ERP Software Solutions Company Dubai UAE";
+$page_desc = "Tailor-made ERP systems in Dubai, UAE: FTA VAT compliance, inventory control, automated HRMS payroll, and supply chain software.";
 $current_page = "services";
 require_once __DIR__ . '/../includes/config.php';
 $service = $services_data['custom-erp-software'];
@@ -10,14 +10,14 @@ require_once __DIR__ . '/../includes/header.php';
 <!-- Hero -->
 <section class="hero-section" style="background: <?php echo $service['banner_gradient']; ?>;">
     <div class="container" style="text-align: center;">
-        <div class="section-tag"><i class="fa-solid <?php echo $service['icon']; ?>"></i> Enterprise ERP</div>
+        <div class="section-tag"><i class="fa-solid <?php echo $service['icon']; ?>"></i> Enterprise ERP in Dubai & UAE</div>
         <h1 class="hero-headline"><?php echo $service['title']; ?></h1>
         <p class="hero-description" style="max-width: 760px; margin-left: auto; margin-right: auto; color: rgba(255,255,255,0.9);">
             <?php echo $service['short_desc']; ?>
         </p>
         <div class="hero-actions">
             <a href="<?php echo $base_url; ?>/contact?service=custom-erp-software" class="btn btn-primary">
-                Consult ERP Architect <i class="fa-solid fa-arrow-right"></i>
+                Consult Dubai ERP Architect <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
     </div>
@@ -29,12 +29,12 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="global-grid">
             <div>
                 <div class="section-tag"><i class="fa-solid fa-sitemap"></i> Business Automation</div>
-                <h2 class="section-title">Centralized Enterprise Management <br><span class="text-gradient">Without Off-The-Shelf Limits</span></h2>
+                <h2 class="section-title">Centralized Enterprise Management <br><span class="text-gradient">Engineered for Dubai & GCC</span></h2>
                 <p style="color: var(--clr-text-muted); font-size: 1.05rem; margin-bottom: 20px;">
-                    Generic SaaS ERP systems often force enterprises into rigid workflows that don't match your operational model. Septix Technologies designs fully bespoke, modular ERP systems engineered specifically for your business processes, supply chains, and multi-location governance.
+                    Generic SaaS ERP systems often force Dubai and UAE enterprises into rigid workflows that don't match regional tax regulations or operational structures. Septix Technologies designs bespoke, modular ERP systems engineered specifically for UAE VAT compliance, Corporate Tax readiness, and multi-location governance.
                 </p>
                 <p style="color: var(--clr-text-muted); font-size: 1rem; margin-bottom: 24px;">
-                    From real-time financial tracking and automated inventory management to integrated HCM payroll and executive BI dashboards, our ERP solutions scale seamlessly across international teams.
+                    From real-time financial tracking and automated multi-warehouse logistics in Dubai free zones to integrated UAE WPS payroll and executive BI analytics, our ERP solutions scale seamlessly across regional and international teams.
                 </p>
             </div>
 

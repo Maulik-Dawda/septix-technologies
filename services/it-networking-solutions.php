@@ -1,6 +1,6 @@
 <?php
-$page_title = "IT Networking & Cloud Solutions - Septix Technologies";
-$page_desc = "Enterprise IT network design, cloud migration (AWS/GCP/Azure), cybersecurity auditing, VPNs, and 24/7 managed IT services.";
+$page_title = "Enterprise IT Networking & Cloud Dubai UAE";
+$page_desc = "Enterprise IT networking in Dubai, UAE: AWS/Azure cloud migration, cybersecurity audits, SD-WAN, and 24/7 managed IT support.";
 $current_page = "services";
 require_once __DIR__ . '/../includes/config.php';
 $service = $services_data['it-networking-solutions'];
@@ -10,14 +10,14 @@ require_once __DIR__ . '/../includes/header.php';
 <!-- Hero -->
 <section class="hero-section" style="background: <?php echo $service['banner_gradient']; ?>;">
     <div class="container" style="text-align: center;">
-        <div class="section-tag"><i class="fa-solid <?php echo $service['icon']; ?>"></i> IT Infrastructure</div>
+        <div class="section-tag"><i class="fa-solid <?php echo $service['icon']; ?>"></i> IT Infrastructure in Dubai & UAE</div>
         <h1 class="hero-headline"><?php echo $service['title']; ?></h1>
         <p class="hero-description" style="max-width: 760px; margin-left: auto; margin-right: auto; color: rgba(255,255,255,0.9);">
             <?php echo $service['short_desc']; ?>
         </p>
         <div class="hero-actions">
             <a href="<?php echo $base_url; ?>/contact?service=it-networking-solutions" class="btn btn-primary">
-                Secure Your IT Infrastructure <i class="fa-solid fa-arrow-right"></i>
+                Secure Your UAE Infrastructure <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
     </div>
@@ -29,12 +29,12 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="global-grid">
             <div>
                 <div class="section-tag"><i class="fa-solid fa-server"></i> Cloud & Network Infrastructure</div>
-                <h2 class="section-title">Zero-Downtime Infrastructure <br><span class="text-gradient">With Bank-Grade Security</span></h2>
+                <h2 class="section-title">Zero-Downtime Infrastructure <br><span class="text-gradient">For Dubai Enterprise Scale</span></h2>
                 <p style="color: var(--clr-text-muted); font-size: 1.05rem; margin-bottom: 20px;">
-                    Modern global operations depend on resilient, low-latency, and hardened IT networks. Septix Technologies provides end-to-end network engineering, multi-cloud migration (AWS, Google Cloud, Azure), and 24/7 managed security operations.
+                    Modern UAE operations require ultra-resilient, low-latency, and cybersecurity-hardened IT networks. Septix Technologies provides end-to-end network architecture, cloud migration to local UAE data centers (AWS UAE, Microsoft Azure UAE North), and 24/7 proactive monitoring.
                 </p>
                 <p style="color: var(--clr-text-muted); font-size: 1rem; margin-bottom: 24px;">
-                    We audit existing infrastructure, eliminate single points of failure, configure secure SD-WAN connections for global offices, and enforce Zero-Trust network access models.
+                    We audit existing corporate infrastructure, eliminate bottlenecks, configure SD-WAN connections for multi-branch Dubai offices, and enforce Zero-Trust access to ensure UAE data sovereignty.
                 </p>
             </div>
 

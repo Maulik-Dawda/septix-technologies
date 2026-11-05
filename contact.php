@@ -1,6 +1,6 @@
 <?php
-$page_title = "Contact Us - Septix Technologies Global HQ";
-$page_desc = "Get in touch with Septix Technologies global IT architects. Request a free quote for Website Development, Mobile Apps, ERP, AI/ML, and IT Networking.";
+$page_title = "Contact Us | IT & Software Company Dubai UAE";
+$page_desc = "Contact Septix Technologies in Dubai, UAE. Schedule a consultation for custom ERPs, mobile apps, web engineering, and AI systems.";
 $current_page = "contact";
 require_once __DIR__ . '/includes/header.php';
 
@@ -10,10 +10,10 @@ $selected_service = isset($_GET['service']) ? $_GET['service'] : '';
 <!-- Contact Hero Header -->
 <section class="hero-section" style="padding: 140px 0 70px;">
     <div class="container" style="text-align: center;">
-        <div class="section-tag"><i class="fa-solid fa-headset"></i> Contact Us</div>
-        <h1 class="hero-headline">Let's Build Something <br><span class="text-gradient">Extraordinary Together</span></h1>
+        <div class="section-tag"><i class="fa-solid fa-headset"></i> Dubai & Global Inquiries</div>
+        <h1 class="hero-headline">Let's Build Something <br><span class="text-gradient">Extraordinary in Dubai</span></h1>
         <p class="hero-description" style="max-width: 760px; margin-left: auto; margin-right: auto;">
-            Have a project in mind or need global IT guidance? Our technical team is available 24/7 to discuss your requirements and deliver a customized technical proposal.
+            Looking for enterprise IT partners in Dubai or globally? Our engineering architects are ready to discuss your requirements and deliver a detailed technical roadmap.
         </p>
     </div>
 </section>
@@ -27,14 +27,14 @@ $selected_service = isset($_GET['service']) ? $_GET['service'] : '';
                 <div>
                     <h2 style="font-size: 1.75rem; margin-bottom: 12px; color: var(--clr-brand-dark);">Get In Touch</h2>
                     <p style="color: var(--clr-text-muted); font-size: 0.95rem;">
-                        Reach out to our global team directly. We respond to all inquiries within 12 hours.
+                        Reach out to our Dubai and international technical teams. We respond to all inquiries within 2 hours during GST business hours.
                     </p>
                 </div>
 
                 <div class="info-item">
                     <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
                     <div>
-                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.95rem;">Global Inquiries Email:</strong>
+                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.95rem;">Enterprise Inquiries Email:</strong>
                         <a href="mailto:<?php echo CONTACT_EMAIL; ?>" style="color: var(--clr-brand-dark); font-weight: 700; font-size: 0.9rem;"><?php echo CONTACT_EMAIL; ?></a>
                     </div>
                 </div>
@@ -50,18 +50,17 @@ $selected_service = isset($_GET['service']) ? $_GET['service'] : '';
                 <div class="info-item">
                     <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
                     <div>
-                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.95rem;">Global Headquarters:</strong>
+                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.95rem;">UAE & Regional Hub:</strong>
                         <span style="color: var(--clr-text-muted); font-size: 0.9rem;"><?php echo HQ_ADDRESS; ?></span>
                     </div>
                 </div>
 
                 <div style="padding-top: 20px; border-top: 1px solid var(--clr-border);">
-                    <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.9rem; margin-bottom: 12px;">Global Regional Presence:</strong>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; font-size: 0.85rem; color: var(--clr-text-muted);">
-                        <div>🇺🇸 North America</div>
-                        <div>🇬🇧 Europe</div>
-                        <div>🇦🇪 Middle East</div>
-                        <div>🇮🇳 Asia Pacific</div>
+                    <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.9rem; margin-bottom: 12px;">UAE Client Benefits:</strong>
+                    <div style="display: grid; grid-template-columns: 1fr; gap: 8px; font-size: 0.85rem; color: var(--clr-text-muted);">
+                        <div><i class="fa-solid fa-check" style="color: var(--clr-brand-light); margin-right: 6px;"></i> Invoicing in AED with Official UAE VAT Compliance</div>
+                        <div><i class="fa-solid fa-check" style="color: var(--clr-brand-light); margin-right: 6px;"></i> GST (UTC+4) Real-Time Sprint Coordination</div>
+                        <div><i class="fa-solid fa-check" style="color: var(--clr-brand-light); margin-right: 6px;"></i> Standard UAE Enterprise Mutual NDA Protection</div>
                     </div>
                 </div>
             </div>

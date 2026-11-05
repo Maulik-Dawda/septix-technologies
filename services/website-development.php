@@ -1,6 +1,6 @@
 <?php
-$page_title = "Website Development Services - Septix Technologies";
-$page_desc = "High-performance website development, custom web applications, e-commerce platforms, and PWAs engineered for global scale.";
+$page_title = "Top Website Development Company Dubai UAE";
+$page_desc = "Top website development in Dubai, UAE: high-speed enterprise portals, headless e-commerce, and bilingual Arabic/English web apps.";
 $current_page = "services";
 require_once __DIR__ . '/../includes/config.php';
 $service = $services_data['website-development'];
@@ -10,14 +10,14 @@ require_once __DIR__ . '/../includes/header.php';
 <!-- Service Detail Hero -->
 <section class="hero-section" style="background: <?php echo $service['banner_gradient']; ?>;">
     <div class="container" style="text-align: center;">
-        <div class="section-tag"><i class="fa-solid <?php echo $service['icon']; ?>"></i> Web Engineering</div>
+        <div class="section-tag"><i class="fa-solid <?php echo $service['icon']; ?>"></i> Web Engineering in Dubai & UAE</div>
         <h1 class="hero-headline"><?php echo $service['title']; ?></h1>
         <p class="hero-description" style="max-width: 760px; margin-left: auto; margin-right: auto; color: rgba(255,255,255,0.9);">
             <?php echo $service['short_desc']; ?>
         </p>
         <div class="hero-actions">
             <a href="<?php echo $base_url; ?>/contact?service=website-development" class="btn btn-primary">
-                Build Your Web App <i class="fa-solid fa-arrow-right"></i>
+                Build Your Web Platform <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
     </div>
@@ -31,10 +31,10 @@ require_once __DIR__ . '/../includes/header.php';
                 <div class="section-tag"><i class="fa-solid fa-code"></i> Overview</div>
                 <h2 class="section-title">High-Speed, Scalable & <br><span class="text-gradient">Secure Web Solutions</span></h2>
                 <p style="color: var(--clr-text-muted); font-size: 1.05rem; margin-bottom: 20px;">
-                    In today's digital economy, your web platform is the flagship of your business. At Septix Technologies, we design and develop enterprise-grade web applications that deliver lightning-fast load times, responsive perfection across all screen resolutions, and robust security.
+                    In Dubai's fast-moving business landscape, your web platform is the flagship of your brand. At Septix Technologies, we design and build enterprise-grade web applications that deliver sub-second load times, bilingual English/Arabic UX, and bank-grade security.
                 </p>
                 <p style="color: var(--clr-text-muted); font-size: 1rem; margin-bottom: 24px;">
-                    Whether you require a custom enterprise portal, an API-first headless e-commerce store, or a Progressive Web Application (PWA), our team utilizes modern web engineering standards to drive user engagement and conversion.
+                    Whether you require a custom corporate portal, an API-first headless e-commerce store with Apple Pay and local GCC payment gateways, or an offline-capable PWA, our team delivers digital solutions that convert.
                 </p>
                 <a href="<?php echo $base_url; ?>/contact" class="btn btn-outline">
                     Discuss Your Web Requirements <i class="fa-solid fa-comments"></i>

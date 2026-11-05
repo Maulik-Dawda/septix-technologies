@@ -1,6 +1,6 @@
 <?php
-$page_title = "About Us - Global IT Leadership & Innovation";
-$page_desc = "Learn about Septix Technologies, our vision, mission, global presence, and enterprise software engineering values.";
+$page_title = "About Our IT & Software Company in Dubai UAE";
+$page_desc = "Discover Septix Technologies: trusted enterprise software, custom ERP, mobile app, and AI development company in Dubai, UAE.";
 $current_page = "about";
 require_once __DIR__ . '/includes/header.php';
 ?>
@@ -9,9 +9,9 @@ require_once __DIR__ . '/includes/header.php';
 <section class="hero-section" style="padding: 140px 0 70px;">
     <div class="container text-center" style="text-align: center;">
         <div class="section-tag"><i class="fa-solid fa-building"></i> Corporate Profile</div>
-        <h1 class="hero-headline">Empowering Businesses Through <br><span class="text-gradient">World-Class Technology</span></h1>
+        <h1 class="hero-headline">Empowering UAE & Global Brands <br><span class="text-gradient">Through World-Class Technology</span></h1>
         <p class="hero-description" style="max-width: 760px; margin-left: auto; margin-right: auto;">
-            Septix Technologies is an international IT development firm specializing in custom software solutions, digital transformation, cloud architecture, and intelligent automated systems.
+            Septix Technologies is an enterprise IT development firm delivering custom software engineering, FTA VAT-compliant ERPs, cross-platform mobile apps, and AI solutions across Dubai, the UAE, and global markets.
         </p>
     </div>
 </section>
@@ -21,13 +21,13 @@ require_once __DIR__ . '/includes/header.php';
     <div class="container">
         <div class="global-grid">
             <div>
-                <div class="section-tag"><i class="fa-solid fa-rocket"></i> Our Story</div>
-                <h2 class="section-title">Built on Innovation, <br><span class="text-gradient">Driven by Results</span></h2>
+                <div class="section-tag"><i class="fa-solid fa-rocket"></i> Our Story & Regional Focus</div>
+                <h2 class="section-title">Built on Innovation, <br><span class="text-gradient">Tailored for UAE Scale</span></h2>
                 <p style="color: var(--clr-text-muted); font-size: 1.05rem; margin-bottom: 20px;">
-                    Founded with a passion for technological excellence, Septix Technologies has grown from a specialized web and mobile software studio into a full-service global IT technology provider.
+                    Rooted in technical precision, Septix Technologies has grown into an international IT partner with specialized operational focus on Dubai and the broader United Arab Emirates.
                 </p>
                 <p style="color: var(--clr-text-muted); font-size: 1rem; margin-bottom: 28px;">
-                    We collaborate closely with visionary tech founders, enterprise leaders, and mid-sized enterprises to build mission-critical digital products that operate seamlessly across worldwide markets.
+                    We actively empower Dubai free zone conglomerates, forward-thinking startups in DIFC & DMCC, and growing GCC enterprises with mission-critical digital systems engineered for speed, security, and statutory compliance.
                 </p>
                 <div style="display: flex; gap: 24px; flex-wrap: wrap;">
                     <div>
@@ -35,26 +35,26 @@ require_once __DIR__ . '/includes/header.php';
                         <span style="color: var(--clr-text-muted); font-size: 0.9rem; font-weight: 600;">Client Transparency</span>
                     </div>
                     <div>
-                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 900;">Global</h3>
-                        <span style="color: var(--clr-text-muted); font-size: 0.9rem; font-weight: 600;">Reach & Delivery</span>
+                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 900;">UAE & Global</h3>
+                        <span style="color: var(--clr-text-muted); font-size: 0.9rem; font-weight: 600;">Delivery Footprint</span>
                     </div>
                     <div>
-                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 900;">24/7</h3>
-                        <span style="color: var(--clr-text-muted); font-size: 0.9rem; font-weight: 600;">SLA Support</span>
+                        <h3 style="font-size: 2.25rem; color: var(--clr-brand-dark); font-weight: 900;">GST (UTC+4)</h3>
+                        <span style="color: var(--clr-text-muted); font-size: 0.9rem; font-weight: 600;">Dedicated SLA</span>
                     </div>
                 </div>
             </div>
 
             <!-- About Stock Visual Container -->
             <div class="hero-image-box">
-                <img src="<?php echo $base_url; ?>/assets/images/hero-banner.jpg" alt="Septix Technologies Global Team">
+                <img src="<?php echo $base_url; ?>/assets/images/hero-banner.jpg" alt="Septix Technologies Dubai and Global Team">
                 <div class="floating-badge">
                     <div class="floating-badge-icon">
-                        <i class="fa-solid fa-earth-americas"></i>
+                        <i class="fa-solid fa-gem"></i>
                     </div>
                     <div>
-                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 1rem;">Globally Trusted Engineering</strong>
-                        <span style="color: var(--clr-text-muted); font-size: 0.85rem;">Serving Clients Globally</span>
+                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 1rem;">UAE Enterprise Standards</strong>
+                        <span style="color: var(--clr-text-muted); font-size: 0.85rem;">Dubai & Worldwide Delivery</span>
                     </div>
                 </div>
             </div>

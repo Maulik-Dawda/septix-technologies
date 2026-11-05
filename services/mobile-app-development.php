@@ -1,6 +1,6 @@
 <?php
-$page_title = "Mobile Application Development - Septix Technologies";
-$page_desc = "Native iOS (Swift), Android (Kotlin), and cross-platform (Flutter/React Native) mobile apps engineered for performance and global user engagement.";
+$page_title = "Top Mobile App Development Company Dubai UAE";
+$page_desc = "Top mobile app development in Dubai, UAE: native iOS, Android, and Flutter apps with Apple Pay, Arabic UI, and top-tier security.";
 $current_page = "services";
 require_once __DIR__ . '/../includes/config.php';
 $service = $services_data['mobile-app-development'];
@@ -10,14 +10,14 @@ require_once __DIR__ . '/../includes/header.php';
 <!-- Hero -->
 <section class="hero-section" style="background: <?php echo $service['banner_gradient']; ?>;">
     <div class="container" style="text-align: center;">
-        <div class="section-tag"><i class="fa-solid <?php echo $service['icon']; ?>"></i> Mobile Apps</div>
+        <div class="section-tag"><i class="fa-solid <?php echo $service['icon']; ?>"></i> Mobile Apps in Dubai & UAE</div>
         <h1 class="hero-headline"><?php echo $service['title']; ?></h1>
         <p class="hero-description" style="max-width: 760px; margin-left: auto; margin-right: auto; color: rgba(255,255,255,0.9);">
             <?php echo $service['short_desc']; ?>
         </p>
         <div class="hero-actions">
             <a href="<?php echo $base_url; ?>/contact?service=mobile-app-development" class="btn btn-primary">
-                Build Mobile App <i class="fa-solid fa-arrow-right"></i>
+                Build Your Mobile App <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
     </div>
@@ -29,12 +29,12 @@ require_once __DIR__ . '/../includes/header.php';
         <div class="global-grid">
             <div>
                 <div class="section-tag"><i class="fa-solid fa-mobile"></i> Mobile Mastery</div>
-                <h2 class="section-title">Engaging Mobile Experiences <br><span class="text-gradient">For iOS & Android</span></h2>
+                <h2 class="section-title">Engaging Mobile Experiences <br><span class="text-gradient">For Dubai & Global Users</span></h2>
                 <p style="color: var(--clr-text-muted); font-size: 1.05rem; margin-bottom: 20px;">
-                    Mobile applications are the primary touchpoint between modern enterprises and millions of global users. Septix Technologies builds high-performance, intuitive mobile apps with fluid animations, offline synchronization, and bank-grade security.
+                    In Dubai's hyper-connected market, mobile apps are the primary channel for business engagement. Septix Technologies builds high-performance, intuitive mobile apps with fluid bilingual (English & Arabic) interfaces, offline sync, and bank-grade data security.
                 </p>
                 <p style="color: var(--clr-text-muted); font-size: 1rem; margin-bottom: 24px;">
-                    We specialize in both cross-platform development (Flutter, React Native) for rapid time-to-market and native iOS/Android codebases for hardware-intensive mobile features.
+                    We specialize in cross-platform development (Flutter, React Native) and native iOS/Android engineering with integrated UAE payment gateways (Apple Pay, Telr, Network International) for Dubai retail, fintech, logistics, and real estate brands.
                 </p>
             </div>
 

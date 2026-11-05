@@ -11,7 +11,7 @@ $base_url = get_base_url();
                     <a href="<?php echo $base_url; ?>/index">
                         <img src="<?php echo $base_url; ?>/assets/images/logo.png" alt="Septix Technologies" style="height: 75px; width: auto; object-fit: contain;">
                     </a>
-                    <p>Septix Technologies is a premier global IT consulting & software engineering firm. We build high-impact web apps, enterprise ERPs, mobile platforms, AI models, and secure IT infrastructure for companies worldwide.</p>
+                    <p>Septix Technologies is an enterprise IT consulting & software engineering firm serving Dubai, the UAE, and global markets. We build high-impact web apps, custom ERPs, mobile platforms, AI models, and secure IT infrastructure.</p>
                     <div class="social-links">
                         <a href="https://linkedin.com/company/septix-technologies" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
                         <a href="https://x.com/septixtech" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="X Twitter"><i class="fa-brands fa-x-twitter"></i></a>
@@ -48,16 +48,16 @@ $base_url = get_base_url();
                     </ul>
                 </div>
 
-                <!-- Global Reach Info -->
+                <!-- Regional & Global Reach Info -->
                 <div>
-                    <h4 class="footer-title">Global Reach</h4>
+                    <h4 class="footer-title">Dubai & Global Hub</h4>
                     <p style="color: var(--clr-text-muted); font-size: 0.9rem; margin-bottom: 16px;">
-                        <i class="fa-solid fa-earth-americas" style="color: var(--clr-brand-light);"></i> Proudly serving clients globally.
+                        <i class="fa-solid fa-location-dot" style="color: var(--clr-brand-light);"></i> Business Bay & Dubai Silicon Oasis, UAE
                     </p>
                     <ul class="footer-links" style="gap: 10px;">
                         <li style="color: var(--clr-brand-dark); font-size: 0.875rem; font-weight: 600;"><i class="fa-solid fa-envelope" style="color: var(--clr-brand-light);"></i> <?php echo CONTACT_EMAIL; ?></li>
                         <li style="color: var(--clr-brand-dark); font-size: 0.875rem; font-weight: 600;"><i class="fa-solid fa-phone" style="color: var(--clr-brand-light);"></i> <?php echo CONTACT_PHONE; ?></li>
-                        <li style="color: var(--clr-brand-dark); font-size: 0.875rem; font-weight: 600;"><i class="fa-solid fa-clock" style="color: var(--clr-brand-light);"></i> 24/7 Global IT Support SLA</li>
+                        <li style="color: var(--clr-brand-dark); font-size: 0.875rem; font-weight: 600;"><i class="fa-solid fa-clock" style="color: var(--clr-brand-light);"></i> 24/7 GCC (GST) & Global SLA</li>
                     </ul>
                 </div>
             </div>

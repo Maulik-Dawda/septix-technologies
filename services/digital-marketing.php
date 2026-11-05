@@ -1,6 +1,6 @@
 <?php
-$page_title = "Digital Marketing & Growth Services - Septix Technologies";
-$page_desc = "Data-driven SEO, performance PPC campaigns, brand strategy, content marketing, and conversion rate optimization for global reach.";
+$page_title = "Top Digital Marketing Agency in Dubai UAE";
+$page_desc = "Top digital marketing agency in Dubai, UAE: local SEO, bilingual Google Ads, conversion rate optimization, and GCC brand growth.";
 $current_page = "services";
 require_once __DIR__ . '/../includes/config.php';
 $service = $services_data['digital-marketing'];
@@ -10,14 +10,14 @@ require_once __DIR__ . '/../includes/header.php';
 <!-- Hero -->
 <section class="hero-section" style="background: <?php echo $service['banner_gradient']; ?>;">
     <div class="container" style="text-align: center;">
-        <div class="section-tag"><i class="fa-solid <?php echo $service['icon']; ?>"></i> Digital Marketing</div>
+        <div class="section-tag"><i class="fa-solid <?php echo $service['icon']; ?>"></i> Digital Marketing in Dubai & UAE</div>
         <h1 class="hero-headline"><?php echo $service['title']; ?></h1>
         <p class="hero-description" style="max-width: 760px; margin-left: auto; margin-right: auto; color: rgba(255,255,255,0.9);">
             <?php echo $service['short_desc']; ?>
         </p>
         <div class="hero-actions">
             <a href="<?php echo $base_url; ?>/contact?service=digital-marketing" class="btn btn-primary">
-                Boost Your Brand Reach <i class="fa-solid fa-arrow-right"></i>
+                Boost Your Dubai Reach <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
     </div>
@@ -28,13 +28,13 @@ require_once __DIR__ . '/../includes/header.php';
     <div class="container">
         <div class="global-grid">
             <div>
-                <div class="section-tag"><i class="fa-solid fa-bullseye"></i> Data-Driven Growth</div>
-                <h2 class="section-title">Scale Brand Authority & <br><span class="text-gradient">Maximize ROI Globally</span></h2>
+                <div class="section-tag"><i class="fa-solid fa-bullseye"></i> High-ROI UAE Campaigns</div>
+                <h2 class="section-title">Scale Brand Authority & <br><span class="text-gradient">Dominate Dubai Rankings</span></h2>
                 <p style="color: var(--clr-text-muted); font-size: 1.05rem; margin-bottom: 20px;">
-                    Great technology needs strategic visibility. Septix Technologies combines analytical precision with creative marketing to launch multi-channel campaigns that convert passive visitors into loyal enterprise clients.
+                    In the competitive GCC business market, visibility drives valuation. Septix Technologies combines analytical search precision with creative storytelling to launch bilingual English/Arabic digital campaigns that capture qualified, high-ticket leads in Dubai and across the UAE.
                 </p>
                 <p style="color: var(--clr-text-muted); font-size: 1rem; margin-bottom: 24px;">
-                    Our digital marketing strategists manage international SEO, target PPC advertising, social media brand positioning, and Conversion Rate Optimization (CRO).
+                    From UAE local SEO and Google Maps optimization to high-converting PPC across Google, LinkedIn, Meta, and TikTok, we engineer digital acquisition funnels with transparent ROI reporting.
                 </p>
             </div>
 
