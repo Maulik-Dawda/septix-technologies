@@ -109,7 +109,7 @@ $categories = $catStmt->fetchAll(PDO::FETCH_COLUMN);
                 ?>
                     <div class="blog-card" style="background: #ffffff; border: 1px solid var(--clr-border); border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-card); display: flex; flex-direction: column; transition: var(--transition);">
                         <div class="service-card-img" style="height: 200px; overflow: hidden; position: relative;">
-                            <img src="<?php echo $imgUrl; ?>" alt="<?php echo htmlspecialchars($post['title']); ?>" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="<?php echo $imgUrl; ?>" alt="<?php echo htmlspecialchars($post['title']); ?>" width="400" height="200" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
                             <span style="position: absolute; top: 14px; right: 14px; background: rgba(38, 18, 91, 0.85); backdrop-filter: blur(4px); color: var(--clr-brand-light); font-size: 0.75rem; font-weight: 800; padding: 4px 12px; border-radius: var(--radius-full); text-transform: uppercase;">
                                 <?php echo htmlspecialchars($post['category']); ?>
                             </span>
@@ -128,8 +128,8 @@ $categories = $catStmt->fetchAll(PDO::FETCH_COLUMN);
                             <p class="blog-summary" style="font-size: 0.925rem; color: var(--clr-text-muted); line-height: 1.6; margin-bottom: 20px; flex-grow: 1; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;">
                                 <?php echo htmlspecialchars($post['summary']); ?>
                             </p>
-                            <a href="<?php echo $postUrl; ?>" class="service-link" style="font-weight: 700; color: var(--clr-brand-dark); display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
-                                Read Article <i class="fa-solid fa-arrow-right"></i>
+                            <a href="<?php echo $postUrl; ?>" class="service-link" aria-label="Read complete article: <?php echo htmlspecialchars($post['title']); ?>" style="font-weight: 700; color: var(--clr-brand-dark); display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+                                Read Complete Article <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
                     </div>

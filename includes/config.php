@@ -146,7 +146,7 @@ $services_data = [
         'title' => 'Digital Marketing',
         'short_desc' => 'Targeted Dubai & UAE SEO, bilingual PPC campaigns, and conversion strategies engineered to capture high-value GCC customers.',
         'icon' => 'fa-chart-line',
-        'image' => 'assets/images/services/web-dev.jpg',
+        'image' => 'assets/images/services/digital-marketing.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
             'Dubai & UAE Local SEO & Google Maps Top Rankings',
@@ -194,7 +194,7 @@ $services_data = [
         'title' => 'IT Networking Solutions',
         'short_desc' => 'Enterprise cloud infrastructure, UAE low-latency data center optimization (AWS UAE/Azure UAE North), and corporate cybersecurity.',
         'icon' => 'fa-network-wired',
-        'image' => 'assets/images/services/erp-software.jpg',
+        'image' => 'assets/images/services/it-networking.jpg',
         'banner_gradient' => 'linear-gradient(135deg, #26125b 0%, #3dc1d0 100%)',
         'features' => [
             'UAE Cloud Latency Optimization (AWS UAE / Azure UAE North)',

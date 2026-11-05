@@ -1422,6 +1422,88 @@ textarea.form-control {
     transform: translateY(-4px);
 }
 
+/* ==========================================================================
+   PERFECT VERTICALLY-ALIGNED FOOTER CONTACT BLOCK (ZERO JAGGED SHIFT)
+   ========================================================================== */
+.footer-contact-block {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    margin-top: 4px;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.footer-contact-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: var(--clr-brand-dark);
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: var(--transition);
+    text-align: left;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.footer-contact-row:hover {
+    color: var(--clr-brand-light);
+    transform: translateX(4px);
+}
+
+.footer-icon-box {
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-brand-light);
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+.footer-icon-box.whatsapp-icon {
+    color: #25d366;
+    font-size: 1.15rem;
+}
+
+.footer-contact-detail {
+    flex: 1;
+    word-break: break-word;
+    text-align: left;
+}
+
+.footer-external-icon {
+    font-size: 0.725rem;
+    margin-left: 4px;
+    color: var(--clr-brand-light);
+}
+
+.footer-contact-row.whatsapp-row {
+    color: #128c7e;
+}
+
+.footer-contact-row.whatsapp-row:hover {
+    color: #25d366;
+}
+
+.footer-contact-row.sla-row {
+    color: var(--clr-text-muted);
+    font-size: 0.825rem;
+    cursor: default;
+}
+
+.footer-contact-row.sla-row:hover {
+    transform: none;
+    color: var(--clr-text-muted);
+}
+
 .footer-bottom {
     border-top: 1px solid var(--clr-border);
     padding-top: 30px;
@@ -1439,6 +1521,20 @@ textarea.form-control {
         flex-direction: column;
         gap: 12px;
         text-align: center;
+    }
+
+    .site-footer .footer-title {
+        text-align: left !important;
+    }
+    
+    .footer-contact-block {
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+    
+    .footer-contact-row {
+        justify-content: flex-start !important;
+        text-align: left !important;
     }
 }
 

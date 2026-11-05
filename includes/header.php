@@ -88,15 +88,32 @@ $page_og_image = isset($page_image) ? (strpos($page_image, 'http') === 0 ? $page
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="<?php echo $base_url; ?>/assets/css/style.css">
 
+    <!-- Meta / Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1098273645129384');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1098273645129384&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta / Facebook Pixel Code -->
+
     <!-- JSON-LD Structured Data Schema Markup (Google Rich Snippets & UAE Local Business) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
+      "@type": ["ProfessionalService", "LocalBusiness"],
       "name": "Septix Technologies",
+      "alternateName": "Best Website Development, Digital Marketing & AI Agency in Dubai",
       "url": "<?php echo $base_url; ?>",
       "logo": "<?php echo $base_url; ?>/assets/images/logo.png",
-      "description": "Premier IT consulting & software development firm in Dubai, UAE. Specializing in Web Platforms, Custom ERPs, Mobile Apps, AI Solutions, and IT Infrastructure.",
+      "description": "Premier IT consulting & software development firm in Dubai, UAE. Recognized as the best website development, digital marketing, and AI agency in Dubai with cost-effective enterprise solutions.",
       "telephone": "+971-527621316",
       "email": "info@septixtechnologies.com",
       "hasMap": "https://maps.google.com/?q=City+Center+Al+Ghubaiba+Rd+Al+Shindagha+Al+Fahidi+Dubai",
@@ -105,12 +122,13 @@ $page_og_image = isset($page_image) ? (strpos($page_image, 'http') === 0 ? $page
         "streetAddress": "City Center, 1st floor, Al Ghubaiba Rd, Al Shindagha, Al Fahidi",
         "addressLocality": "Dubai",
         "addressRegion": "Dubai",
+        "postalCode": "00000",
         "addressCountry": "AE"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 25.2048,
-        "longitude": 55.2708
+        "latitude": 25.2631,
+        "longitude": 55.2972
       },
       "areaServed": [
         {
@@ -128,12 +146,19 @@ $page_og_image = isset($page_image) ? (strpos($page_image, 'http') === 0 ? $page
       ],
       "priceRange": "$$",
       "currenciesAccepted": "AED, USD, EUR, SAR",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
       "sameAs": [
         "https://linkedin.com/company/septix-technologies",
         "https://x.com/septixtech",
         "https://facebook.com/septixtechnologies",
         "https://instagram.com/septixtechnologies",
-        "https://youtube.com/@septixtechnologies"
+        "https://youtube.com/@septixtechnologies",
+        "https://github.com/Maulik-Dawda/septix-technologies"
       ]
     }
     </script>
@@ -144,8 +169,8 @@ $page_og_image = isset($page_image) ? (strpos($page_image, 'http') === 0 ? $page
     <header class="site-header">
         <div class="container nav-wrapper">
             <!-- Brand Logo -->
-            <a href="<?php echo $base_url; ?>/index" class="brand-logo">
-                <img src="<?php echo $base_url; ?>/assets/images/logo.png" alt="Septix Technologies Logo">
+            <a href="<?php echo $base_url; ?>/index" class="brand-logo" aria-label="Septix Technologies Home">
+                <img src="<?php echo $base_url; ?>/assets/images/logo.png" alt="Septix Technologies Logo" width="180" height="50" style="height: 50px; width: auto; object-fit: contain;">
             </a>
 
             <!-- Mobile Drawer Toggle Button -->

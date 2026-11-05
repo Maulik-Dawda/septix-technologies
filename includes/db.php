@@ -135,7 +135,7 @@ function seed_default_blogs($pdo) {
             'title' => 'Architecting Cloud-Native ERP Systems for Global Operations',
             'category' => 'ERP Software',
             'author' => 'Alexander Vance',
-            'image' => 'assets/images/service-erp.jpg',
+            'image' => 'assets/images/blog/blog-erp.jpg',
             'summary' => 'Discover how modular cloud-native ERP architectures streamline multi-entity financial reporting, inventory tracking, and global supply chain automation.',
             'content' => '<p>Modern global enterprises demand 99.99% uptime and low-latency database transactions across multiple continents. Switching from rigid legacy ERP software to modular cloud-native architectures ensures seamless scalability, automated multi-currency compliance, and real-time inventory synchronization.</p><h3>Key Benefits of Cloud-Native ERP</h3><ul><li><strong>Microservice Architecture:</strong> Decouple inventory, payroll, and finance into independently deployable microservices.</li><li><strong>Automated Data Pipelines:</strong> Real-time streaming ETL processes for executive dashboards.</li><li><strong>Multi-Region Resilience:</strong> High availability database clusters across AWS and Google Cloud.</li></ul><p>By leveraging containerized microservices and automated API integration layers, enterprise organizations can eliminate data silos and accelerate business decision-making.</p>',
             'read_time' => '6 min read'
@@ -145,7 +145,7 @@ function seed_default_blogs($pdo) {
             'title' => 'Building Autonomous AI Agent Workflows in Enterprise Systems',
             'category' => 'AI / ML',
             'author' => 'Dr. Elena Rostova',
-            'image' => 'assets/images/service-ai.jpg',
+            'image' => 'assets/images/blog/blog-ai.jpg',
             'summary' => 'Explore how generative AI models, vector search, and autonomous agent workflows are driving unprecedented efficiency across enterprise operations.',
             'content' => '<p>Generative AI is evolving from simple chatbot interactions into autonomous agentic workflows capable of executing complex business processes. From automated code audits to predictive supply chain routing, AI agents are transforming enterprise productivity.</p><h3>Implementing Agentic Workflows</h3><p>Enterprise AI systems combine Large Language Models (LLMs) with RAG (Retrieval-Augmented Generation) and vector databases to process company knowledge securely without data leaks.</p>',
             'read_time' => '5 min read'
@@ -165,7 +165,7 @@ function seed_default_blogs($pdo) {
             'title' => 'Engineering High-Performance Mobile Apps with Flutter & Swift',
             'category' => 'Mobile Apps',
             'author' => 'David Chen',
-            'image' => 'assets/images/service-mobile.jpg',
+            'image' => 'assets/images/blog/blog-mobile.jpg',
             'summary' => 'How to optimize native rendering pipelines, offline database sync, and cross-platform Flutter codebases for maximum mobile user engagement.',
             'content' => '<p>Mobile user expectations demand sub-second load times and fluid 60fps animations. By leveraging native C++ bridges, SQLite local caching, and optimized state management, developers can achieve desktop-grade performance on mobile devices.</p>',
             'read_time' => '4 min read'
@@ -175,7 +175,7 @@ function seed_default_blogs($pdo) {
             'title' => 'Optimizing Web Performance & Core Web Vitals for Max Conversion',
             'category' => 'Web Development',
             'author' => 'Sarah Jenkins',
-            'image' => 'assets/images/service-web.jpg',
+            'image' => 'assets/images/blog/blog-web.jpg',
             'summary' => 'Practical techniques for optimizing Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and SEO rankings on high-traffic platforms.',
             'content' => '<p>Fast page speeds directly translate to higher conversion rates and superior search engine positioning. Implementing progressive image loading, server-side caching, and critical CSS inline styles drives dramatic performance improvements.</p>',
             'read_time' => '5 min read'
@@ -185,7 +185,7 @@ function seed_default_blogs($pdo) {
             'title' => 'Data-Driven Digital Marketing Strategies for B2B Growth',
             'category' => 'Digital Marketing',
             'author' => 'Rachel Adams',
-            'image' => 'assets/images/service-marketing.jpg',
+            'image' => 'assets/images/blog/blog-marketing.jpg',
             'summary' => 'Leveraging programmatic advertising, multi-channel attribution models, and conversion rate optimization to scale B2B customer acquisition.',
             'content' => '<p>Effective B2B marketing relies on precise customer segmentation and data analytics. Combining content strategy with automated email funnels drives predictable sales pipeline growth.</p>',
             'read_time' => '6 min read'

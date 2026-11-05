@@ -8,8 +8,8 @@ $base_url = get_base_url();
             <div class="footer-grid">
                 <!-- Brand Info -->
                 <div class="footer-brand">
-                    <a href="<?php echo $base_url; ?>/index">
-                        <img src="<?php echo $base_url; ?>/assets/images/logo.png" alt="Septix Technologies" style="height: 75px; width: auto; object-fit: contain;">
+                    <a href="<?php echo $base_url; ?>/index" aria-label="Septix Technologies Home">
+                        <img src="<?php echo $base_url; ?>/assets/images/logo.png" alt="Septix Technologies Logo" width="180" height="50" style="height: 50px; width: auto; object-fit: contain;">
                     </a>
                     <p>Septix Technologies is an enterprise IT consulting & software engineering firm serving Dubai, the UAE, and global markets. We build high-impact web apps, custom ERPs, mobile platforms, AI models, and secure IT infrastructure.</p>
                     <div class="social-links">
@@ -26,12 +26,12 @@ $base_url = get_base_url();
                 <div>
                     <h4 class="footer-title">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="<?php echo $base_url; ?>/index"><i class="fa-solid fa-angle-right"></i> Home</a></li>
-                        <li><a href="<?php echo $base_url; ?>/about"><i class="fa-solid fa-angle-right"></i> About Us</a></li>
-                        <li><a href="<?php echo $base_url; ?>/services"><i class="fa-solid fa-angle-right"></i> All Services</a></li>
-                        <li><a href="<?php echo $base_url; ?>/portfolio"><i class="fa-solid fa-angle-right"></i> Case Studies</a></li>
-                        <li><a href="<?php echo $base_url; ?>/blog"><i class="fa-solid fa-angle-right"></i> Tech Blog</a></li>
-                        <li><a href="<?php echo $base_url; ?>/contact"><i class="fa-solid fa-angle-right"></i> Contact Us</a></li>
+                        <li><a href="<?php echo $base_url; ?>/index"><i class="fa-solid fa-angle-right"></i> Home Overview</a></li>
+                        <li><a href="<?php echo $base_url; ?>/about"><i class="fa-solid fa-angle-right"></i> About Our Company</a></li>
+                        <li><a href="<?php echo $base_url; ?>/services"><i class="fa-solid fa-angle-right"></i> Enterprise Services</a></li>
+                        <li><a href="<?php echo $base_url; ?>/portfolio"><i class="fa-solid fa-angle-right"></i> Client Case Studies</a></li>
+                        <li><a href="<?php echo $base_url; ?>/blog"><i class="fa-solid fa-angle-right"></i> Tech Insights & Blog</a></li>
+                        <li><a href="<?php echo $base_url; ?>/contact"><i class="fa-solid fa-angle-right"></i> Connect With Us</a></li>
                     </ul>
                 </div>
 
@@ -50,33 +50,33 @@ $base_url = get_base_url();
 
                 <!-- Regional & Global Reach Info -->
                 <div>
-                    <h4 class="footer-title">Dubai Headquarters</h4>
-                    <div style="margin-bottom: 16px;">
-                        <a href="<?php echo HQ_MAPS_URL; ?>" target="_blank" rel="noopener noreferrer" style="color: var(--clr-text-muted); font-size: 0.875rem; line-height: 1.5; display: flex; align-items: flex-start; gap: 8px; text-decoration: none;" title="Open in Google Maps">
-                            <i class="fa-solid fa-location-dot" style="color: var(--clr-brand-light); font-size: 1rem; margin-top: 3px; flex-shrink: 0;"></i>
-                            <span><?php echo HQ_ADDRESS; ?> <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px; color: var(--clr-brand-light);"></i></span>
+                    <h4 class="footer-title">UAE Corporate Headquarters</h4>
+                    <div class="footer-contact-block">
+                        <a href="<?php echo HQ_MAPS_URL; ?>" target="_blank" rel="noopener noreferrer" class="footer-contact-row" title="Open Google Maps Location directly">
+                            <span class="footer-icon-box"><i class="fa-solid fa-location-dot"></i></span>
+                            <span class="footer-contact-detail"><?php echo HQ_ADDRESS; ?> <i class="fa-solid fa-arrow-up-right-from-square footer-external-icon"></i></span>
                         </a>
+                        
+                        <a href="mailto:<?php echo CONTACT_EMAIL; ?>" class="footer-contact-row" title="Send an Email directly">
+                            <span class="footer-icon-box"><i class="fa-solid fa-envelope"></i></span>
+                            <span class="footer-contact-detail">&#105;&#110;&#102;&#111;&#64;&#115;&#101;&#112;&#116;&#105;&#120;&#116;&#101;&#99;&#104;&#110;&#111;&#108;&#111;&#103;&#105;&#101;&#115;&#46;&#99;&#111;&#109;</span>
+                        </a>
+                        
+                        <a href="tel:<?php echo CONTACT_PHONE_RAW; ?>" class="footer-contact-row" title="Direct Phone Call">
+                            <span class="footer-icon-box"><i class="fa-solid fa-phone"></i></span>
+                            <span class="footer-contact-detail"><?php echo CONTACT_PHONE; ?></span>
+                        </a>
+                        
+                        <a href="<?php echo CONTACT_WHATSAPP_URL; ?>" target="_blank" rel="noopener noreferrer" class="footer-contact-row whatsapp-row" title="Chat directly on WhatsApp">
+                            <span class="footer-icon-box whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></span>
+                            <span class="footer-contact-detail">WhatsApp: +971-527621316</span>
+                        </a>
+                        
+                        <div class="footer-contact-row sla-row">
+                            <span class="footer-icon-box"><i class="fa-solid fa-clock"></i></span>
+                            <span class="footer-contact-detail">24/7 GCC (GST) & Global Enterprise SLA</span>
+                        </div>
                     </div>
-                    <ul class="footer-links" style="gap: 10px;">
-                        <li style="font-size: 0.875rem; font-weight: 600;">
-                            <a href="mailto:<?php echo CONTACT_EMAIL; ?>" style="color: var(--clr-brand-dark); display: flex; align-items: center; gap: 8px; text-decoration: none;" title="Send an Email">
-                                <i class="fa-solid fa-envelope" style="color: var(--clr-brand-light);"></i> <?php echo CONTACT_EMAIL; ?>
-                            </a>
-                        </li>
-                        <li style="font-size: 0.875rem; font-weight: 600;">
-                            <a href="tel:<?php echo CONTACT_PHONE_RAW; ?>" style="color: var(--clr-brand-dark); display: flex; align-items: center; gap: 8px; text-decoration: none;" title="Call Us Directly">
-                                <i class="fa-solid fa-phone" style="color: var(--clr-brand-light);"></i> <?php echo CONTACT_PHONE; ?>
-                            </a>
-                        </li>
-                        <li style="font-size: 0.875rem; font-weight: 600;">
-                            <a href="<?php echo CONTACT_WHATSAPP_URL; ?>" target="_blank" rel="noopener noreferrer" style="color: #128c7e; display: flex; align-items: center; gap: 8px; text-decoration: none;" title="Chat with Us on WhatsApp">
-                                <i class="fa-brands fa-whatsapp" style="color: #25d366; font-size: 1.1rem;"></i> WhatsApp: +971-527621316
-                            </a>
-                        </li>
-                        <li style="color: var(--clr-text-muted); font-size: 0.825rem; font-weight: 600; display: flex; align-items: center; gap: 8px;">
-                            <i class="fa-solid fa-clock" style="color: var(--clr-brand-light);"></i> 24/7 GCC (GST) & Global SLA
-                        </li>
-                    </ul>
                 </div>
             </div>
 

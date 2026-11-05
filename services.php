@@ -23,7 +23,7 @@ require_once __DIR__ . '/includes/header.php';
             <?php foreach ($services_data as $key => $service): ?>
                 <div class="service-card" id="<?php echo $key; ?>">
                     <div class="service-card-img">
-                        <img src="<?php echo $base_url . '/' . $service['image']; ?>" alt="<?php echo $service['title']; ?>">
+                        <img src="<?php echo $base_url . '/' . $service['image']; ?>" alt="<?php echo $service['title']; ?> in Dubai UAE" width="400" height="260" loading="lazy">
                     </div>
                     <div class="service-card-body">
                         <div class="service-card-icon">
@@ -54,8 +54,8 @@ require_once __DIR__ . '/includes/header.php';
                             </div>
                         </div>
 
-                        <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center; margin-top: auto;">
-                            View Dedicated Service Page <i class="fa-solid fa-arrow-right"></i>
+                        <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>" class="btn btn-primary btn-sm" style="width: 100%; justify-content: center; margin-top: auto;" aria-label="Explore dedicated <?php echo $service['title']; ?> solutions">
+                            Explore <?php echo $service['title']; ?> Solutions <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>

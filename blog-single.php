@@ -102,7 +102,7 @@ $categories = $catStmt->fetchAll();
 
                 <!-- 2. FEATURED COVER IMAGE (Second as requested) -->
                 <div style="width: 100%; height: 380px; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 32px; box-shadow: var(--shadow-card);">
-                    <img src="<?php echo $imgUrl; ?>" alt="<?php echo htmlspecialchars($post['title']); ?>" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="<?php echo $imgUrl; ?>" alt="<?php echo htmlspecialchars($post['title']); ?>" width="800" height="380" loading="eager" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
 
                 <!-- 3. FULL ARTICLE CONTENT / DESCRIPTION (Third as requested) -->
@@ -127,8 +127,8 @@ $categories = $catStmt->fetchAll();
                             $prevUrl = $base_url . '/blog/' . htmlspecialchars($prevPost['slug']);
                             $prevImg = (strpos($prevPost['image'], 'http') === 0) ? $prevPost['image'] : ($base_url . '/' . ltrim($prevPost['image'], '/'));
                         ?>
-                            <a href="<?php echo $prevUrl; ?>" style="display: flex; gap: 14px; align-items: center; background: #f8fafc; border: 1px solid var(--clr-border); border-radius: var(--radius-md); padding: 16px; text-decoration: none; transition: var(--transition);" class="prev-next-card">
-                                <img src="<?php echo $prevImg; ?>" alt="<?php echo htmlspecialchars($prevPost['title']); ?>" style="width: 60px; height: 60px; border-radius: var(--radius-sm); object-fit: cover; flex-shrink: 0;">
+                            <a href="<?php echo $prevUrl; ?>" style="display: flex; gap: 14px; align-items: center; background: #f8fafc; border: 1px solid var(--clr-border); border-radius: var(--radius-md); padding: 16px; text-decoration: none; transition: var(--transition);" class="prev-next-card" aria-label="Previous article: <?php echo htmlspecialchars($prevPost['title']); ?>">
+                                <img src="<?php echo $prevImg; ?>" alt="<?php echo htmlspecialchars($prevPost['title']); ?>" width="60" height="60" loading="lazy" style="width: 60px; height: 60px; border-radius: var(--radius-sm); object-fit: cover; flex-shrink: 0;">
                                 <div style="overflow: hidden;">
                                     <span style="font-size: 0.75rem; font-weight: 800; color: var(--clr-brand-light); text-transform: uppercase; display: block;"><i class="fa-solid fa-arrow-left"></i> Previous Blog</span>
                                     <strong style="font-size: 0.875rem; color: var(--clr-brand-dark); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px;">
@@ -145,14 +145,14 @@ $categories = $catStmt->fetchAll();
                             $nextUrl = $base_url . '/blog/' . htmlspecialchars($nextPost['slug']);
                             $nextImg = (strpos($nextPost['image'], 'http') === 0) ? $nextPost['image'] : ($base_url . '/' . ltrim($nextPost['image'], '/'));
                         ?>
-                            <a href="<?php echo $nextUrl; ?>" style="display: flex; gap: 14px; align-items: center; background: #f8fafc; border: 1px solid var(--clr-border); border-radius: var(--radius-md); padding: 16px; text-decoration: none; transition: var(--transition); text-align: right; justify-content: flex-end;" class="prev-next-card">
+                            <a href="<?php echo $nextUrl; ?>" style="display: flex; gap: 14px; align-items: center; background: #f8fafc; border: 1px solid var(--clr-border); border-radius: var(--radius-md); padding: 16px; text-decoration: none; transition: var(--transition); text-align: right; justify-content: flex-end;" class="prev-next-card" aria-label="Next article: <?php echo htmlspecialchars($nextPost['title']); ?>">
                                 <div style="overflow: hidden;">
                                     <span style="font-size: 0.75rem; font-weight: 800; color: var(--clr-brand-light); text-transform: uppercase; display: block;">Next Blog <i class="fa-solid fa-arrow-right"></i></span>
                                     <strong style="font-size: 0.875rem; color: var(--clr-brand-dark); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px;">
                                         <?php echo htmlspecialchars($nextPost['title']); ?>
                                     </strong>
                                 </div>
-                                <img src="<?php echo $nextImg; ?>" alt="<?php echo htmlspecialchars($nextPost['title']); ?>" style="width: 60px; height: 60px; border-radius: var(--radius-sm); object-fit: cover; flex-shrink: 0;">
+                                <img src="<?php echo $nextImg; ?>" alt="<?php echo htmlspecialchars($nextPost['title']); ?>" width="60" height="60" loading="lazy" style="width: 60px; height: 60px; border-radius: var(--radius-sm); object-fit: cover; flex-shrink: 0;">
                             </a>
                         <?php endif; ?>
 
@@ -186,8 +186,8 @@ $categories = $catStmt->fetchAll();
                             $recImg = (strpos($rec['image'], 'http') === 0) ? $rec['image'] : ($base_url . '/' . ltrim($rec['image'], '/'));
                             $recDate = date('M d, Y', strtotime($rec['created_at']));
                         ?>
-                            <a href="<?php echo $recUrl; ?>" style="display: flex; gap: 12px; text-decoration: none; group" class="recent-blog-item">
-                                <img src="<?php echo $recImg; ?>" alt="<?php echo htmlspecialchars($rec['title']); ?>" style="width: 70px; height: 70px; border-radius: var(--radius-md); object-fit: cover; flex-shrink: 0;">
+                            <a href="<?php echo $recUrl; ?>" style="display: flex; gap: 12px; text-decoration: none;" class="recent-blog-item" aria-label="Read recent article: <?php echo htmlspecialchars($rec['title']); ?>">
+                                <img src="<?php echo $recImg; ?>" alt="<?php echo htmlspecialchars($rec['title']); ?>" width="70" height="70" loading="lazy" style="width: 70px; height: 70px; border-radius: var(--radius-md); object-fit: cover; flex-shrink: 0;">
                                 <div>
                                     <span style="font-size: 0.775rem; color: var(--clr-text-dim); display: block; margin-bottom: 4px;">
                                         <i class="fa-solid fa-calendar-days"></i> <?php echo $recDate; ?>

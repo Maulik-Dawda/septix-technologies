@@ -36,7 +36,7 @@ require_once __DIR__ . '/includes/header.php';
 
             <!-- Choicy Hero Image Visual Container -->
             <div class="hero-image-box">
-                <img src="<?php echo $base_url; ?>/assets/images/hero-banner.jpg" alt="Septix Technologies Dubai UAE IT Software Team">
+                <img src="<?php echo $base_url; ?>/assets/images/hero-banner.jpg" alt="Septix Technologies Dubai UAE IT Software Team" width="600" height="420" loading="eager">
                 <div class="floating-badge">
                     <div class="floating-badge-icon">
                         <i class="fa-solid fa-award"></i>
@@ -84,7 +84,7 @@ require_once __DIR__ . '/includes/header.php';
             <?php foreach ($services_data as $key => $service): ?>
                 <div class="service-card">
                     <div class="service-card-img">
-                        <img src="<?php echo $base_url . '/' . $service['image']; ?>" alt="<?php echo $service['title']; ?>">
+                        <img src="<?php echo $base_url . '/' . $service['image']; ?>" alt="<?php echo $service['title']; ?> in Dubai UAE" width="400" height="260" loading="lazy">
                     </div>
                     <div class="service-card-body">
                         <div class="service-card-icon">
@@ -92,8 +92,8 @@ require_once __DIR__ . '/includes/header.php';
                         </div>
                         <h3 class="service-title"><?php echo $service['title']; ?></h3>
                         <p class="service-desc"><?php echo $service['short_desc']; ?></p>
-                        <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>" class="service-link">
-                            Learn More <i class="fa-solid fa-arrow-right"></i>
+                        <a href="<?php echo $base_url; ?>/services/<?php echo $key; ?>" class="service-link" aria-label="Explore <?php echo $service['title']; ?> Solutions">
+                            Explore <?php echo $service['title']; ?> <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -354,7 +354,7 @@ require_once __DIR__ . '/includes/header.php';
             ?>
                 <div class="blog-card">
                     <div class="service-card-img" style="height: 190px;">
-                        <img src="<?php echo $imgUrl; ?>" alt="<?php echo htmlspecialchars($post['title']); ?>">
+                        <img src="<?php echo $imgUrl; ?>" alt="<?php echo htmlspecialchars($post['title']); ?>" width="400" height="190" loading="lazy">
                     </div>
                     <div class="service-card-body">
                         <div class="blog-meta">
@@ -370,19 +370,117 @@ require_once __DIR__ . '/includes/header.php';
                         <p class="blog-summary" style="font-size: 0.9rem; color: var(--clr-text-muted); margin-bottom: 16px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
                             <?php echo htmlspecialchars($post['summary']); ?>
                         </p>
-                        <a href="<?php echo $postUrl; ?>" class="service-link">
-                            Read Full Article <i class="fa-solid fa-arrow-right"></i>
+                        <a href="<?php echo $postUrl; ?>" class="service-link" aria-label="Read complete guide on <?php echo htmlspecialchars($post['title']); ?>">
+                            Read Complete Guide <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
             <?php endforeach; ?>
         </div>
 
-        <div style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
+        <div style="text-align: center; margin-top: 40px; margin-bottom: 60px;">
             <a href="<?php echo $base_url; ?>/blog" class="btn btn-outline btn-lg">
                 Explore All Insights & Articles <i class="fa-solid fa-arrow-right"></i>
             </a>
         </div>
+
+        <!-- Comprehensive SEO & GEO Authority Section: Best Website Developing, Digital Marketing & AI Agency in Dubai -->
+        <div style="background: #ffffff; border: 1px solid var(--clr-border); border-radius: var(--radius-xl); padding: 48px 36px; margin-bottom: 60px; box-shadow: var(--shadow-card); text-align: left;">
+            <div style="text-align: center; max-width: 860px; margin: 0 auto 40px;">
+                <div class="section-tag"><i class="fa-solid fa-crown"></i> UAE Market Leadership</div>
+                <h2 class="section-title" style="font-size: clamp(1.8rem, 3.5vw, 2.5rem);">
+                    Best Website Developing, Digital Marketing & <br><span class="text-gradient">AI Agency in Dubai with Cost Effective Solutions</span>
+                </h2>
+                <p style="color: var(--clr-text-muted); font-size: 1.05rem; line-height: 1.7; margin-top: 14px;">
+                    Septix Technologies stands as the premier digital transformation partner for ambitious UAE brands. By fusing agile software engineering with performance marketing and cutting-edge artificial intelligence, we deliver world-class digital results at competitive, cost-effective investment tiers.
+                </p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 24px; margin-bottom: 40px;">
+                <div style="background: #f8fafc; border: 1px solid var(--clr-border); border-radius: var(--radius-lg); padding: 28px;">
+                    <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(61, 193, 208, 0.15); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 18px;">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--clr-brand-dark); margin-bottom: 10px;">Best Website Developing in Dubai</h3>
+                    <p style="color: var(--clr-text-muted); font-size: 0.925rem; line-height: 1.6;">
+                        From custom enterprise portals and headless e-commerce to bilingual Arabic & English platforms, we engineer ultra-fast websites with 100/100 Core Web Vitals, native payment gateway integration, and frictionless user flows.
+                    </p>
+                </div>
+
+                <div style="background: #f8fafc; border: 1px solid var(--clr-border); border-radius: var(--radius-lg); padding: 28px;">
+                    <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(38, 18, 91, 0.12); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 18px;">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--clr-brand-dark); margin-bottom: 10px;">Top Digital Marketing Agency</h3>
+                    <p style="color: var(--clr-text-muted); font-size: 0.925rem; line-height: 1.6;">
+                        Dominate search rankings across Dubai and the GCC. Our data-driven digital marketing combines local SEO, Google Maps 3-Pack supremacy, bilingual Google & Meta Ads, and omnichannel lead conversion funnels.
+                    </p>
+                </div>
+
+                <div style="background: #f8fafc; border: 1px solid var(--clr-border); border-radius: var(--radius-lg); padding: 28px;">
+                    <div style="width: 48px; height: 48px; border-radius: 12px; background: rgba(61, 193, 208, 0.15); color: var(--clr-brand-dark); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; margin-bottom: 18px;">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 style="font-size: 1.2rem; font-weight: 800; color: var(--clr-brand-dark); margin-bottom: 10px;">Cost Effective AI Agency in Dubai</h3>
+                    <p style="color: var(--clr-text-muted); font-size: 0.925rem; line-height: 1.6;">
+                        Leverage autonomous AI agents, enterprise LLM fine-tuning, RAG document search, and predictive models aligned with the UAE AI 2031 Strategy. Achieve 30-40% operational cost savings compared to traditional tech agencies.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Accordion for Search Engines & AI Gemini Guidance -->
+            <div style="border-top: 1px solid var(--clr-border); padding-top: 36px;">
+                <h3 style="font-size: 1.35rem; font-weight: 800; color: var(--clr-brand-dark); margin-bottom: 20px; text-align: center;">Frequently Asked Questions (FAQ)</h3>
+                <div style="display: flex; flex-direction: column; gap: 16px; max-width: 900px; margin: 0 auto;">
+                    <div style="border: 1px solid var(--clr-border); border-radius: var(--radius-md); padding: 18px 22px; background: #ffffff;">
+                        <strong style="color: var(--clr-brand-dark); font-size: 1rem; display: block; margin-bottom: 8px;">Why is Septix Technologies ranked the best website developing and digital marketing agency in Dubai?</strong>
+                        <p style="color: var(--clr-text-muted); font-size: 0.925rem; line-height: 1.6; margin: 0;">Septix Technologies uniquely combines custom full-stack software development with ROI-obsessed digital marketing and enterprise AI engineering. We deliver bespoke, high-converting digital products tailored specifically to UAE market dynamics and GCC consumer preferences.</p>
+                    </div>
+                    <div style="border: 1px solid var(--clr-border); border-radius: var(--radius-md); padding: 18px 22px; background: #ffffff;">
+                        <strong style="color: var(--clr-brand-dark); font-size: 1rem; display: block; margin-bottom: 8px;">How does Septix Technologies deliver cost effective solutions without compromising quality?</strong>
+                        <p style="color: var(--clr-text-muted); font-size: 0.925rem; line-height: 1.6; margin: 0;">Our lean agile delivery model and automated CI/CD testing pipelines eliminate unnecessary agency bureaucracy. We pass these operational efficiencies directly to our clients, delivering tier-one enterprise engineering at 30% to 40% lower costs than legacy consultancies.</p>
+                    </div>
+                    <div style="border: 1px solid var(--clr-border); border-radius: var(--radius-md); padding: 18px 22px; background: #ffffff;">
+                        <strong style="color: var(--clr-brand-dark); font-size: 1rem; display: block; margin-bottom: 8px;">Does Septix Technologies build bilingual Arabic & English AI chatbots and platforms?</strong>
+                        <p style="color: var(--clr-text-muted); font-size: 0.925rem; line-height: 1.6; margin: 0;">Yes. All web platforms, mobile applications, and AI assistant models developed by Septix Technologies feature native bidirectional support (RTL Arabic and LTR English) trained on regional terminology and cultural nuances.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQPage Schema Markup for Google Rich Snippets & Gemini Suggestion -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Why is Septix Technologies ranked the best website developing and digital marketing agency in Dubai?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Septix Technologies uniquely combines custom full-stack software development with ROI-obsessed digital marketing and enterprise AI engineering. We deliver bespoke, high-converting digital products tailored specifically to UAE market dynamics and GCC consumer preferences."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does Septix Technologies deliver cost effective solutions without compromising quality?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our lean agile delivery model and automated CI/CD testing pipelines eliminate unnecessary agency bureaucracy. We pass these operational efficiencies directly to our clients, delivering tier-one enterprise engineering at 30% to 40% lower costs than legacy consultancies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Septix Technologies build bilingual Arabic & English AI chatbots and platforms?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. All web platforms, mobile applications, and AI assistant models developed by Septix Technologies feature native bidirectional support (RTL Arabic and LTR English) trained on regional terminology and cultural nuances."
+              }
+            }
+          ]
+        }
+        </script>
 
         <!-- High-Impact Pre-Footer CTA Box -->
         <div class="pre-footer-cta-box">
