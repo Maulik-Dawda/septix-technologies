@@ -1706,3 +1706,43 @@ textarea.form-control {
         border-bottom: 1px solid var(--clr-border);
     }
 }
+
+/* Floating Direct WhatsApp Quick Action Button */
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 60px;
+    height: 60px;
+    background: #25d366;
+    color: #ffffff !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    z-index: 9999;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    text-decoration: none;
+}
+
+.floating-whatsapp-btn:hover {
+    transform: translateY(-4px) scale(1.06);
+    box-shadow: 0 15px 35px rgba(37, 211, 102, 0.55);
+    color: #ffffff !important;
+}
+
+@media (max-width: 768px) {
+    .floating-whatsapp-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 52px;
+        height: 52px;
+        font-size: 28px;
+    }
+    .nav-phone-link {
+        display: none !important;
+    }
+}
+

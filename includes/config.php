@@ -8,10 +8,11 @@ if (!defined('SITE_NAME')) {
     define('SITE_TAGLINE', 'Enterprise IT & Software Solutions in Dubai, UAE');
     define('SITE_DOMAIN', 'septixtechnologies.com');
     define('CONTACT_EMAIL', 'info@septixtechnologies.com');
-    define('CONTACT_PHONE', '+1 (800) 592-7378');
-    define('UAE_CONTACT_PHONE', '+971 4 249 8765');
-    define('HQ_ADDRESS', 'Business Bay & Dubai Silicon Oasis, Dubai, UAE');
-    define('GLOBAL_OFFICE', 'Innovation Way, Global Tech Hub');
+    define('CONTACT_PHONE', '+971-527621316');
+    define('CONTACT_PHONE_RAW', '+971527621316');
+    define('CONTACT_WHATSAPP_URL', 'https://wa.me/971527621316?text=' . rawurlencode('Hello Septix Technologies, I would like to inquire about your IT & software services.'));
+    define('HQ_ADDRESS', 'City Center - 1st floor - Al Ghubaiba Rd - Al Shindagha - Al Fahidi - Dubai');
+    define('HQ_MAPS_URL', 'https://maps.google.com/?q=' . rawurlencode('City Center Al Ghubaiba Rd Al Shindagha Al Fahidi Dubai'));
 
     // Load local .env environment file if present (ignored by Git)
     $envFile = __DIR__ . '/../.env';

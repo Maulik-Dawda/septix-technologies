@@ -97,11 +97,12 @@ $page_og_image = isset($page_image) ? (strpos($page_image, 'http') === 0 ? $page
       "url": "<?php echo $base_url; ?>",
       "logo": "<?php echo $base_url; ?>/assets/images/logo.png",
       "description": "Premier IT consulting & software development firm in Dubai, UAE. Specializing in Web Platforms, Custom ERPs, Mobile Apps, AI Solutions, and IT Infrastructure.",
-      "telephone": "+1-800-592-7378",
+      "telephone": "+971-527621316",
       "email": "info@septixtechnologies.com",
+      "hasMap": "https://maps.google.com/?q=City+Center+Al+Ghubaiba+Rd+Al+Shindagha+Al+Fahidi+Dubai",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Business Bay & Dubai Silicon Oasis",
+        "streetAddress": "City Center, 1st floor, Al Ghubaiba Rd, Al Shindagha, Al Fahidi",
         "addressLocality": "Dubai",
         "addressRegion": "Dubai",
         "addressCountry": "AE"
@@ -190,10 +191,15 @@ $page_og_image = isset($page_image) ? (strpos($page_image, 'http') === 0 ? $page
                     </li>
                 </ul>
 
-                <!-- Header CTA Button -->
-                <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary btn-sm">
-                    Get a Quote <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                <!-- Header Direct Actions -->
+                <div style="display: flex; align-items: center; gap: 14px;">
+                    <a href="tel:<?php echo CONTACT_PHONE_RAW; ?>" class="nav-phone-link" style="color: var(--clr-brand-dark); font-weight: 700; font-size: 0.875rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px;" title="Call +971-527621316 Directly">
+                        <i class="fa-solid fa-phone" style="color: var(--clr-brand-light);"></i> <span><?php echo CONTACT_PHONE; ?></span>
+                    </a>
+                    <a href="<?php echo $base_url; ?>/contact" class="btn btn-primary btn-sm">
+                        Get a Quote <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
             </nav>
         </div>
     </header>

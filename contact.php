@@ -35,7 +35,7 @@ $selected_service = isset($_GET['service']) ? $_GET['service'] : '';
                     <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
                     <div>
                         <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.95rem;">Enterprise Inquiries Email:</strong>
-                        <a href="mailto:<?php echo CONTACT_EMAIL; ?>" style="color: var(--clr-brand-dark); font-weight: 700; font-size: 0.9rem;"><?php echo CONTACT_EMAIL; ?></a>
+                        <a href="mailto:<?php echo CONTACT_EMAIL; ?>" style="color: var(--clr-brand-dark); font-weight: 700; font-size: 0.9rem;" title="Click to send email directly"><?php echo CONTACT_EMAIL; ?></a>
                     </div>
                 </div>
 
@@ -43,15 +43,23 @@ $selected_service = isset($_GET['service']) ? $_GET['service'] : '';
                     <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
                     <div>
                         <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.95rem;">Direct Phone & WhatsApp:</strong>
-                        <a href="tel:<?php echo CONTACT_PHONE; ?>" style="color: var(--clr-brand-dark); font-weight: 700; font-size: 0.9rem;"><?php echo CONTACT_PHONE; ?></a>
+                        <a href="tel:<?php echo CONTACT_PHONE_RAW; ?>" style="color: var(--clr-brand-dark); font-weight: 700; font-size: 0.9rem; display: block; margin-bottom: 6px;" title="Click to call directly"><?php echo CONTACT_PHONE; ?></a>
+                        <a href="<?php echo CONTACT_WHATSAPP_URL; ?>" target="_blank" rel="noopener noreferrer" class="btn btn-sm" style="background: #25d366; color: #ffffff; border: none; font-size: 0.8rem; padding: 6px 14px; border-radius: var(--radius-sm); display: inline-flex; align-items: center; gap: 8px; text-decoration: none;" title="Open WhatsApp Chat directly">
+                            <i class="fa-brands fa-whatsapp" style="font-size: 1rem;"></i> Instant WhatsApp Chat
+                        </a>
                     </div>
                 </div>
 
                 <div class="info-item">
                     <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
                     <div>
-                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.95rem;">UAE & Regional Hub:</strong>
-                        <span style="color: var(--clr-text-muted); font-size: 0.9rem;"><?php echo HQ_ADDRESS; ?></span>
+                        <strong style="display: block; color: var(--clr-brand-dark); font-size: 0.95rem;">Dubai Headquarters Address:</strong>
+                        <a href="<?php echo HQ_MAPS_URL; ?>" target="_blank" rel="noopener noreferrer" style="color: var(--clr-text-muted); font-size: 0.9rem; line-height: 1.5; text-decoration: none; display: inline-block;" title="Click to open Google Maps directly">
+                            <?php echo HQ_ADDRESS; ?>
+                            <span style="color: var(--clr-brand-light); font-weight: 700; display: block; font-size: 0.825rem; margin-top: 4px;">
+                                <i class="fa-solid fa-map-location-dot"></i> Open Location in Google Maps &rarr;
+                            </span>
+                        </a>
                     </div>
                 </div>
 
